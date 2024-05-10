@@ -26,7 +26,6 @@ In this project I will create an extraction, storage and BI system for stock dat
 - Dưới đây là các tham số API cần thiết để truy xuất danh sách các công ty có trên các thị trường chứng khoán NASDAQ, NYSE, NYSEMKT và NATS.
     - **exchange_name**: Tên của thị trường chứng khoán cần trích xuất công ty.
     - **api_key**: Khóa API để xác thực yêu cầu.
-        https://api.sec-api.io/mapping/exchange/<exchange_name>?token=<api_key>     
 - Chỉ lấy các công ty của 4 sàn chứng khoán Hoa Kỳ là NYSE, NASDAQ, NYSEMKT (AMEX), BATS
 - Dự kiến trong tương lai:
     - Thuộc tính isDelisted của các công ty có thể thay đổi → cập nhật giá trị của thuộc tính này cho công ty đó
@@ -58,7 +57,6 @@ In this project I will create an extraction, storage and BI system for stock dat
 - Đây là các tham số API cần thiết để truy xuất trạng thái thị trường hiện tại của các sàn giao dịch chính cho cổ phiếu, ngoại hối và tiền điện tử trên toàn thế giới:
     - **function**: "MARKET_STATUS".
     - **apikey**: Khóa API để xác thực yêu cầu.
-    https://www.alphavantage.co/query?function=MARKET_STATUS&apikey=demo
 - Mọi thay đổi trong tương lai đều được Overwrite
   
 **Dữ liệu này cung cấp thông tin về các khu vực và các sàn chứng khoán tại khu vực đó. Dưới đây là mô tả của các thuộc tính trong JSON:**
@@ -200,7 +198,7 @@ Từ các file JSON trên ta trích xuất ra các bảng thông tin:
 
 ## III. ERD
 - Cấu trúc CSDL của data staging được extract vào trước khi xử lý data để đưa vào Data Warehouse
-![img](img\ERD.png)
+![ERD](\img\ERD.png)
 
 ## IV. Star Schema
 - Business Requirement #1
@@ -208,5 +206,5 @@ Từ các file JSON trên ta trích xuất ra các bảng thông tin:
 - Business Requirement #2
     Tạo Data Mart từ CSDL để theo dõi các chuyên gia nói gì về từng cổ phiếu sau mỗi ngày giao dịch. 
 
-![img](img\starschema.png)
+![starschema](\img\starschema.png)
 ## V. ETL Architecture
