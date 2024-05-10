@@ -4,10 +4,10 @@ import json
 function = "NEWS_SENTIMENT"
 # ticket = ""
 # topic = ""
-time_from = "20240101T0000"
-time_to = "20240131T2359"
+time_from = "202405101T0000"
+time_to = "20240510T2359"
 sort = "LATEST"
-limit = "1000"
+limit = "10000"
 apikey = "8VRGCBIF91MIK8OE"
 
 # adjusted = "true"

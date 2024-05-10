@@ -195,7 +195,46 @@ Từ các file JSON trên ta trích xuất ra các bảng thông tin:
     - ticker_sentiment_label: Nhãn mô tả cảm xúc của cổ phiếu đó.
 
 ### 2. Estimate 
+Để ước tính lượng dữ liệu được đưa vào hệ thống theo 4Vs của big data, chúng ta sẽ xem xét các thông tin về số lượng dòng dữ liệu, số lượng bài báo và tần suất cập nhật để tính toán.
 
+1. **Volume (Khối lượng)**:
+    
+    Để ước tính dung lượng cho khối lượng dữ liệu được mô tả, ta cần xem xét các yếu tố sau:
+    
+    a. **Dung lượng trung bình của mỗi dòng dữ liệu:**
+        - Bảng giao dịch hằng ngày: Mỗi dòng dữ liệu bao gồm thông tin về một giao dịch, bao gồm mã chứng khoán, giá, khối lượng, thời gian giao dịch, v.v. Giả sử trung bình mỗi dòng dữ liệu có thể cần khoảng 100 byte ~ 0.1 KB để lưu trữ.
+        - Bảng các bài báo: Mỗi bài báo bao gồm tiêu đề, nội dung, tác giả, ngày xuất bản, tóm tắt v.v. Giả sử trung bình mỗi bài báo có thể cần khoảng 1 kilobyte (KB) để lưu trữ.
+        - Giả sử mỗi khi bảng các bài báo được ghi thì NEWS_Fact_Table cũng được cập nhật với môi dòng là 0,5 KB.
+    b. **Tần suất truy vấn dữ liệu:**
+        - Bảng giao dịch hằng ngày: 10400 dòng dữ liệu được truy vấn mỗi ngày.
+        - Bảng các bài báo: 10000 bài viết được truy vấn mỗi ngày.
+        - Bảng khu vực: Cập nhật mỗi tháng.
+        - Bảng thông tin về công ty: Cập nhật mỗi tháng.
+    c. **Tính toán:**
+        - **Bảng giao dịch hằng ngày:**
+            - Dung lượng trung bình mỗi dòng: 0.1 KB
+            - Số lượng dòng dữ liệu mỗi ngày: 10400
+            - Dung lượng lưu trữ cần thiết: 0.1 KB/dòng * 10400 dòng/ngày ≈ 1040 KB
+        - **Bảng các bài báo:**
+            - Dung lượng trung bình mỗi bài báo: 1 KB
+            - Mỗi bài báo liên quan tới 3 cổ phiếu chứng khoán: 0.5 KB
+            - Số lượng bài báo mỗi ngày: 1000
+            - Dung lượng lưu trữ cần thiết: 1.5 KB/bài báo * 10000 bài báo/ngày ≈ 15000 KB
+        - **Tổng dung lượng lưu trữ cần thiết trong một ngày là: 16040 KB ~ 15.66 MB**
+        - **Tổng dung lượng lưu trữ cần thiết trong một tháng là: 469.92 MB**
+        - **Tổng dung lượng lưu trữ cần thiết trong một tháng là: 5,639.06 MB ~ 5.5 GB**
+2. **Velocity (Tốc độ)**:
+    - **Giao dịch cổ phiếu:** Mỗi giây, hàng triệu giao dịch cổ phiếu được thực hiện trên các sàn giao dịch toàn cầu. Dữ liệu giao dịch này cần được thu thập và xử lý trong thời gian thực để cung cấp cho các nhà đầu tư thông tin cập nhật về giá cả và khối lượng giao dịch.
+    - **Tin tức và dữ liệu tài chính:** Các nguồn tin tức và dữ liệu tài chính liên tục tạo ra một lượng lớn dữ liệu mới, bao gồm bài báo, báo cáo, phân tích và ý kiến. Dữ liệu này cần được xử lý và phân tích nhanh chóng để giúp các nhà đầu tư đưa ra quyết định sáng suốt.
+3. **Variety (Đa dạng)**:
+    - **Dữ liệu giá cả:** Giá cổ phiếu theo thời gian thực và lịch sử, khối lượng giao dịch, giá mở, cao, thấp, đóng cửa, biến động giá
+    - **Dữ liệu thị trường:** Chỉ số thị trường (VNIndex, VIX, v.v.), Tin tức và thông báo công ty, Báo cáo tài chính và phân tích, Thông tin về thị trường, Các bài báo với nhiều chủ đề.
+4. **Veracity (Tính chính xác)**:
+    - Nguồn dữ liệu được lấy từ các tổ chức uy tín như:
+        - **SEC EDGAR** là viết tắt của **Electronic Data Gathering, Analysis, and Retrieval**, là một hệ thống điện tử được Ủy ban Chứng khoán và Giao dịch Hoa Kỳ (SEC) sử dụng để thu thập, phân tích và truy xuất các tài liệu được nộp bởi các công ty đại chúng và các tổ chức khác.
+        - Alpha Vantage Inc. là nhà cung cấp hàng đầu các API có thể truy cập cho dữ liệu thị trường tài chính bao gồm cổ phiếu, FX và tiền tệ kỹ thuật số/tiền điện tử.
+        - Polygon.io là một công ty cung cấp dữ liệu và API cho thị trường tài chính được thành lập vào năm 2017 hợp tác với một số tổ chức uy tín trong ngành tài chính, bao gồm Google, Microsoft, Goldman Sachs và Morgan Stanley.
+        - 
 ## III. ERD
 - Cấu trúc CSDL của data staging được extract vào trước khi xử lý data để đưa vào Data Warehouse
 <img src="images\ERD.png" alt="ERD">
@@ -208,3 +247,4 @@ Từ các file JSON trên ta trích xuất ra các bảng thông tin:
 
 <img src="images\starschema.png" alt="starschema">
 ## V. ETL Architecture
+<img src="images\ETL.png" alt="ETL">
