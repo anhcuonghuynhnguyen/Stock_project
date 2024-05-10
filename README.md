@@ -246,5 +246,6 @@ Từ các file JSON trên ta trích xuất ra các bảng thông tin:
     Tạo Data Mart từ CSDL để theo dõi các chuyên gia nói gì về từng cổ phiếu sau mỗi ngày giao dịch. 
 
 <img src="images\starschema.png" alt="starschema">
+
 ## V. ETL Architecture
 <img src="images\ETL.png" alt="ETL">
