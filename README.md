@@ -222,7 +222,7 @@ Từ các file JSON trên ta trích xuất ra các bảng thông tin:
             - Dung lượng lưu trữ cần thiết: 1.5 KB/bài báo * 10000 bài báo/ngày ≈ 15000 KB
         - **Tổng dung lượng lưu trữ cần thiết trong một ngày là: 16040 KB ~ 15.66 MB**
         - **Tổng dung lượng lưu trữ cần thiết trong một tháng là: 469.92 MB**
-        - **Tổng dung lượng lưu trữ cần thiết trong một tháng là: 5,639.06 MB ~ 5.5 GB**
+        - **Tổng dung lượng lưu trữ cần thiết trong một năm là: 5,639.06 MB ~ 5.5 GB**
 - **Velocity (Tốc độ)**:
     - **Giao dịch cổ phiếu:** Mỗi giây, hàng triệu giao dịch cổ phiếu được thực hiện trên các sàn giao dịch toàn cầu. Dữ liệu giao dịch này cần được thu thập và xử lý trong thời gian thực để cung cấp cho các nhà đầu tư thông tin cập nhật về giá cả và khối lượng giao dịch.
     - **Tin tức và dữ liệu tài chính:** Các nguồn tin tức và dữ liệu tài chính liên tục tạo ra một lượng lớn dữ liệu mới, bao gồm bài báo, báo cáo, phân tích và ý kiến. Dữ liệu này cần được xử lý và phân tích nhanh chóng để giúp các nhà đầu tư đưa ra quyết định sáng suốt.
