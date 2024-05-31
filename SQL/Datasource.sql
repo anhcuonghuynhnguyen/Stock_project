@@ -4,25 +4,29 @@ CREATE TABLE IF NOT EXISTS Regions (
     region_id SERIAL PRIMARY KEY,
     region_name VARCHAR(50) NOT NULL,
     region_local_open TIME NOT NULL,
-    region_local_close TIME NOT NULL
+    region_local_close TIME NOT NULL,
+    company_time_stamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE IF NOT EXISTS Industries (
     industry_id SERIAL PRIMARY KEY,
     industry_name VARCHAR(100) NOT NULL,
-    industry_sector VARCHAR(100) NOT NULL
+    industry_sector VARCHAR(100) NOT NULL,
+    company_time_stamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE IF NOT EXISTS SicIndustries (
     sic_id INT PRIMARY KEY,
     sic_industry VARCHAR(100) NOT NULL,
-    sic_sector VARCHAR(100) NOT NULL
+    sic_sector VARCHAR(100) NOT NULL,
+    company_time_stamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE IF NOT EXISTS Exchanges (
     exchange_id SERIAL PRIMARY KEY,
     exchange_region_id INT NOT NULL,
     exchange_name VARCHAR(10) NOT NULL,
+    company_time_stamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     CONSTRAINT fk_exchange_region_id
         FOREIGN KEY(exchange_region_id)
         REFERENCES Regions(region_id)
