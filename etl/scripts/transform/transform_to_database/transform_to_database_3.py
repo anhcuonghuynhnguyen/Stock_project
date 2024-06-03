@@ -48,7 +48,7 @@ DATABASE = 'datasource'  # Tên cơ sở dữ liệu
 engine = create_engine(f"{DATABASE_TYPE}://{USER}:{PASSWORD}@{ENDPOINT}:{PORT}/{DATABASE}")
 
 # Đọc file JSON
-companies_json = read_latest_file_in_directory(r'etl\data\raw\companies')
+companies_json = read_latest_file_in_directory(r'etl\data\raw\crawl_apis\companies')
 
 # Tạo DataFrame cho bảng Exchanges
 companies = cleaned_dataframe(pd.DataFrame([

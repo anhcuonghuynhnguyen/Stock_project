@@ -20,7 +20,7 @@ json_object = json.dumps(data, indent=4)
 # Writing to sample.json
 date = datetime.date.today().strftime("%Y_%m_%d")
 print(date)
-path = r"etl\data\raw\OHLCs\crawl_OHLCs_" + f"{date}.json"
+path = r"etl\data\raw\crawl_apis\OHLCs\crawl_OHLCs_" + f"{date}.json"
 with open(path, "w") as outfile:
     outfile.write(json_object)
 
