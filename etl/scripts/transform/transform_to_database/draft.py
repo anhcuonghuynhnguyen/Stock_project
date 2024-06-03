@@ -1,21 +1,12 @@
-import pandas as pd
-from sqlalchemy import create_engine, text
-# Kết nói database
-# Thông tin kết nối đến PostgreSQL
-DATABASE_TYPE = 'postgresql'
-ENDPOINT = 'localhost'  # Địa chỉ của PostgreSQL
-USER = 'anhcu'  # Tên đăng nhập PostgreSQL
-PASSWORD = '225720074'  # Mật khẩu PostgreSQL
-PORT = 5432  # Cổng mặc định của PostgreSQL
-DATABASE = 'datasource'  # Tên cơ sở dữ liệu
+import os
+def get_latest_file_in_directory(directory, extension):
+    # Lấy danh sách các file trong thư mục với phần mở rộng cụ thể
+    files = [os.path.join(directory, f) for f in os.listdir(directory) if f.endswith(extension)]
+    # Nếu không có file nào trong thư mục, trả về None
+    if not files:
+        return None
+    # Tìm file mới nhất dựa trên thời gian chỉnh sửa
+    latest_file = max(files, key=os.path.getmtime)
+    return latest_file
 
-# Tạo engine kết nối đến PostgreSQL
-engine = create_engine(f"{DATABASE_TYPE}://{USER}:{PASSWORD}@{ENDPOINT}:{PORT}/{DATABASE}")
-
-# Exchanges = pd.read_sql_query("SELECT * FROM Exchanges", engine)
-# print(Exchanges)
-sql = "Select * from Exchanges;"
-
-# Thực thi câu lệnh tạo bảng
-with engine.connect() as conn:
-    conn.execute(text(sql))
+print(get_latest_file_in_directory(r'etl\data\raw\OHLCs', '.json'))

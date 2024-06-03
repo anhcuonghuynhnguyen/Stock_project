@@ -1,6 +1,6 @@
 import requests
 import json
-import datetime
+from datetime import datetime
 
 function = "NEWS_SENTIMENT"
 
@@ -8,7 +8,7 @@ function = "NEWS_SENTIMENT"
 # Định dạng chuỗi theo định dạng YYYYMMDDTHHMM
 def get_data_by_time_range():
     """Lấy dữ liệu dựa trên khung giờ hiện tại."""
-    now = datetime.datetime.now()
+    now = datetime.now()
 
     # Xác định khung giờ hiện tại
     if now.hour < 9.5:
@@ -44,10 +44,10 @@ r = requests.get(url)
 data = r.json()["feed"]
 # Serializing json
 json_object = json.dumps(data, indent=4)
-print(type(json_object))
 # Writing to sample.json
-path = r"etl\data\raw\news\crawl_news_" + f"{time_from}_{time_to}.json"
+date = datetime.now().strftime("%m_%d_%Y_%H_%M_%S")
+path = r"etl\data\raw\news\crawl_news_" + f"{date}.json"
 with open(path, "w") as outfile:
     outfile.write(json_object)
 
-print("The process of crawling news was successful")
+print(f"The process of crawling {len(data)} news was successful")

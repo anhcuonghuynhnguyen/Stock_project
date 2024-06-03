@@ -13,7 +13,7 @@ data = r.json()["markets"]
 json_object = json.dumps(data, indent=4)
 
 # Lấy date của ngày thực hiện truy xuất dữ liệu
-date = datetime.date.today().strftime("%Y-%m-%d")
+date = datetime.date.today().strftime("%Y_%m_%d")
 path = r"etl\data\raw\markets\crawl_markets_" + f"{date}.json"
 # Writing
 with open(path, "w") as outfile:

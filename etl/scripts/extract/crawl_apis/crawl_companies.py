@@ -14,7 +14,7 @@ for e in exchanges:
     print(f"The process of extracting {len(data)} companies from the {e.upper()} stock exchange has been completed")
 
 # Lấy date của ngày thực hiện truy xuất dữ liệu
-date = datetime.date.today().strftime("%Y-%m-%d")
+date = datetime.date.today().strftime("%Y_%m_%d")
 path = r"etl\data\raw\companies\crawl_companies_" + f"{date}.json"
 # Serializing json
 json_object = json.dumps(list_companies, indent=4)
