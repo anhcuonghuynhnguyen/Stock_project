@@ -30,11 +30,11 @@ def query_to_parquet(query, conn, parquet_file_path):
     df.to_parquet(parquet_file_path, engine='pyarrow')
 
 # Đường dẫn đến file truy vấn SQL
-query_file_path = r'etl\scripts\extract\extract_db_to_dl\extract_db_to_parquet.sql'
+query_file_path = r'etl/scripts/extract/extract_db_to_dl/extract_db_to_parquet.sql'
 
 # Đường dẫn đến file Parquet đầu ra
 date = datetime.date.today().strftime("%Y_%m_%d")
-parquet_file_path = r'etl\data\completed\load_db_to_dl\load_db_to_dl_' + f"{date}.parquet"
+parquet_file_path = r'etl/data/completed/load_db_to_dl/load_db_to_dl_' + f"{date}.parquet"
 
 # Đọc truy vấn SQL từ file
 query = read_query_from_file(query_file_path)

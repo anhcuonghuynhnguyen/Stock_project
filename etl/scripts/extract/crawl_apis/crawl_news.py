@@ -46,8 +46,9 @@ data = r.json()["feed"]
 json_object = json.dumps(data, indent=4)
 # Writing to sample.json
 date = datetime.now().strftime("%m_%d_%Y_%H_%M_%S")
-path = r"etl\data\raw\crawl_apis\news\crawl_news_" + f"{date}.json"
+path = r"etl/data/raw/crawl_apis/news/crawl_news_" + f"{date}.json"
 with open(path, "w") as outfile:
     outfile.write(json_object)
 
 print(f"The process of crawling {len(data)} news was successful")
+print(f"Saving at {path}")

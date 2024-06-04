@@ -14,9 +14,10 @@ json_object = json.dumps(data, indent=4)
 
 # Lấy date của ngày thực hiện truy xuất dữ liệu
 date = datetime.date.today().strftime("%Y_%m_%d")
-path = r"etl\data\raw\crawl_apis\markets\crawl_markets_" + f"{date}.json"
+path = r"etl/data/raw/crawl_apis/markets/crawl_markets_" + f"{date}.json"
 # Writing
 with open(path, "w") as outfile:
     outfile.write(json_object)
 
 print(f"The process of extracting {len(data)} regions and exchanges has been completed")
+print(f"Saving at {path}")

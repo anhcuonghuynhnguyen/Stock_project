@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS exchanges (
     exchange_id SERIAL PRIMARY KEY,
     exchange_region_id INT NOT NULL,
     exchange_name VARCHAR(100) UNIQUE NOT NULL,
-    company_time_stamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    company_update_time_stamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     CONSTRAINT fk_exchange_region_id
         FOREIGN KEY(exchange_region_id)
         REFERENCES regions(region_id)
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS companies (
     company_exchange_id INT NOT NULL,
     company_industry_id INT,
     company_sic_id INT,
-    company_time_stamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    company_update_time_stamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     company_name VARCHAR(255) NOT NULL,
     company_ticket VARCHAR(10) NOT NULL,
     company_is_delisted BOOLEAN NOT NULL,

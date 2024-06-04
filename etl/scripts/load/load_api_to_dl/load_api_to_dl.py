@@ -53,14 +53,14 @@ def load_db_to_dl(input_directory, output_directory):
 
 # Chuyển đổi cho News
 # Đường dẫn đến thư mục chứa các file JSON
-input_directory = r'etl\data\raw\crawl_apis\news'
+input_directory = r'etl/data/raw/crawl_apis/news'
 # Đường dẫn đến thư mục lưu file Parquet
-output_directory = r'etl\data\completed\load_api_news_to_dl'
+output_directory = r'etl/data/completed/load_api_news_to_dl'
 load_db_to_dl(input_directory, output_directory)
 
 # Chuyển đổi cho OHLCs
 # Đường dẫn đến thư mục chứa các file JSON
-input_directory = r'etl\data\raw\crawl_apis\ohlcs'
+input_directory = r'etl/data/raw/crawl_apis/ohlcs'
 # Đường dẫn đến thư mục lưu file Parquet
-output_directory = r'etl\data\completed\load_api_ohlcs_to_dl'
+output_directory = r'etl/data/completed/load_api_ohlcs_to_dl'
 load_db_to_dl(input_directory, output_directory)

@@ -15,9 +15,10 @@ for e in exchanges:
 
 # Lấy date của ngày thực hiện truy xuất dữ liệu
 date = datetime.date.today().strftime("%Y_%m_%d")
-path = r"etl\data\raw\crawl_apis\companies\crawl_companies_" + f"{date}.json"
+path = r"etl/data/raw/crawl_apis/companies/crawl_companies_" + f"{date}.json"
 # Serializing json
 json_object = json.dumps(list_companies, indent=4)
 # Writing to sample.json
 with open(path, "w") as outfile:
     outfile.write(json_object)
+print(f"Saving at {path}")
