@@ -8,7 +8,7 @@ from sqlalchemy import create_engine
 DATABASE_TYPE = 'postgresql'
 ENDPOINT = 'localhost'  # Địa chỉ của PostgreSQL
 USER = 'anhcu'  # Tên đăng nhập PostgreSQL
-PASSWORD = '225720074'  # Mật khẩu PostgreSQL
+PASSWORD = 'admin'  # Mật khẩu PostgreSQL
 PORT = 5432  # Cổng mặc định của PostgreSQL
 DATABASE = 'datasource'  # Tên cơ sở dữ liệu
 
@@ -41,3 +41,4 @@ query = read_query_from_file(query_file_path)
 
 # Thực hiện truy vấn và lưu kết quả vào file Parquet
 query_to_parquet(query, engine, parquet_file_path)
+print(f"Saved data from database to parquet successfully at {parquet_file_path}")

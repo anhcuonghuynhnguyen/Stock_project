@@ -1,7 +1,7 @@
 SELECT 
     c.company_id,
     c.company_name,
-    c.company_time_stamp,
+    c.company_update_time_stamp,
     c.company_ticket,
     c.company_is_delisted,
     c.company_category,
@@ -26,5 +26,5 @@ LEFT JOIN industries i
 LEFT JOIN sicindustries s 
 	ON c.company_sic_id = s.sic_id
 WHERE 
-    DATE_TRUNC('month', c.company_time_stamp) >= DATE_TRUNC('month', CURRENT_DATE)
-	AND DATE_TRUNC('year', c.company_time_stamp) = DATE_TRUNC('year', CURRENT_DATE)
+    DATE_TRUNC('month', c.company_update_time_stamp) >= DATE_TRUNC('month', CURRENT_DATE)
+	AND DATE_TRUNC('year', c.company_update_time_stamp) = DATE_TRUNC('year', CURRENT_DATE)
