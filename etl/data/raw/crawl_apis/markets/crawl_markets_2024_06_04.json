@@ -23,7 +23,7 @@
         "primary_exchanges": "London",
         "local_open": "08:00",
         "local_close": "16:30",
-        "current_status": "closed",
+        "current_status": "open",
         "notes": ""
     },
     {
@@ -59,7 +59,7 @@
         "primary_exchanges": "Lisbon",
         "local_open": "08:00",
         "local_close": "16:30",
-        "current_status": "closed",
+        "current_status": "open",
         "notes": ""
     },
     {
@@ -77,7 +77,7 @@
         "primary_exchanges": "NSE, BSE",
         "local_open": "09:15",
         "local_close": "15:30",
-        "current_status": "open",
+        "current_status": "closed",
         "notes": ""
     },
     {
@@ -95,7 +95,7 @@
         "primary_exchanges": "Hong Kong",
         "local_open": "09:30",
         "local_close": "16:00",
-        "current_status": "open",
+        "current_status": "closed",
         "notes": "Noon trading break from 12:00 to 13:00 local time"
     },
     {

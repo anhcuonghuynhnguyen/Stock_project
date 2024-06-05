@@ -1,4 +1,6 @@
-CREATE DATABASE Datasource;
+CREATE DATABASE datasource;
+
+\c datasource;
 
 CREATE TABLE IF NOT EXISTS regions (
     region_id SERIAL PRIMARY KEY,
@@ -58,7 +60,7 @@ CREATE TABLE IF NOT EXISTS companies (
     CONSTRAINT unique_company_delisted UNIQUE (company_ticket, company_is_delisted)
 );
 
-CREATE INDEX idx_company_time_stamp ON companies(company_time_stamp);
+CREATE INDEX idx_company_time_stamp ON companies(company_update_time_stamp);
 CREATE INDEX idx_company_exchange_id ON companies(company_exchange_id);
 CREATE INDEX idx_exchange_region_id ON exchanges(exchange_region_id);
 CREATE INDEX idx_company_industry_id ON companies(company_industry_id);
