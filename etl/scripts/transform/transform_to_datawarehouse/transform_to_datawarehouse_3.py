@@ -1,13 +1,13 @@
 import pyspark
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import col, explode, lit
+from pyspark.sql.functions import col, explode
 import duckdb
 import pandas as pd
 from datetime import datetime, timedelta
 
 # Create SparkSession
 spark = SparkSession.builder \
-    .appName("Insert Parquet into DuckDB") \
+    .appName("Insert Parquet into DuckDB (dim_times, dim_topics, dim_news, fact_news_topics, fact_news_companies)") \
     .config("spark.sql.caseSensitive", "true") \
     .getOrCreate()
 
