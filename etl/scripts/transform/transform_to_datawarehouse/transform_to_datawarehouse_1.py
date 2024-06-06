@@ -1,46 +1,67 @@
+import duckdb
+import pandas as pd
 from pyspark.sql import SparkSession
-from pyspark.sql.types import StructType, StructField, StringType, DoubleType, LongType, BooleanType
 
-# Tạo SparkSession
+# Initialize Spark session
 spark = SparkSession.builder \
-    .appName("CaseSensitiveExample") \
-    .config("spark.sql.caseSensitive", "true") \
+    .appName("Insert Parquet into DuckDB (dim_companies)") \
     .getOrCreate()
 
-# Đường dẫn đến file Parquet
-parquet_file_path = "datalake/ohlcs/crawl_OHLCs_2024_06_03_06_04_2024_13_33_24.parquet"
+# Path to Parquet file
+parquet_file_path = "datalake/companies/load_db_to_dl_2024_06_05.parquet"
 
-# Định nghĩa schema phù hợp với schema thực tế của file Parquet
-schema = StructType([
-    StructField("T", StringType()),
-    StructField("v", DoubleType()),
-    StructField("vw", DoubleType()),
-    StructField("o", DoubleType()),
-    StructField("c", DoubleType()),
-    StructField("h", DoubleType()),
-    StructField("l", DoubleType()),
-    StructField("t", LongType()),
-    StructField("n", DoubleType()),
-    StructField("otc", BooleanType())
-])
-# Đọc file Parquet với schema đã xác định
-df = spark.read.schema(schema).parquet(parquet_file_path)
-# df = spark.read.parquet(parquet_file_path)
+# Read Parquet file into PySpark DataFrame
+df_spark = spark.read.parquet(parquet_file_path)
 
-# Đổi tên các cột
-df = df.withColumnRenamed("T", "ticket") \
-    .withColumnRenamed("v", "volume") \
-    .withColumnRenamed("vw", "volume_weighted") \
-    .withColumnRenamed("o", "open") \
-    .withColumnRenamed("c", "close") \
-    .withColumnRenamed("h", "high") \
-    .withColumnRenamed("l", "low") \
-    .withColumnRenamed("t", "time_stamp") \
-    .withColumnRenamed("n", "num_of_trades") \
-    .withColumnRenamed("otc", "is_otc")
+# Display schema and a few rows of data
+df_spark.printSchema()
+df_spark.show()
 
-# Hiển thị schema
-df.printSchema()
+# Convert PySpark DataFrame to Pandas DataFrame
+df_pandas = df_spark.toPandas()
 
-# Hiển thị một vài dòng dữ liệu
-df.show()
+# Path to DuckDB database file
+database_path = 'datawarehouse.duckdb'
+
+# Connect to DuckDB
+conn = duckdb.connect(database=database_path)
+
+# Register the Pandas DataFrame as a DuckDB table and insert data into dim_companies
+conn.register('df_pandas', df_pandas)
+conn.execute('''
+    INSERT INTO dim_companies (
+        company_name,
+        company_ticket,
+        company_is_delisted,
+        company_category,
+        company_currency,
+        company_location,
+        company_exchange_name,
+        company_region_name,
+        company_industry_name,
+        company_industry_sector,
+        company_sic_industry,
+        company_sic_sector
+    ) SELECT 
+        company_name,
+        company_ticket,
+        company_is_delisted,
+        company_category,
+        company_currency,
+        company_location,
+        company_exchange_name,
+        company_region_name,
+        company_industry_name,
+        company_industry_sector,
+        company_sic_industry,
+        company_sic_sector
+    FROM df_pandas
+''')
+
+# Close DuckDB connection
+conn.close()
+
+# Stop Spark session
+spark.stop()
+
+print("Data has been successfully inserted into dim_companies in DuckDB!")
