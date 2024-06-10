@@ -1,0 +1,37 @@
+[2024-06-10 10:20:47,402] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: ELT_to_Data_Warehouse.load_parquet_to_hdfs 2024-06-10T10:19:32.127010+00:00 [queued]>
+[2024-06-10 10:20:47,407] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: ELT_to_Data_Warehouse.load_parquet_to_hdfs 2024-06-10T10:19:32.127010+00:00 [queued]>
+[2024-06-10 10:20:47,407] {taskinstance.py:1017} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-10 10:20:47,407] {taskinstance.py:1018} INFO - Starting attempt 2 of 3
+[2024-06-10 10:20:47,407] {taskinstance.py:1019} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-10 10:20:47,420] {taskinstance.py:1038} INFO - Executing <Task(BashOperator): load_parquet_to_hdfs> on 2024-06-10T10:19:32.127010+00:00
+[2024-06-10 10:20:47,424] {standard_task_runner.py:51} INFO - Started process 72676 to run task
+[2024-06-10 10:20:47,430] {standard_task_runner.py:75} INFO - Running: ['airflow', 'tasks', 'run', 'ELT_to_Data_Warehouse', 'load_parquet_to_hdfs', '2024-06-10T10:19:32.127010+00:00', '--job-id', '32', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/elt_to_dw.py', '--cfg-path', '/tmp/tmpxt51pj7m']
+[2024-06-10 10:20:47,431] {standard_task_runner.py:76} INFO - Job 32: Subtask load_parquet_to_hdfs
+[2024-06-10 10:20:47,473] {logging_mixin.py:103} INFO - Running <TaskInstance: ELT_to_Data_Warehouse.load_parquet_to_hdfs 2024-06-10T10:19:32.127010+00:00 [running]> on host etl.us-central1-a.c.data-engineering-stock.internal
+[2024-06-10 10:20:47,485] {taskinstance.py:1396} ERROR - bash /home/anhcu/Project/Stock_project/elt/scripts/load/load_parquet_to_hdfs.sh
+Traceback (most recent call last):
+  File "/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1086, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1224, in _prepare_and_execute_task_with_callbacks
+    self.render_templates(context=context)
+  File "/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1684, in render_templates
+    self.task.render_template_fields(context)
+  File "/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 857, in render_template_fields
+    self._do_render_template_fields(self, self.template_fields, context, jinja_env, set())
+  File "/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 870, in _do_render_template_fields
+    rendered_content = self.render_template(content, context, jinja_env, seen_oids)
+  File "/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 905, in render_template
+    return jinja_env.get_template(content).render(**context)
+  File "/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/jinja2/loaders.py", line 197, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bash /home/anhcu/Project/Stock_project/elt/scripts/load/load_parquet_to_hdfs.sh
+[2024-06-10 10:20:47,487] {taskinstance.py:1433} INFO - Marking task as UP_FOR_RETRY. dag_id=ELT_to_Data_Warehouse, task_id=load_parquet_to_hdfs, execution_date=20240610T101932, start_date=20240610T102047, end_date=20240610T102047
+[2024-06-10 10:20:47,520] {local_task_job.py:118} INFO - Task exited with return code 1

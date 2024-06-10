@@ -1,0 +1,7 @@
+#!/home/anhcu/Project/Stock_project/airflow_venv/bin/python3
+import json_merge_patch.cli
+json_merge_patch.cli.main()
+
+
+
+
