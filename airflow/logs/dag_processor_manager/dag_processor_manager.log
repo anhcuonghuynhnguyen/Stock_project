@@ -15763,3 +15763,306 @@ File Path                                                                       
 ================================================================================
 [2024-06-11 08:19:48,658] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
 [2024-06-11 08:19:48,658] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-11 08:14:48.658695+00:00
+[2024-06-11 08:19:58,824] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-11 08:19:58,824] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-11 08:14:58.824955+00:00
+[2024-06-11 08:20:08,932] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-11 08:20:08,933] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-11 08:15:08.933223+00:00
+[2024-06-11 08:20:17,856] {dag_processing.py:833} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_kubernetes_executor_config.py                                0           0  0.10s           2024-06-11T08:19:52
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py                                                    0           0  0.10s           2024-06-11T08:20:09
+/home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py                                                                                                          1           0  1.01s           2024-06-11T08:19:51
+/home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py                                                                                                      1           0  0.11s           2024-06-11T08:20:06
+/home/anhcu/Project/Stock_project/airflow/dags/etl_to_db.py                                                                                                          1           0  0.10s           2024-06-11T08:20:05
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_latest_only.py                                               1           0  0.10s           2024-06-11T08:20:01
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                    1           0  0.31s           2024-06-11T08:20:12
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                              1           0  0.20s           2024-06-11T08:20:17
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_xcom.py                                                      1           0  0.10s           2024-06-11T08:19:56
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_bash_operator.py                                             1           0  0.10s           2024-06-11T08:19:59
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py                                             1           0  0.20s           2024-06-11T08:20:16
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py                                                  1           0  0.10s           2024-06-11T08:19:58
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_trigger_target_dag.py                                        1           0  0.10s           2024-06-11T08:19:55
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_complex.py                                                   1           0  0.10s           2024-06-11T08:20:00
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py                                         1           0  0.11s           2024-06-11T08:19:57
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_nested_branch_dag.py                                         1           0  0.10s           2024-06-11T08:20:02
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial_etl_dag.py                                                  1           0  0.10s           2024-06-11T08:19:53
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_kubernetes_executor.py                                       1           0  0.10s           2024-06-11T08:20:10
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py                                                        1           0  0.21s           2024-06-11T08:20:15
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py                                           1           0  0.10s           2024-06-11T08:19:54
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                           1           0  0.10s           2024-06-11T08:20:11
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_operator.py                                    1           0  0.20s           2024-06-11T08:19:52
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                  1           0  0.10s           2024-06-11T08:20:02
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py                                                1           0  0.20s           2024-06-11T08:20:16
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_python_operator.py                                           1           0  0.10s           2024-06-11T08:20:03
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py                                                          1           0  0.20s           2024-06-11T08:20:13
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                  2           0  0.10s           2024-06-11T08:20:07
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_xcomargs.py                                                  2           0  0.10s           2024-06-11T08:20:07
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py                                           3           0  0.31s           2024-06-11T08:20:14
+================================================================================
+[2024-06-11 08:20:19,222] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-11 08:20:19,223] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-11 08:15:19.223255+00:00
+[2024-06-11 08:20:29,253] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-11 08:20:29,253] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-11 08:15:29.253567+00:00
+[2024-06-11 08:20:39,361] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-11 08:20:39,362] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-11 08:15:39.362326+00:00
+[2024-06-11 08:20:48,298] {dag_processing.py:833} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_kubernetes_executor_config.py                                0           0  0.10s           2024-06-11T08:20:47
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py                                                    0           0  0.10s           2024-06-11T08:20:36
+/home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py                                                                                                          1           0  0.61s           2024-06-11T08:20:47
+/home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py                                                                                                      1           0  0.10s           2024-06-11T08:20:33
+/home/anhcu/Project/Stock_project/airflow/dags/etl_to_db.py                                                                                                          1           0  0.10s           2024-06-11T08:20:32
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_latest_only.py                                               1           0  0.10s           2024-06-11T08:20:29
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                    1           0  0.10s           2024-06-11T08:20:39
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                              1           0  0.20s           2024-06-11T08:20:45
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_xcom.py                                                      1           0  0.10s           2024-06-11T08:20:24
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_bash_operator.py                                             1           0  0.10s           2024-06-11T08:20:27
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py                                             1           0  0.20s           2024-06-11T08:20:44
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py                                                  1           0  0.10s           2024-06-11T08:20:26
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_trigger_target_dag.py                                        1           0  0.10s           2024-06-11T08:20:23
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_complex.py                                                   1           0  0.10s           2024-06-11T08:20:28
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py                                         1           0  0.10s           2024-06-11T08:20:25
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_nested_branch_dag.py                                         1           0  0.10s           2024-06-11T08:20:31
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial_etl_dag.py                                                  1           0  0.10s           2024-06-11T08:20:21
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_kubernetes_executor.py                                       1           0  0.21s           2024-06-11T08:20:37
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py                                                        1           0  0.10s           2024-06-11T08:20:42
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py                                           1           0  0.11s           2024-06-11T08:20:22
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                           1           0  0.10s           2024-06-11T08:20:38
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_operator.py                                    1           0  0.12s           2024-06-11T08:20:48
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                  1           0  0.10s           2024-06-11T08:20:30
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py                                                1           0  0.20s           2024-06-11T08:20:43
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_python_operator.py                                           1           0  0.10s           2024-06-11T08:20:31
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py                                                          1           0  0.10s           2024-06-11T08:20:40
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                  2           0  0.10s           2024-06-11T08:20:34
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_xcomargs.py                                                  2           0  0.10s           2024-06-11T08:20:35
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py                                           3           0  0.10s           2024-06-11T08:20:41
+================================================================================
+[2024-06-11 08:20:49,488] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-11 08:20:49,488] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-11 08:15:49.488759+00:00
+[2024-06-11 08:20:59,607] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-11 08:20:59,608] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-11 08:15:59.608195+00:00
+[2024-06-11 08:21:09,740] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-11 08:21:09,741] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-11 08:16:09.740976+00:00
+[2024-06-11 08:21:18,408] {dag_processing.py:833} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_kubernetes_executor_config.py                                0           0  0.11s           2024-06-11T08:21:14
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py                                                    0           0  0.11s           2024-06-11T08:21:03
+/home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py                                                                                                          1           0  1.01s           2024-06-11T08:21:14
+/home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py                                                                                                      1           0  0.10s           2024-06-11T08:21:01
+/home/anhcu/Project/Stock_project/airflow/dags/etl_to_db.py                                                                                                          1           0  0.10s           2024-06-11T08:21:00
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_latest_only.py                                               1           0  0.10s           2024-06-11T08:20:56
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                    1           0  0.10s           2024-06-11T08:21:06
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                              1           0  0.10s           2024-06-11T08:21:12
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_xcom.py                                                      1           0  0.10s           2024-06-11T08:20:51
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_bash_operator.py                                             1           0  0.10s           2024-06-11T08:20:54
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py                                             1           0  0.10s           2024-06-11T08:21:11
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py                                                  1           0  0.10s           2024-06-11T08:20:53
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_trigger_target_dag.py                                        1           0  0.11s           2024-06-11T08:21:18
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_complex.py                                                   1           0  0.21s           2024-06-11T08:20:55
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py                                         1           0  0.10s           2024-06-11T08:20:52
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_nested_branch_dag.py                                         1           0  0.10s           2024-06-11T08:20:58
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial_etl_dag.py                                                  1           0  0.10s           2024-06-11T08:21:17
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_kubernetes_executor.py                                       1           0  0.10s           2024-06-11T08:21:04
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py                                                        1           0  0.10s           2024-06-11T08:21:09
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py                                           1           0  0.21s           2024-06-11T08:21:17
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                           1           0  0.10s           2024-06-11T08:21:05
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_operator.py                                    1           0  0.22s           2024-06-11T08:21:16
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                  1           0  0.10s           2024-06-11T08:20:57
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py                                                1           0  0.10s           2024-06-11T08:21:10
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_python_operator.py                                           1           0  0.10s           2024-06-11T08:20:59
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py                                                          1           0  0.10s           2024-06-11T08:21:07
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                  2           0  0.21s           2024-06-11T08:21:02
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_xcomargs.py                                                  2           0  0.31s           2024-06-11T08:21:03
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py                                           3           0  0.10s           2024-06-11T08:21:08
+================================================================================
+[2024-06-11 08:21:19,846] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-11 08:21:19,847] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-11 08:16:19.847293+00:00
+[2024-06-11 08:21:29,961] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-11 08:21:29,961] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-11 08:16:29.961815+00:00
+[2024-06-11 08:21:40,069] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-11 08:21:40,070] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-11 08:16:40.070334+00:00
+[2024-06-11 08:21:48,517] {dag_processing.py:833} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_kubernetes_executor_config.py                                0           0  0.10s           2024-06-11T08:21:42
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py                                                    0           0  0.10s           2024-06-11T08:21:32
+/home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py                                                                                                          1           0  0.71s           2024-06-11T08:21:41
+/home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py                                                                                                      1           0  0.10s           2024-06-11T08:21:29
+/home/anhcu/Project/Stock_project/airflow/dags/etl_to_db.py                                                                                                          1           0  0.10s           2024-06-11T08:21:28
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_latest_only.py                                               1           0  0.10s           2024-06-11T08:21:23
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                    1           0  0.10s           2024-06-11T08:21:34
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                              1           0  0.10s           2024-06-11T08:21:40
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_xcom.py                                                      1           0  0.10s           2024-06-11T08:21:47
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_bash_operator.py                                             1           0  0.10s           2024-06-11T08:21:22
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py                                             1           0  0.10s           2024-06-11T08:21:39
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py                                                  1           0  0.10s           2024-06-11T08:21:48
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_trigger_target_dag.py                                        1           0  0.10s           2024-06-11T08:21:46
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_complex.py                                                   1           0  0.10s           2024-06-11T08:21:23
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py                                         1           0  0.20s           2024-06-11T08:21:47
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_nested_branch_dag.py                                         1           0  0.10s           2024-06-11T08:21:26
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial_etl_dag.py                                                  1           0  0.10s           2024-06-11T08:21:44
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_kubernetes_executor.py                                       1           0  0.10s           2024-06-11T08:21:32
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py                                                        1           0  0.10s           2024-06-11T08:21:37
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py                                           1           0  0.20s           2024-06-11T08:21:45
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                           1           0  0.10s           2024-06-11T08:21:33
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_operator.py                                    1           0  0.10s           2024-06-11T08:21:43
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                  1           0  0.10s           2024-06-11T08:21:25
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py                                                1           0  0.10s           2024-06-11T08:21:38
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_python_operator.py                                           1           0  0.10s           2024-06-11T08:21:27
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py                                                          1           0  0.10s           2024-06-11T08:21:35
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                  2           0  0.10s           2024-06-11T08:21:30
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_xcomargs.py                                                  2           0  0.10s           2024-06-11T08:21:31
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py                                           3           0  0.10s           2024-06-11T08:21:36
+================================================================================
+[2024-06-11 08:21:50,181] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-11 08:21:50,182] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-11 08:16:50.182384+00:00
+[2024-06-11 08:22:00,290] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-11 08:22:00,290] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-11 08:17:00.290951+00:00
+[2024-06-11 08:22:10,482] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-11 08:22:10,482] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-11 08:17:10.482934+00:00
+[2024-06-11 08:22:18,773] {dag_processing.py:833} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_kubernetes_executor_config.py                                0           0  0.21s           2024-06-11T08:22:09
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py                                                    0           0  0.10s           2024-06-11T08:21:59
+/home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py                                                                                                          1           0  0.61s           2024-06-11T08:22:09
+/home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py                                                                                                      1           0  0.10s           2024-06-11T08:21:56
+/home/anhcu/Project/Stock_project/airflow/dags/etl_to_db.py                                                                                                          1           0  0.10s           2024-06-11T08:21:55
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_latest_only.py                                               1           0  0.10s           2024-06-11T08:21:51
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                    1           0  0.10s           2024-06-11T08:22:02
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_branch_python_dop_operator_3.py                              1           0  0.10s           2024-06-11T08:22:07
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_xcom.py                                                      1           0  0.10s           2024-06-11T08:22:14
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_bash_operator.py                                             1           0  0.20s           2024-06-11T08:22:17
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py                                             1           0  0.10s           2024-06-11T08:22:06
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py                                                  1           0  0.10s           2024-06-11T08:22:16
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_trigger_target_dag.py                                        1           0  0.10s           2024-06-11T08:22:13
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_complex.py                                                   1           0  0.21s           2024-06-11T08:22:18
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py                                         1           0  0.22s           2024-06-11T08:22:15
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_nested_branch_dag.py                                         1           0  0.10s           2024-06-11T08:21:53
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial_etl_dag.py                                                  1           0  0.20s           2024-06-11T08:22:11
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_kubernetes_executor.py                                       1           0  0.10s           2024-06-11T08:22:00
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py                                                        1           0  0.10s           2024-06-11T08:22:04
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_branch_operator.py                                           1           0  0.10s           2024-06-11T08:22:12
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                           1           0  0.11s           2024-06-11T08:22:01
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_operator.py                                    1           0  0.33s           2024-06-11T08:22:10
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_latest_only_with_trigger.py                                  1           0  0.10s           2024-06-11T08:21:52
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py                                                1           0  0.10s           2024-06-11T08:22:05
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_python_operator.py                                           1           0  0.10s           2024-06-11T08:21:54
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py                                                          1           0  0.10s           2024-06-11T08:22:02
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_external_task_marker_dag.py                                  2           0  0.10s           2024-06-11T08:21:57
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_xcomargs.py                                                  2           0  0.10s           2024-06-11T08:21:58
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py                                           3           0  0.10s           2024-06-11T08:22:03
+================================================================================
+[2024-06-11 08:22:20,585] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-11 08:22:20,586] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-11 08:17:20.586352+00:00
+[2024-06-11 08:22:30,690] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-11 08:22:30,691] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-11 08:17:30.691351+00:00
+[2024-06-11 08:22:40,854] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-11 08:22:40,855] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-11 08:17:40.854964+00:00
+[2024-06-11 08:22:46,219] {dag_processing.py:726} INFO - Searching for files in /home/anhcu/Project/Stock_project/airflow/dags
+[2024-06-11 08:22:46,229] {dag_processing.py:729} INFO - There are 18 files in /home/anhcu/Project/Stock_project/airflow/dags
+[2024-06-11 08:22:48,878] {dag_processing.py:833} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py                                                    0           0  0.10s           2024-06-11T08:22:27
+/home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py                                                                                                          1           0  0.61s           2024-06-11T08:22:37
+/home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py                                                                                                      1           0  0.10s           2024-06-11T08:22:47
+/home/anhcu/Project/Stock_project/airflow/dags/etl_to_db.py                                                                                                          1           0  0.11s           2024-06-11T08:22:47
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                    1           0  0.10s           2024-06-11T08:22:30
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_xcom.py                                                      1           0  0.20s           2024-06-11T08:22:43
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py                                                  1           0  0.21s           2024-06-11T08:22:45
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_trigger_target_dag.py                                        1           0  0.10s           2024-06-11T08:22:41
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py                                         1           0  0.10s           2024-06-11T08:22:44
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial_etl_dag.py                                                  1           0  0.10s           2024-06-11T08:22:39
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py                                                        1           0  0.10s           2024-06-11T08:22:33
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                           1           0  0.10s           2024-06-11T08:22:29
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_operator.py                                    1           0  0.10s           2024-06-11T08:22:39
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py                                                1           0  0.10s           2024-06-11T08:22:34
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_python_operator.py                                           1           0  0.10s           2024-06-11T08:22:46
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py                                                          1           0  0.10s           2024-06-11T08:22:31
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_xcomargs.py                                                  2           0  0.21s           2024-06-11T08:22:48
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py                                           3           0  0.10s           2024-06-11T08:22:32
+================================================================================
+[2024-06-11 08:22:51,022] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-11 08:22:51,023] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-11 08:17:51.023223+00:00
+[2024-06-11 08:23:01,142] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-11 08:23:01,143] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-11 08:18:01.143356+00:00
+[2024-06-11 08:23:11,240] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-11 08:23:11,241] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-11 08:18:11.241479+00:00
+[2024-06-11 08:23:18,883] {dag_processing.py:833} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                    0           0  0.10s           2024-06-11T08:23:07
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_xcom.py                                                      0           0  0.10s           2024-06-11T08:23:16
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py                                                  0           0  0.10s           2024-06-11T08:23:17
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_trigger_target_dag.py                                        0           0  0.10s           2024-06-11T08:23:15
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py                                         0           0  0.10s           2024-06-11T08:23:18
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial_etl_dag.py                                                  0           0  0.10s           2024-06-11T08:23:14
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py                                                        0           0  0.10s           2024-06-11T08:23:10
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                           0           0  0.10s           2024-06-11T08:23:06
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_operator.py                                    0           0  0.10s           2024-06-11T08:23:13
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py                                                0           0  0.10s           2024-06-11T08:23:11
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_python_operator.py                                           0           0  0.10s           2024-06-11T08:23:02
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py                                                          0           0  0.10s           2024-06-11T08:23:08
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_xcomargs.py                                                  0           0  0.10s           2024-06-11T08:23:05
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py                                           0           0  0.10s           2024-06-11T08:23:09
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py                                                    0           0  0.11s           2024-06-11T08:23:17
+/home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py                                                                                                          1           0  0.71s           2024-06-11T08:23:12
+/home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py                                                                                                      1           0  0.10s           2024-06-11T08:23:04
+/home/anhcu/Project/Stock_project/airflow/dags/etl_to_db.py                                                                                                          1           0  0.31s           2024-06-11T08:23:04
+================================================================================
+[2024-06-11 08:23:21,376] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-11 08:23:21,377] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-11 08:18:21.377308+00:00
+[2024-06-11 08:23:31,594] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-11 08:23:31,594] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-11 08:18:31.594827+00:00
+[2024-06-11 08:23:41,889] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-11 08:23:41,890] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-11 08:18:41.890231+00:00
+[2024-06-11 08:23:49,843] {dag_processing.py:833} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_trigger_controller_dag.py                                    0           0  0.10s           2024-06-11T08:23:44
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_xcom.py                                                      0           0  0.10s           2024-06-11T08:23:35
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_skip_dag.py                                                  0           0  0.10s           2024-06-11T08:23:35
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_trigger_target_dag.py                                        0           0  0.10s           2024-06-11T08:23:33
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial_taskflow_api_etl.py                                         0           0  0.10s           2024-06-11T08:23:37
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial_etl_dag.py                                                  0           0  0.10s           2024-06-11T08:23:32
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py                                                        0           0  0.10s           2024-06-11T08:23:47
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_passing_params_via_test_command.py                           0           0  0.10s           2024-06-11T08:23:43
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_short_circuit_operator.py                                    0           0  0.10s           2024-06-11T08:23:31
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_task_group.py                                                0           0  0.10s           2024-06-11T08:23:47
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_python_operator.py                                           0           0  0.10s           2024-06-11T08:23:39
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py                                                          0           0  0.10s           2024-06-11T08:23:45
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_xcomargs.py                                                  0           0  0.10s           2024-06-11T08:23:42
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/example_subdag_operator.py                                           0           0  0.10s           2024-06-11T08:23:45
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py                                                    0           0  0.10s           2024-06-11T08:23:36
+/home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py                                                                                                          1           0  0.82s           2024-06-11T08:23:49
+/home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py                                                                                                      1           0  0.10s           2024-06-11T08:23:40
+/home/anhcu/Project/Stock_project/airflow/dags/etl_to_db.py                                                                                                          1           0  0.10s           2024-06-11T08:23:40
+================================================================================

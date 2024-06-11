@@ -2168,3 +2168,65 @@
 [2024-06-11 08:19:46,534] {logging_mixin.py:103} INFO - [2024-06-11 08:19:46,534] {dag.py:1813} INFO - Sync 1 DAGs
 [2024-06-11 08:19:46,557] {logging_mixin.py:103} INFO - [2024-06-11 08:19:46,556] {dag.py:2266} INFO - Setting next_dagrun for test_utils to None
 [2024-06-11 08:19:46,576] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py took 0.062 seconds
+[2024-06-11 08:20:15,117] {scheduler_job.py:181} INFO - Started process (PID=25223) to work on /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:20:15,118] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py for tasks to queue
+[2024-06-11 08:20:15,119] {logging_mixin.py:103} INFO - [2024-06-11 08:20:15,119] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:20:15,137] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['test_utils']) retrieved from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:20:15,139] {logging_mixin.py:103} INFO - [2024-06-11 08:20:15,139] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:20:15,186] {logging_mixin.py:103} INFO - [2024-06-11 08:20:15,186] {dag.py:2266} INFO - Setting next_dagrun for test_utils to None
+[2024-06-11 08:20:15,219] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py took 0.117 seconds
+[2024-06-11 08:20:42,472] {scheduler_job.py:181} INFO - Started process (PID=25480) to work on /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:20:42,474] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py for tasks to queue
+[2024-06-11 08:20:42,475] {logging_mixin.py:103} INFO - [2024-06-11 08:20:42,475] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:20:42,480] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['test_utils']) retrieved from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:20:42,481] {logging_mixin.py:103} INFO - [2024-06-11 08:20:42,481] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:20:42,499] {logging_mixin.py:103} INFO - [2024-06-11 08:20:42,499] {dag.py:2266} INFO - Setting next_dagrun for test_utils to None
+[2024-06-11 08:20:42,513] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py took 0.045 seconds
+[2024-06-11 08:21:09,765] {scheduler_job.py:181} INFO - Started process (PID=25932) to work on /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:21:09,767] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py for tasks to queue
+[2024-06-11 08:21:09,767] {logging_mixin.py:103} INFO - [2024-06-11 08:21:09,767] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:21:09,772] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['test_utils']) retrieved from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:21:09,773] {logging_mixin.py:103} INFO - [2024-06-11 08:21:09,773] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:21:09,789] {logging_mixin.py:103} INFO - [2024-06-11 08:21:09,789] {dag.py:2266} INFO - Setting next_dagrun for test_utils to None
+[2024-06-11 08:21:09,802] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py took 0.040 seconds
+[2024-06-11 08:21:37,106] {scheduler_job.py:181} INFO - Started process (PID=26458) to work on /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:21:37,108] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py for tasks to queue
+[2024-06-11 08:21:37,109] {logging_mixin.py:103} INFO - [2024-06-11 08:21:37,109] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:21:37,114] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['test_utils']) retrieved from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:21:37,116] {logging_mixin.py:103} INFO - [2024-06-11 08:21:37,116] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:21:37,135] {logging_mixin.py:103} INFO - [2024-06-11 08:21:37,135] {dag.py:2266} INFO - Setting next_dagrun for test_utils to None
+[2024-06-11 08:21:37,155] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py took 0.055 seconds
+[2024-06-11 08:22:04,305] {scheduler_job.py:181} INFO - Started process (PID=26714) to work on /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:22:04,309] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py for tasks to queue
+[2024-06-11 08:22:04,310] {logging_mixin.py:103} INFO - [2024-06-11 08:22:04,310] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:22:04,316] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['test_utils']) retrieved from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:22:04,317] {logging_mixin.py:103} INFO - [2024-06-11 08:22:04,317] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:22:04,341] {logging_mixin.py:103} INFO - [2024-06-11 08:22:04,341] {dag.py:2266} INFO - Setting next_dagrun for test_utils to None
+[2024-06-11 08:22:04,354] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py took 0.053 seconds
+[2024-06-11 08:22:33,617] {scheduler_job.py:181} INFO - Started process (PID=26896) to work on /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:22:33,619] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py for tasks to queue
+[2024-06-11 08:22:33,620] {logging_mixin.py:103} INFO - [2024-06-11 08:22:33,620] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:22:33,626] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['test_utils']) retrieved from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:22:33,627] {logging_mixin.py:103} INFO - [2024-06-11 08:22:33,627] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:22:33,647] {logging_mixin.py:103} INFO - [2024-06-11 08:22:33,647] {dag.py:2266} INFO - Setting next_dagrun for test_utils to None
+[2024-06-11 08:22:33,663] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py took 0.051 seconds
+[2024-06-11 08:22:53,101] {scheduler_job.py:181} INFO - Started process (PID=27018) to work on /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:22:53,103] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py for tasks to queue
+[2024-06-11 08:22:53,104] {logging_mixin.py:103} INFO - [2024-06-11 08:22:53,104] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:22:53,105] {scheduler_job.py:641} WARNING - No viable dags retrieved from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:22:53,106] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py took 0.009 seconds
+[2024-06-11 08:23:10,206] {scheduler_job.py:181} INFO - Started process (PID=27215) to work on /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:23:10,208] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py for tasks to queue
+[2024-06-11 08:23:10,209] {logging_mixin.py:103} INFO - [2024-06-11 08:23:10,209] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:23:10,210] {scheduler_job.py:641} WARNING - No viable dags retrieved from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:23:10,210] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py took 0.009 seconds
+[2024-06-11 08:23:27,694] {scheduler_job.py:181} INFO - Started process (PID=27889) to work on /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:23:27,695] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py for tasks to queue
+[2024-06-11 08:23:27,696] {logging_mixin.py:103} INFO - [2024-06-11 08:23:27,696] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:23:27,696] {scheduler_job.py:641} WARNING - No viable dags retrieved from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:23:27,697] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py took 0.007 seconds
+[2024-06-11 08:23:47,048] {scheduler_job.py:181} INFO - Started process (PID=28069) to work on /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:23:47,049] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py for tasks to queue
+[2024-06-11 08:23:47,050] {logging_mixin.py:103} INFO - [2024-06-11 08:23:47,050] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:23:47,050] {scheduler_job.py:641} WARNING - No viable dags retrieved from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py
+[2024-06-11 08:23:47,051] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/test_utils.py took 0.006 seconds

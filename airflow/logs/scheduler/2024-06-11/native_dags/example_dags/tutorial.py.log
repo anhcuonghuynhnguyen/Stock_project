@@ -2161,3 +2161,67 @@
 [2024-06-11 08:19:44,634] {logging_mixin.py:103} INFO - [2024-06-11 08:19:44,633] {dag.py:1813} INFO - Sync 1 DAGs
 [2024-06-11 08:19:44,657] {logging_mixin.py:103} INFO - [2024-06-11 08:19:44,657] {dag.py:2266} INFO - Setting next_dagrun for tutorial to 2024-06-09 00:00:00+00:00
 [2024-06-11 08:19:44,677] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.064 seconds
+[2024-06-11 08:20:12,968] {scheduler_job.py:181} INFO - Started process (PID=25165) to work on /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:20:12,972] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2024-06-11 08:20:12,974] {logging_mixin.py:103} INFO - [2024-06-11 08:20:12,974] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:20:12,981] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:20:12,982] {logging_mixin.py:103} INFO - [2024-06-11 08:20:12,982] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:20:13,024] {logging_mixin.py:103} INFO - [2024-06-11 08:20:13,024] {dag.py:2266} INFO - Setting next_dagrun for tutorial to 2024-06-09 00:00:00+00:00
+[2024-06-11 08:20:13,047] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.084 seconds
+[2024-06-11 08:20:40,408] {scheduler_job.py:181} INFO - Started process (PID=25442) to work on /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:20:40,410] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2024-06-11 08:20:40,411] {logging_mixin.py:103} INFO - [2024-06-11 08:20:40,411] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:20:40,417] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:20:40,418] {logging_mixin.py:103} INFO - [2024-06-11 08:20:40,418] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:20:40,436] {logging_mixin.py:103} INFO - [2024-06-11 08:20:40,436] {dag.py:2266} INFO - Setting next_dagrun for tutorial to 2024-06-09 00:00:00+00:00
+[2024-06-11 08:20:40,450] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.046 seconds
+[2024-06-11 08:21:07,799] {scheduler_job.py:181} INFO - Started process (PID=25927) to work on /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:21:07,801] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2024-06-11 08:21:07,802] {logging_mixin.py:103} INFO - [2024-06-11 08:21:07,801] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:21:07,808] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:21:07,809] {logging_mixin.py:103} INFO - [2024-06-11 08:21:07,809] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:21:07,827] {logging_mixin.py:103} INFO - [2024-06-11 08:21:07,827] {dag.py:2266} INFO - Setting next_dagrun for tutorial to 2024-06-09 00:00:00+00:00
+[2024-06-11 08:21:07,841] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.046 seconds
+[2024-06-11 08:21:35,032] {scheduler_job.py:181} INFO - Started process (PID=26185) to work on /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:21:35,033] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2024-06-11 08:21:35,034] {logging_mixin.py:103} INFO - [2024-06-11 08:21:35,034] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:21:35,042] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:21:35,043] {logging_mixin.py:103} INFO - [2024-06-11 08:21:35,043] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:21:35,060] {logging_mixin.py:103} INFO - [2024-06-11 08:21:35,060] {dag.py:2266} INFO - Setting next_dagrun for tutorial to 2024-06-09 00:00:00+00:00
+[2024-06-11 08:21:35,074] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.047 seconds
+[2024-06-11 08:22:02,477] {scheduler_job.py:181} INFO - Started process (PID=26710) to work on /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:22:02,478] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2024-06-11 08:22:02,479] {logging_mixin.py:103} INFO - [2024-06-11 08:22:02,479] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:22:02,485] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:22:02,486] {logging_mixin.py:103} INFO - [2024-06-11 08:22:02,486] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:22:02,505] {logging_mixin.py:103} INFO - [2024-06-11 08:22:02,505] {dag.py:2266} INFO - Setting next_dagrun for tutorial to 2024-06-09 00:00:00+00:00
+[2024-06-11 08:22:02,518] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.046 seconds
+[2024-06-11 08:22:31,737] {scheduler_job.py:181} INFO - Started process (PID=26892) to work on /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:22:31,739] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2024-06-11 08:22:31,740] {logging_mixin.py:103} INFO - [2024-06-11 08:22:31,740] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:22:31,745] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:22:31,746] {logging_mixin.py:103} INFO - [2024-06-11 08:22:31,746] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:22:31,764] {logging_mixin.py:103} INFO - [2024-06-11 08:22:31,764] {dag.py:2266} INFO - Setting next_dagrun for tutorial to 2024-06-09 00:00:00+00:00
+[2024-06-11 08:22:31,780] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.048 seconds
+[2024-06-11 08:22:51,047] {scheduler_job.py:181} INFO - Started process (PID=26999) to work on /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:22:51,048] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2024-06-11 08:22:51,049] {logging_mixin.py:103} INFO - [2024-06-11 08:22:51,049] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:22:51,054] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:22:51,055] {logging_mixin.py:103} INFO - [2024-06-11 08:22:51,055] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:22:51,071] {logging_mixin.py:103} INFO - [2024-06-11 08:22:51,071] {dag.py:2266} INFO - Setting next_dagrun for tutorial to 2024-06-09 00:00:00+00:00
+[2024-06-11 08:22:51,086] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.042 seconds
+[2024-06-11 08:23:08,274] {scheduler_job.py:181} INFO - Started process (PID=27211) to work on /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:23:08,275] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2024-06-11 08:23:08,276] {logging_mixin.py:103} INFO - [2024-06-11 08:23:08,276] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:23:08,276] {scheduler_job.py:641} WARNING - No viable dags retrieved from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:23:08,277] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.008 seconds
+[2024-06-11 08:23:25,436] {scheduler_job.py:181} INFO - Started process (PID=27866) to work on /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:23:25,443] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2024-06-11 08:23:25,454] {logging_mixin.py:103} INFO - [2024-06-11 08:23:25,454] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:23:25,463] {scheduler_job.py:641} WARNING - No viable dags retrieved from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:23:25,466] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.036 seconds
+[2024-06-11 08:23:45,306] {scheduler_job.py:181} INFO - Started process (PID=28065) to work on /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:23:45,308] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2024-06-11 08:23:45,308] {logging_mixin.py:103} INFO - [2024-06-11 08:23:45,308] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:23:45,308] {scheduler_job.py:641} WARNING - No viable dags retrieved from /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2024-06-11 08:23:45,309] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.007 seconds
