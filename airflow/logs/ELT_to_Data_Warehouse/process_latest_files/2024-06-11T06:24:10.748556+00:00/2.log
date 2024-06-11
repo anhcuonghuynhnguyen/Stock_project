@@ -1,0 +1,552 @@
+[2024-06-11 06:26:28,438] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: ELT_to_Data_Warehouse.process_latest_files 2024-06-11T06:24:10.748556+00:00 [queued]>
+[2024-06-11 06:26:28,447] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: ELT_to_Data_Warehouse.process_latest_files 2024-06-11T06:24:10.748556+00:00 [queued]>
+[2024-06-11 06:26:28,447] {taskinstance.py:1017} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-11 06:26:28,447] {taskinstance.py:1018} INFO - Starting attempt 2 of 2
+[2024-06-11 06:26:28,447] {taskinstance.py:1019} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-11 06:26:28,463] {taskinstance.py:1038} INFO - Executing <Task(PythonOperator): process_latest_files> on 2024-06-11T06:24:10.748556+00:00
+[2024-06-11 06:26:28,466] {standard_task_runner.py:51} INFO - Started process 37833 to run task
+[2024-06-11 06:26:28,473] {standard_task_runner.py:75} INFO - Running: ['airflow', 'tasks', 'run', 'ELT_to_Data_Warehouse', 'process_latest_files', '2024-06-11T06:24:10.748556+00:00', '--job-id', '92', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/elt_to_dw.py', '--cfg-path', '/tmp/tmpjay3m9_r']
+[2024-06-11 06:26:28,474] {standard_task_runner.py:76} INFO - Job 92: Subtask process_latest_files
+[2024-06-11 06:26:28,510] {logging_mixin.py:103} INFO - Running <TaskInstance: ELT_to_Data_Warehouse.process_latest_files 2024-06-11T06:24:10.748556+00:00 [running]> on host etl.us-central1-a.c.data-engineering-stock.internal
+[2024-06-11 06:26:28,540] {taskinstance.py:1230} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=ELT_to_Data_Warehouse
+AIRFLOW_CTX_TASK_ID=process_latest_files
+AIRFLOW_CTX_EXECUTION_DATE=2024-06-11T06:24:10.748556+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-06-11T06:24:10.748556+00:00
+[2024-06-11 06:26:28,544] {elt_to_dw.py:82} INFO - Files pulled from XCom: /user/anhcu/datalake/news/crawl_news_2024_06_10.parquet
+/user/anhcu/datalake/ohlcs/crawl_ohlcs_2024_06_10.parquet
+/user/anhcu/datalake/companies/load_db_to_dl_2024_06_11.parquet
+
+
+[2024-06-11 06:26:45,037] {logging_mixin.py:103} INFO - root
+ |-- title: string (nullable = true)
+ |-- url: string (nullable = true)
+ |-- time_published: string (nullable = true)
+ |-- authors: array (nullable = true)
+ |    |-- element: string (containsNull = true)
+ |-- summary: string (nullable = true)
+ |-- banner_image: string (nullable = true)
+ |-- source: string (nullable = true)
+ |-- category_within_source: string (nullable = true)
+ |-- source_domain: string (nullable = true)
+ |-- topics: array (nullable = true)
+ |    |-- element: struct (containsNull = true)
+ |    |    |-- relevance_score: string (nullable = true)
+ |    |    |-- topic: string (nullable = true)
+ |-- overall_sentiment_score: double (nullable = true)
+ |-- overall_sentiment_label: string (nullable = true)
+ |-- ticker_sentiment: array (nullable = true)
+ |    |-- element: struct (containsNull = true)
+ |    |    |-- relevance_score: string (nullable = true)
+ |    |    |-- ticker: string (nullable = true)
+ |    |    |-- ticker_sentiment_label: string (nullable = true)
+ |    |    |-- ticker_sentiment_score: string (nullable = true)
+[2024-06-11 06:26:45,037] {logging_mixin.py:103} INFO - 
+[2024-06-11 06:26:49,836] {logging_mixin.py:103} INFO - +--------------------+--------------------+---------------+--------------------+--------------------+--------------------+-----------------+----------------------+--------------------+--------------------+-----------------------+-----------------------+--------------------+
+|               title|                 url| time_published|             authors|             summary|        banner_image|           source|category_within_source|       source_domain|              topics|overall_sentiment_score|overall_sentiment_label|    ticker_sentiment|
++--------------------+--------------------+---------------+--------------------+--------------------+--------------------+-----------------+----------------------+--------------------+--------------------+-----------------------+-----------------------+--------------------+
+|INR slides amid f...|https://www.busin...|20240610T092900|    [Capital Market]|Indian Rupee has ...|https://www.busin...|Business Standard|             GoogleRSS|www.business-stan...|[{0.158519, Earni...|               0.164851|       Somewhat-Bullish|[{0.666827, FOREX...|
+|Bulgarian electio...|https://www.aljaz...|20240610T092754|        [Al Jazeera]|The centre-right ...|https://www.aljaz...|       Al Jareeza|                   n/a|   www.aljazeera.com| [{1.0, Technology}]|               0.115218|                Neutral|[{0.103331, META,...|
+|Russian President...|https://www.benzi...|20240610T092740|    [Benzinga Neuro]|Russian President...|https://cdn.benzi...|         Benzinga|                  News|    www.benzinga.com|[{1.0, Retail & W...|                0.03589|                Neutral|[{0.092213, GLP, ...|
+|HDFC Bank hikes f...|https://www.busin...|20240610T092536|[Surbhi Gloria Si...|For its general c...|https://bsmedia.b...|Business Standard|             GoogleRSS|www.business-stan...|[{0.928139, Econo...|               0.250628|       Somewhat-Bullish|[{0.0699, SBKFF, ...|
+|If You'd Invested...|https://www.fool....|20240610T092500|        [Will Healy]|Super Micro Compu...|https://g.foolcdn...|      Motley Fool|                   n/a|        www.fool.com|[{0.451494, IPO},...|               0.148965|                Neutral|[{0.114137, NVDA,...|
+|Michael Mosley 'c...|https://theweek.c...|20240610T092419|[The Week UK, Hol...|The family of mis...|https://cdn.mos.c...|    The Week News|                   n/a|         theweek.com|                  []|               0.036322|                Neutral|[{0.049221, FRNWF...|
+|This Stock Has Do...|https://www.fool....|20240610T092200|         [Adam Levy]|Berkshire Hathawa...|https://g.foolcdn...|      Motley Fool|                   n/a|        www.fool.com|[{1.0, Finance}, ...|               0.372082|                Bullish|[{0.045224, BAC, ...|
+|3 Artificial Inte...|https://www.fool....|20240610T092100|     [Sean Williams]|Warren Buffett's ...|https://g.foolcdn...|      Motley Fool|                   n/a|        www.fool.com|[{0.999499, Finan...|               0.250368|       Somewhat-Bullish|[{0.268294, MSFT,...|
+|Olympic athletes ...|https://www.cnn.c...|20240610T091900|                  []|Olympians, includ...|https://media.cnn...|              CNN|               Markets|         www.cnn.com|[{1.0, Life Scien...|               0.245539|       Somewhat-Bullish|[{0.03853, GLDAF,...|
+|Shelly Group anno...|https://www.prnew...|20240610T091700|      [Shelly Group]|SOFIA, Bulgaria a...|https://mma.prnew...|      PR Newswire|                   n/a|  www.prnewswire.com|[{0.650727, Finan...|               0.432138|                Bullish|[{0.122269, SSNLF...|
+|This Coffee Stock...|https://www.fool....|20240610T091500|         [Jon Quast]|Is Black Rifle Co...|https://media.ych...|      Motley Fool|                   n/a|        www.fool.com|[{0.158519, IPO},...|               0.308221|       Somewhat-Bullish|[{0.145145, BROS,...|
+|Modi 3.0: Telcos ...|https://www.busin...|20240610T091456|[Press Trust of I...|According to DIPA...|https://bsmedia.b...|Business Standard|             GoogleRSS|www.business-stan...| [{1.0, Technology}]|                0.21211|       Somewhat-Bullish|[{0.059341, VOD, ...|
+|2nd highest weekl...|https://cointeleg...|20240610T091321|    [William Suberg]|BTC price action ...|https://images.co...|    Cointelegraph|                   n/a|   cointelegraph.com|[{0.998626, Econo...|                0.10395|                Neutral|[{0.059194, CME, ...|
+|Check out the ver...|https://www.busin...|20240610T091300|     [Meghan Morris]|Read the super-co...|                NULL| Business Insider|             GoogleRSS|www.businessinsid...|                  []|               0.089791|                Neutral|[{0.110462, ACN, ...|
+|A key Russian CEO...|https://www.busin...|20240610T091000|       [Huileng Tan]|Key Russian oil C...|                NULL| Business Insider|             GoogleRSS|www.businessinsid...|[{0.838487, Econo...|               0.096331|                Neutral|[{0.076602, FOREX...|
+|Is Now a Golden O...|https://www.fool....|20240610T091000|   [Geoffrey Seiler]|The company's new...|https://g.foolcdn...|      Motley Fool|                   n/a|        www.fool.com|[{0.999767, Earni...|               0.171113|       Somewhat-Bullish|[{0.053153, SSNLF...|
+|I quit my career ...|https://www.busin...|20240610T090700|      [J.D. Harlock]|I Lost All My Sav...|                NULL| Business Insider|             GoogleRSS|www.businessinsid...|[{0.158519, Earni...|               0.051328|                Neutral|[{0.059636, FOREX...|
+|3 Stock-Split Sto...|https://www.fool....|20240610T090600|     [Sean Williams]|Three supercharge...|https://g.foolcdn...|      Motley Fool|                   n/a|        www.fool.com|[{1.0, Financial ...|               0.217492|       Somewhat-Bullish|[{0.028626, EVR, ...|
+|Sarawak Premier L...|https://www.prnew...|20240610T090500|[Asia Pacific Gre...|KUCHING, Malaysia...|https://mma.prnew...|      PR Newswire|                   n/a|  www.prnewswire.com|[{0.108179, Finan...|               0.438818|                Bullish|[{0.068112, PRFUF...|
+|Microsoft to help...|https://www.prnew...|20240610T090500|   [Microsoft Corp.]|New program will ...|https://mma.prnew...|      PR Newswire|                   n/a|  www.prnewswire.com| [{1.0, Technology}]|               0.236407|       Somewhat-Bullish|[{0.716023, MSFT,...|
++--------------------+--------------------+---------------+--------------------+--------------------+--------------------+-----------------+----------------------+--------------------+--------------------+-----------------------+-----------------------+--------------------+
+only showing top 20 rows
+[2024-06-11 06:26:49,836] {logging_mixin.py:103} INFO - 
+[2024-06-11 06:26:51,875] {logging_mixin.py:103} INFO - Data inserted into dim_topics successfully!
+[2024-06-11 06:26:51,875] {logging_mixin.py:103} INFO - Yesterday's date: 2024-06-10
+[2024-06-11 06:26:52,574] {logging_mixin.py:103} INFO -                                               new_title new_time_published              new_authors  ... new_overall_sentiment_score new_overall_sentiment_label news_time_id
+0      INR slides amid firm movement in US dollar index    20240610T092900       ['Capital Market']  ...                    0.164851            Somewhat-Bullish            2
+1     Bulgarian election delivers another fragmented...    20240610T092754           ['Al Jazeera']  ...                    0.115218                     Neutral            2
+2     Russian President To Visit North Korea For Fir...    20240610T092740       ['Benzinga Neuro']  ...                    0.035890                     Neutral            2
+3     HDFC Bank hikes fixed deposit rates on select ...    20240610T092536  ['Surbhi Gloria Singh']  ...                    0.250628            Somewhat-Bullish            2
+4     If You'd Invested $1,000 in Super Micro Comput...    20240610T092500           ['Will Healy']  ...                    0.148965                     Neutral            2
+...                                                 ...                ...                      ...  ...                         ...                         ...          ...
+2002  African elephants call each other by unique na...    20240610T160300     ['CHRISTINA LARSON']  ...                    0.018860                     Neutral            2
+2003  Dow Edges Lower; KWESST Micro Systems Shares J...    20240610T160250           ['Avi Kapoor']  ...                   -0.072897                     Neutral            2
+2004                India among Asia's new flying geese    20240610T160243          ['Sonal Varma']  ...                    0.290257            Somewhat-Bullish            2
+2005  INARI MEDICAL, INC.  ( NASDAQ: NARI )  INVESTO...    20240610T160228       ['Globe Newswire']  ...                    0.089498                     Neutral            2
+2006  Uniswap Labs Acquires 'Crypto: The Game' Ahead...    20240610T160111          ['Reza Jafery']  ...                    0.263580            Somewhat-Bullish            2
+
+[2007 rows x 9 columns]
+[2024-06-11 06:26:52,718] {logging_mixin.py:103} INFO - Data inserted into dim_news successfully!
+[2024-06-11 06:26:53,355] {logging_mixin.py:103} INFO -      new_topic_relevance_score              topic_name                                          new_title
+0                     0.158519                Earnings   INR slides amid firm movement in US dollar index
+1                     0.158519      Economy - Monetary   INR slides amid firm movement in US dollar index
+2                     0.360215       Financial Markets   INR slides amid firm movement in US dollar index
+3                          1.0              Technology  Bulgarian election delivers another fragmented...
+4                          1.0      Retail & Wholesale  Russian President To Visit North Korea For Fir...
+...                        ...                     ...                                                ...
+4465                  0.158519        Economy - Fiscal                India among Asia's new flying geese
+4466                  0.929393       Financial Markets                India among Asia's new flying geese
+4467                  0.108179  Mergers & Acquisitions  INARI MEDICAL, INC.  ( NASDAQ: NARI )  INVESTO...
+4468                       1.0           Life Sciences  INARI MEDICAL, INC.  ( NASDAQ: NARI )  INVESTO...
+4469                  0.972756       Financial Markets  INARI MEDICAL, INC.  ( NASDAQ: NARI )  INVESTO...
+
+[4470 rows x 3 columns]
+[2024-06-11 06:26:53,408] {logging_mixin.py:103} INFO -       new_topic_relevance_score          topic_name                                          new_title  topic_id  new_id
+0                      0.158519            Earnings   INR slides amid firm movement in US dollar index         5     151
+1                      0.158519            Earnings   INR slides amid firm movement in US dollar index         5    2158
+2                      0.158519            Earnings   INR slides amid firm movement in US dollar index         5    4165
+3                      0.158519            Earnings   INR slides amid firm movement in US dollar index         5    6172
+4                      0.158519  Economy - Monetary   INR slides amid firm movement in US dollar index        11     151
+...                         ...                 ...                                                ...       ...     ...
+18871                       1.0       Life Sciences  INARI MEDICAL, INC.  ( NASDAQ: NARI )  INVESTO...        15    8177
+18872                  0.972756   Financial Markets  INARI MEDICAL, INC.  ( NASDAQ: NARI )  INVESTO...        10    2156
+18873                  0.972756   Financial Markets  INARI MEDICAL, INC.  ( NASDAQ: NARI )  INVESTO...        10    4163
+18874                  0.972756   Financial Markets  INARI MEDICAL, INC.  ( NASDAQ: NARI )  INVESTO...        10    6170
+18875                  0.972756   Financial Markets  INARI MEDICAL, INC.  ( NASDAQ: NARI )  INVESTO...        10    8177
+
+[18876 rows x 5 columns]
+[2024-06-11 06:26:54,521] {logging_mixin.py:103} INFO - Data inserted into fact_news_topics successfully!
+[2024-06-11 06:26:55,150] {logging_mixin.py:103} INFO -      new_company_relevance_score company_ticket new_company_ticker_sentiment_score new_company_ticker_sentiment_label                                          new_title
+0                       0.666827      FOREX:INR                           0.253801                   Somewhat-Bullish   INR slides amid firm movement in US dollar index
+1                       0.666827      FOREX:USD                           0.253801                   Somewhat-Bullish   INR slides amid firm movement in US dollar index
+2                       0.103331           META                           0.362883                            Bullish  Bulgarian election delivers another fragmented...
+3                       0.092213            GLP                          -0.044674                            Neutral  Russian President To Visit North Korea For Fir...
+4                         0.0699          SBKFF                           0.464013                            Bullish  HDFC Bank hikes fixed deposit rates on select ...
+...                          ...            ...                                ...                                ...                                                ...
+3785                    0.210274             NE                           0.230674                   Somewhat-Bullish  Dow Edges Lower; KWESST Micro Systems Shares J...
+3786                    0.210274           SIFY                           0.018524                            Neutral  Dow Edges Lower; KWESST Micro Systems Shares J...
+3787                    0.414559           NARI                           0.080039                            Neutral  INARI MEDICAL, INC.  ( NASDAQ: NARI )  INVESTO...
+3788                     0.17715     CRYPTO:ETH                           0.210748                   Somewhat-Bullish  Uniswap Labs Acquires 'Crypto: The Game' Ahead...
+3789                    0.629492     CRYPTO:UNI                           0.337156                   Somewhat-Bullish  Uniswap Labs Acquires 'Crypto: The Game' Ahead...
+
+[3790 rows x 5 columns]
+[2024-06-11 06:26:55,207] {logging_mixin.py:103} INFO -       new_company_relevance_score company_ticket new_company_ticker_sentiment_score  ...                                          new_title new_id  company_id
+8                        0.103331           META                           0.362883  ...  Bulgarian election delivers another fragmented...    152      5903.0
+9                        0.103331           META                           0.362883  ...  Bulgarian election delivers another fragmented...   2159      5903.0
+10                       0.103331           META                           0.362883  ...  Bulgarian election delivers another fragmented...   4166      5903.0
+11                       0.103331           META                           0.362883  ...  Bulgarian election delivers another fragmented...   6173      5903.0
+12                       0.092213            GLP                          -0.044674  ...  Russian President To Visit North Korea For Fir...    153     14847.0
+...                           ...            ...                                ...  ...                                                ...    ...         ...
+15955                    0.210274           SIFY                           0.018524  ...  Dow Edges Lower; KWESST Micro Systems Shares J...   8175     12677.0
+15956                    0.414559           NARI                           0.080039  ...  INARI MEDICAL, INC.  ( NASDAQ: NARI )  INVESTO...   2156      6306.0
+15957                    0.414559           NARI                           0.080039  ...  INARI MEDICAL, INC.  ( NASDAQ: NARI )  INVESTO...   4163      6306.0
+15958                    0.414559           NARI                           0.080039  ...  INARI MEDICAL, INC.  ( NASDAQ: NARI )  INVESTO...   6170      6306.0
+15959                    0.414559           NARI                           0.080039  ...  INARI MEDICAL, INC.  ( NASDAQ: NARI )  INVESTO...   8177      6306.0
+
+[12268 rows x 7 columns]
+[2024-06-11 06:26:55,309] {logging_mixin.py:103} INFO - Data inserted into fact_news_companies successfully!
+[2024-06-11 06:26:56,825] {logging_mixin.py:103} INFO - root
+ |-- company_ticket: string (nullable = true)
+ |-- volume: double (nullable = true)
+ |-- volume_weighted: double (nullable = true)
+ |-- open: double (nullable = true)
+ |-- close: double (nullable = true)
+ |-- high: double (nullable = true)
+ |-- low: double (nullable = true)
+ |-- time_stamp: long (nullable = true)
+ |-- num_of_trades: double (nullable = true)
+ |-- is_otc: boolean (nullable = true)
+[2024-06-11 06:26:56,826] {logging_mixin.py:103} INFO - 
+[2024-06-11 06:26:57,280] {logging_mixin.py:103} INFO - +--------------+---------+---------------+------+------+-------+-------+-------------+-------------+------+
+|company_ticket|   volume|volume_weighted|  open| close|   high|    low|   time_stamp|num_of_trades|is_otc|
++--------------+---------+---------------+------+------+-------+-------+-------------+-------------+------+
+|           CFR| 514797.0|        97.8206| 99.25| 97.53|  99.25|  97.27|1718049600000|      12182.0|  NULL|
+|          PSCM|  18544.0|        77.1174|  77.0| 76.98|  77.12|  76.98|1718049600000|         17.0|  NULL|
+|         PUMSY|  18404.0|         5.0048|  5.06| 5.002|   5.06| 4.9701|1718049600000|         55.0|  true|
+|           JBL| 976703.0|       116.4732|113.13| 117.1| 117.26| 113.13|1718049600000|      23841.0|  NULL|
+|          ADAP|1624762.0|         1.0304|  1.01|  1.04|  1.045|   1.01|1718049600000|       2629.0|  NULL|
+|           PCY| 246948.0|        20.1679|  20.2| 20.17|   20.2| 20.135|1718049600000|       1565.0|  NULL|
+|            ZM|3410969.0|        62.8349| 62.43| 62.96|  63.32|  62.42|1718049600000|      48029.0|  NULL|
+|          AVDE| 303588.0|        64.5796| 64.25| 64.64|64.6624|64.1131|1718049600000|        889.0|  NULL|
+|          CBRE|1806891.0|        86.9636| 84.99| 87.62|  87.68|  84.68|1718049600000|      25257.0|  NULL|
+|           UZE|  88271.0|        21.3756| 21.23|  21.5|  21.57|21.1501|1718049600000|        580.0|  NULL|
+|           NWG| 865861.0|         8.0354|  8.03|  8.08|    8.1|  7.985|1718049600000|       3289.0|  NULL|
+|          ASGN| 275478.0|        92.2782| 92.39| 92.37|  92.81|  91.58|1718049600000|       9685.0|  NULL|
+|          REFG|   2000.0|         1.0E-6|1.0E-6|1.0E-6| 1.0E-6| 1.0E-6|1718049600000|          1.0|  true|
+|          FVAL|  66138.0|        56.7982| 56.62| 56.87|  56.93|  56.62|1718049600000|        431.0|  NULL|
+|          HJEN|  12162.0|        12.0681| 11.91|  12.2|  12.25|  11.85|1718049600000|        227.0|  NULL|
+|          MMSI| 203913.0|         82.106|  81.7| 82.22|   82.4| 81.325|1718049600000|       6708.0|  NULL|
+|          IDRV|  34795.0|        30.3532| 30.19| 30.42|  30.49|  30.19|1718049600000|        409.0|  NULL|
+|           SIL| 658797.0|         31.986|  32.0| 32.19|  32.19|  31.44|1718049600000|       5705.0|  NULL|
+|          JAAA|2168248.0|        50.7258|50.745| 50.73|  50.75|  50.71|1718049600000|       6554.0|  NULL|
+|          TFLO|2207969.0|        50.5295| 50.53| 50.53|  50.54|  50.52|1718049600000|       4998.0|  NULL|
++--------------+---------+---------------+------+------+-------+-------+-------------+-------------+------+
+only showing top 20 rows
+[2024-06-11 06:26:57,280] {logging_mixin.py:103} INFO - 
+[2024-06-11 06:26:58,359] {logging_mixin.py:103} INFO -       company_ticket     volume  volume_weighted    open    close     high       low     time_stamp  num_of_trades is_otc
+0                CFR   514797.0          97.8206   99.25   97.530   99.250   97.2700  1718049600000        12182.0   None
+1               PSCM    18544.0          77.1174   77.00   76.980   77.120   76.9800  1718049600000           17.0   None
+2              PUMSY    18404.0           5.0048    5.06    5.002    5.060    4.9701  1718049600000           55.0   True
+3                JBL   976703.0         116.4732  113.13  117.100  117.260  113.1300  1718049600000        23841.0   None
+4               ADAP  1624762.0           1.0304    1.01    1.040    1.045    1.0100  1718049600000         2629.0   None
+...              ...        ...              ...     ...      ...      ...       ...            ...            ...    ...
+14566          ZJZZT   173361.0          21.0000   21.00   21.000   21.000   21.0000  1718049600000            1.0   None
+14567           ZBZX        0.0              NaN   25.00   25.000   25.000   25.0000  1718049600000            NaN   None
+14568          ZEXIT     2000.0          10.0000   10.00   10.000   10.000   10.0000  1718049600000            1.0   None
+14569          ZXZZT     5490.0          18.4857   10.25   10.250   10.250   10.2500  1718049600000          117.0   None
+14570          ZWZZT   162655.0          19.0049   19.00   19.500   19.500   19.0000  1718049600000            5.0   None
+
+[14571 rows x 10 columns]
+[2024-06-11 06:26:58,360] {logging_mixin.py:103} INFO - Yesterday's date: 2024-06-10
+[2024-06-11 06:26:58,394] {logging_mixin.py:103} INFO -        company_id company_ticket
+0               1           AAAB
+1               2           AABC
+2               3           AACC
+3               4           AACE
+4               5           AACI
+...           ...            ...
+19683       19684          ZNHYY
+19684       19685           ZPIN
+19685       19686            ZTO
+19686       19687          ZXAIY
+19687       19688           GRTX
+
+[19688 rows x 2 columns]
+[2024-06-11 06:26:58,414] {logging_mixin.py:103} INFO -        company_id company_ticket
+0               1           AAAB
+1               2           AABC
+2               3           AACC
+3               4           AACE
+4               5           AACI
+...           ...            ...
+19683       19684          ZNHYY
+19684       19685           ZPIN
+19685       19686            ZTO
+19686       19687          ZXAIY
+19687       19688           GRTX
+
+[19687 rows x 2 columns]
+[2024-06-11 06:26:58,481] {logging_mixin.py:103} INFO -       company_ticket     volume  volume_weighted    open   close     high     low     time_stamp  num_of_trades is_otc  company_id
+0                CFR   514797.0          97.8206   99.25   97.53   99.250   97.27  1718049600000        12182.0   None     13915.0
+3                JBL   976703.0         116.4732  113.13  117.10  117.260  113.13  1718049600000        23841.0   None     15256.0
+4               ADAP  1624762.0           1.0304    1.01    1.04    1.045    1.01  1718049600000         2629.0   None       170.0
+6                 ZM  3410969.0          62.8349   62.43   62.96   63.320   62.42  1718049600000        48029.0   None     10408.0
+8               CBRE  1806891.0          86.9636   84.99   87.62   87.680   84.68  1718049600000        25257.0   None     13846.0
+...              ...        ...              ...     ...     ...      ...     ...            ...            ...    ...         ...
+14171          IPXXU      100.0          10.5900   10.59   10.59   10.590   10.59  1718049600000            1.0   None     11764.0
+14174          GAMCW      600.0           0.1500    0.15    0.15    0.150    0.15  1718049600000            1.0   None     11422.0
+14175           PBBK      562.0          13.2594   13.25   13.25   13.250   13.25  1718049600000           57.0   None      7070.0
+14177          BAYAU      103.0          10.3544   10.35   10.35   10.350   10.35  1718049600000            2.0   None     10710.0
+14178        HLLY.WS     4900.0           0.1000    0.10    0.10    0.100    0.10  1718049600000            1.0   None     18480.0
+
+[6135 rows x 11 columns]
+[2024-06-11 06:26:58,519] {logging_mixin.py:103} INFO -       company_ticket     volume  volume_weighted    open   close     high     low     time_stamp  num_of_trades is_otc  company_id  candles_time_id
+0                CFR   514797.0          97.8206   99.25   97.53   99.250   97.27  1718049600000        12182.0   None     13915.0                2
+3                JBL   976703.0         116.4732  113.13  117.10  117.260  113.13  1718049600000        23841.0   None     15256.0                2
+4               ADAP  1624762.0           1.0304    1.01    1.04    1.045    1.01  1718049600000         2629.0   None       170.0                2
+6                 ZM  3410969.0          62.8349   62.43   62.96   63.320   62.42  1718049600000        48029.0   None     10408.0                2
+8               CBRE  1806891.0          86.9636   84.99   87.62   87.680   84.68  1718049600000        25257.0   None     13846.0                2
+...              ...        ...              ...     ...     ...      ...     ...            ...            ...    ...         ...              ...
+14171          IPXXU      100.0          10.5900   10.59   10.59   10.590   10.59  1718049600000            1.0   None     11764.0                2
+14174          GAMCW      600.0           0.1500    0.15    0.15    0.150    0.15  1718049600000            1.0   None     11422.0                2
+14175           PBBK      562.0          13.2594   13.25   13.25   13.250   13.25  1718049600000           57.0   None      7070.0                2
+14177          BAYAU      103.0          10.3544   10.35   10.35   10.350   10.35  1718049600000            2.0   None     10710.0                2
+14178        HLLY.WS     4900.0           0.1000    0.10    0.10    0.100    0.10  1718049600000            1.0   None     18480.0                2
+
+[6135 rows x 12 columns]
+[2024-06-11 06:26:59,561] {logging_mixin.py:103} INFO - Data inserted into fact_candles successfully!
+[2024-06-11 06:27:01,059] {taskinstance.py:1396} ERROR - An error occurred while calling o187.parquet.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0) (etl.us-central1-a.c.data-engineering-stock.internal executor driver): org.apache.spark.sql.AnalysisException: Illegal Parquet type: INT64 (TIME(MICROS,true)).
+	at org.apache.spark.sql.errors.QueryCompilationErrors$.illegalParquetTypeError(QueryCompilationErrors.scala:1826)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.illegalType$1(ParquetSchemaConverter.scala:206)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.$anonfun$convertPrimitiveField$2(ParquetSchemaConverter.scala:283)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.convertPrimitiveField(ParquetSchemaConverter.scala:224)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.convertField(ParquetSchemaConverter.scala:187)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.$anonfun$convertInternal$3(ParquetSchemaConverter.scala:147)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.$anonfun$convertInternal$3$adapted(ParquetSchemaConverter.scala:117)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:286)
+	at scala.collection.immutable.Range.foreach(Range.scala:158)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:286)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:279)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.convertInternal(ParquetSchemaConverter.scala:117)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.convert(ParquetSchemaConverter.scala:87)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetFileFormat$.$anonfun$readSchemaFromFooter$2(ParquetFileFormat.scala:514)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetFileFormat$.readSchemaFromFooter(ParquetFileFormat.scala:514)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetFileFormat$.$anonfun$mergeSchemasInParallel$2(ParquetFileFormat.scala:494)
+	at scala.collection.immutable.Stream.map(Stream.scala:418)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetFileFormat$.$anonfun$mergeSchemasInParallel$1(ParquetFileFormat.scala:494)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetFileFormat$.$anonfun$mergeSchemasInParallel$1$adapted(ParquetFileFormat.scala:485)
+	at org.apache.spark.sql.execution.datasources.SchemaMergeUtils$.$anonfun$mergeSchemasInParallel$2(SchemaMergeUtils.scala:80)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitions$2(RDD.scala:858)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitions$2$adapted(RDD.scala:858)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2856)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2792)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2791)
+	at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)
+	at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2791)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1247)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1247)
+	at scala.Option.foreach(Option.scala:407)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1247)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3060)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2994)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2983)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:989)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2398)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2419)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2438)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2463)
+	at org.apache.spark.rdd.RDD.$anonfun$collect$1(RDD.scala:1049)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:410)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:1048)
+	at org.apache.spark.sql.execution.datasources.SchemaMergeUtils$.mergeSchemasInParallel(SchemaMergeUtils.scala:74)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetFileFormat$.mergeSchemasInParallel(ParquetFileFormat.scala:497)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetUtils$.inferSchema(ParquetUtils.scala:132)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetFileFormat.inferSchema(ParquetFileFormat.scala:79)
+	at org.apache.spark.sql.execution.datasources.DataSource.$anonfun$getOrInferFileFormatSchema$11(DataSource.scala:208)
+	at scala.Option.orElse(Option.scala:447)
+	at org.apache.spark.sql.execution.datasources.DataSource.getOrInferFileFormatSchema(DataSource.scala:205)
+	at org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:407)
+	at org.apache.spark.sql.DataFrameReader.loadV1Source(DataFrameReader.scala:229)
+	at org.apache.spark.sql.DataFrameReader.$anonfun$load$2(DataFrameReader.scala:211)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:211)
+	at org.apache.spark.sql.DataFrameReader.parquet(DataFrameReader.scala:563)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.spark.sql.AnalysisException: Illegal Parquet type: INT64 (TIME(MICROS,true)).
+	at org.apache.spark.sql.errors.QueryCompilationErrors$.illegalParquetTypeError(QueryCompilationErrors.scala:1826)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.illegalType$1(ParquetSchemaConverter.scala:206)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.$anonfun$convertPrimitiveField$2(ParquetSchemaConverter.scala:283)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.convertPrimitiveField(ParquetSchemaConverter.scala:224)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.convertField(ParquetSchemaConverter.scala:187)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.$anonfun$convertInternal$3(ParquetSchemaConverter.scala:147)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.$anonfun$convertInternal$3$adapted(ParquetSchemaConverter.scala:117)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:286)
+	at scala.collection.immutable.Range.foreach(Range.scala:158)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:286)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:279)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.convertInternal(ParquetSchemaConverter.scala:117)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.convert(ParquetSchemaConverter.scala:87)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetFileFormat$.$anonfun$readSchemaFromFooter$2(ParquetFileFormat.scala:514)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetFileFormat$.readSchemaFromFooter(ParquetFileFormat.scala:514)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetFileFormat$.$anonfun$mergeSchemasInParallel$2(ParquetFileFormat.scala:494)
+	at scala.collection.immutable.Stream.map(Stream.scala:418)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetFileFormat$.$anonfun$mergeSchemasInParallel$1(ParquetFileFormat.scala:494)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetFileFormat$.$anonfun$mergeSchemasInParallel$1$adapted(ParquetFileFormat.scala:485)
+	at org.apache.spark.sql.execution.datasources.SchemaMergeUtils$.$anonfun$mergeSchemasInParallel$2(SchemaMergeUtils.scala:80)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitions$2(RDD.scala:858)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitions$2$adapted(RDD.scala:858)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	... 1 more
+Traceback (most recent call last):
+  File "/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1086, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1260, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1300, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py", line 88, in process_latest_files
+    process_companies(file_path)
+  File "/home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py", line 95, in process_companies
+    transform_to_datawarehouse_1.process(hdfs_path)
+  File "/home/anhcu/Project/Stock_project/elt/scripts/transform/transform_to_datawarehouse_1.py", line 13, in process
+    df_spark = spark.read.parquet(parquet_file_path)
+  File "/usr/local/spark/python/pyspark/sql/readwriter.py", line 544, in parquet
+    return self._df(self._jreader.parquet(_to_seq(self._spark._sc, paths)))
+  File "/home/anhcu/.local/lib/python3.8/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/usr/local/spark/python/pyspark/errors/exceptions/captured.py", line 179, in deco
+    return f(*a, **kw)
+  File "/home/anhcu/.local/lib/python3.8/site-packages/py4j/protocol.py", line 326, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: An error occurred while calling o187.parquet.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0) (etl.us-central1-a.c.data-engineering-stock.internal executor driver): org.apache.spark.sql.AnalysisException: Illegal Parquet type: INT64 (TIME(MICROS,true)).
+	at org.apache.spark.sql.errors.QueryCompilationErrors$.illegalParquetTypeError(QueryCompilationErrors.scala:1826)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.illegalType$1(ParquetSchemaConverter.scala:206)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.$anonfun$convertPrimitiveField$2(ParquetSchemaConverter.scala:283)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.convertPrimitiveField(ParquetSchemaConverter.scala:224)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.convertField(ParquetSchemaConverter.scala:187)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.$anonfun$convertInternal$3(ParquetSchemaConverter.scala:147)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.$anonfun$convertInternal$3$adapted(ParquetSchemaConverter.scala:117)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:286)
+	at scala.collection.immutable.Range.foreach(Range.scala:158)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:286)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:279)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.convertInternal(ParquetSchemaConverter.scala:117)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.convert(ParquetSchemaConverter.scala:87)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetFileFormat$.$anonfun$readSchemaFromFooter$2(ParquetFileFormat.scala:514)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetFileFormat$.readSchemaFromFooter(ParquetFileFormat.scala:514)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetFileFormat$.$anonfun$mergeSchemasInParallel$2(ParquetFileFormat.scala:494)
+	at scala.collection.immutable.Stream.map(Stream.scala:418)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetFileFormat$.$anonfun$mergeSchemasInParallel$1(ParquetFileFormat.scala:494)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetFileFormat$.$anonfun$mergeSchemasInParallel$1$adapted(ParquetFileFormat.scala:485)
+	at org.apache.spark.sql.execution.datasources.SchemaMergeUtils$.$anonfun$mergeSchemasInParallel$2(SchemaMergeUtils.scala:80)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitions$2(RDD.scala:858)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitions$2$adapted(RDD.scala:858)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2856)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2792)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2791)
+	at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)
+	at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2791)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1247)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1247)
+	at scala.Option.foreach(Option.scala:407)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1247)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3060)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2994)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2983)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:989)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2398)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2419)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2438)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2463)
+	at org.apache.spark.rdd.RDD.$anonfun$collect$1(RDD.scala:1049)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:410)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:1048)
+	at org.apache.spark.sql.execution.datasources.SchemaMergeUtils$.mergeSchemasInParallel(SchemaMergeUtils.scala:74)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetFileFormat$.mergeSchemasInParallel(ParquetFileFormat.scala:497)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetUtils$.inferSchema(ParquetUtils.scala:132)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetFileFormat.inferSchema(ParquetFileFormat.scala:79)
+	at org.apache.spark.sql.execution.datasources.DataSource.$anonfun$getOrInferFileFormatSchema$11(DataSource.scala:208)
+	at scala.Option.orElse(Option.scala:447)
+	at org.apache.spark.sql.execution.datasources.DataSource.getOrInferFileFormatSchema(DataSource.scala:205)
+	at org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:407)
+	at org.apache.spark.sql.DataFrameReader.loadV1Source(DataFrameReader.scala:229)
+	at org.apache.spark.sql.DataFrameReader.$anonfun$load$2(DataFrameReader.scala:211)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:211)
+	at org.apache.spark.sql.DataFrameReader.parquet(DataFrameReader.scala:563)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.spark.sql.AnalysisException: Illegal Parquet type: INT64 (TIME(MICROS,true)).
+	at org.apache.spark.sql.errors.QueryCompilationErrors$.illegalParquetTypeError(QueryCompilationErrors.scala:1826)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.illegalType$1(ParquetSchemaConverter.scala:206)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.$anonfun$convertPrimitiveField$2(ParquetSchemaConverter.scala:283)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.convertPrimitiveField(ParquetSchemaConverter.scala:224)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.convertField(ParquetSchemaConverter.scala:187)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.$anonfun$convertInternal$3(ParquetSchemaConverter.scala:147)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.$anonfun$convertInternal$3$adapted(ParquetSchemaConverter.scala:117)
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:286)
+	at scala.collection.immutable.Range.foreach(Range.scala:158)
+	at scala.collection.TraversableLike.map(TraversableLike.scala:286)
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:279)
+	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.convertInternal(ParquetSchemaConverter.scala:117)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetToSparkSchemaConverter.convert(ParquetSchemaConverter.scala:87)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetFileFormat$.$anonfun$readSchemaFromFooter$2(ParquetFileFormat.scala:514)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetFileFormat$.readSchemaFromFooter(ParquetFileFormat.scala:514)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetFileFormat$.$anonfun$mergeSchemasInParallel$2(ParquetFileFormat.scala:494)
+	at scala.collection.immutable.Stream.map(Stream.scala:418)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetFileFormat$.$anonfun$mergeSchemasInParallel$1(ParquetFileFormat.scala:494)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetFileFormat$.$anonfun$mergeSchemasInParallel$1$adapted(ParquetFileFormat.scala:485)
+	at org.apache.spark.sql.execution.datasources.SchemaMergeUtils$.$anonfun$mergeSchemasInParallel$2(SchemaMergeUtils.scala:80)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitions$2(RDD.scala:858)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitions$2$adapted(RDD.scala:858)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	... 1 more
+
+[2024-06-11 06:27:01,146] {taskinstance.py:1433} INFO - Marking task as FAILED. dag_id=ELT_to_Data_Warehouse, task_id=process_latest_files, execution_date=20240611T062410, start_date=20240611T062628, end_date=20240611T062701
+[2024-06-11 06:27:01,196] {local_task_job.py:118} INFO - Task exited with return code 1

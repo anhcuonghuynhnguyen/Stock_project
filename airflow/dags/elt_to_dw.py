@@ -55,13 +55,16 @@ with DAG(
         result = subprocess.run(['bash', '/home/anhcu/Project/Stock_project/elt/scripts/load/load_parquet_to_hdfs.sh'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         if result.returncode != 0:
             raise Exception(f"Shell script failed with error: {result.stderr.decode()}")
-        print(result.stdout.decode())
+        output = result.stdout.decode()
+        print(output)
+        return output
         
     load_parquet_to_hdfs = PythonOperator(
         task_id='load_parquet_to_hdfs',
         python_callable=run_shell_script,
         do_xcom_push=True
     )
+
     # load_parquet_to_hdfs = BashOperator(
     #     task_id='load_parquet_to_hdfs',
     #     bash_command='bash /home/anhcu/Project/Stock_project/elt/scripts/load/load_parquet_to_hdfs.sh',

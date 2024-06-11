@@ -1,0 +1,28 @@
+[2024-06-11 05:21:20,981] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: ETL_to_Database.load_json_to_db_3 2024-06-11T05:20:58.447255+00:00 [queued]>
+[2024-06-11 05:21:20,988] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: ETL_to_Database.load_json_to_db_3 2024-06-11T05:20:58.447255+00:00 [queued]>
+[2024-06-11 05:21:20,988] {taskinstance.py:1017} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-11 05:21:20,988] {taskinstance.py:1018} INFO - Starting attempt 1 of 2
+[2024-06-11 05:21:20,988] {taskinstance.py:1019} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-11 05:21:21,003] {taskinstance.py:1038} INFO - Executing <Task(BashOperator): load_json_to_db_3> on 2024-06-11T05:20:58.447255+00:00
+[2024-06-11 05:21:21,006] {standard_task_runner.py:51} INFO - Started process 4470 to run task
+[2024-06-11 05:21:21,016] {standard_task_runner.py:75} INFO - Running: ['airflow', 'tasks', 'run', 'ETL_to_Database', 'load_json_to_db_3', '2024-06-11T05:20:58.447255+00:00', '--job-id', '57', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/etl_to_db.py', '--cfg-path', '/tmp/tmpl4vc2ck4']
+[2024-06-11 05:21:21,017] {standard_task_runner.py:76} INFO - Job 57: Subtask load_json_to_db_3
+[2024-06-11 05:21:21,061] {logging_mixin.py:103} INFO - Running <TaskInstance: ETL_to_Database.load_json_to_db_3 2024-06-11T05:20:58.447255+00:00 [running]> on host etl.us-central1-a.c.data-engineering-stock.internal
+[2024-06-11 05:21:21,091] {taskinstance.py:1230} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=anhcuonghuynhnguyen@gmail.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=ETL_to_Database
+AIRFLOW_CTX_TASK_ID=load_json_to_db_3
+AIRFLOW_CTX_EXECUTION_DATE=2024-06-11T05:20:58.447255+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-06-11T05:20:58.447255+00:00
+[2024-06-11 05:21:21,092] {bash.py:135} INFO - Tmp dir root location: 
+ /tmp
+[2024-06-11 05:21:21,093] {bash.py:158} INFO - Running command: /bin/python3 /home/anhcu/Project/Stock_project/backend/scripts/load/load_json_to_db_3.py
+[2024-06-11 05:21:21,102] {bash.py:169} INFO - Output:
+[2024-06-11 05:21:26,452] {bash.py:173} INFO - Inserted data into companies
+[2024-06-11 05:21:26,459] {bash.py:177} INFO - Command exited with return code 0
+[2024-06-11 05:21:26,478] {taskinstance.py:1135} INFO - Marking task as SUCCESS. dag_id=ETL_to_Database, task_id=load_json_to_db_3, execution_date=20240611T052058, start_date=20240611T052120, end_date=20240611T052126
+[2024-06-11 05:21:26,497] {taskinstance.py:1195} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-11 05:21:26,520] {local_task_job.py:118} INFO - Task exited with return code 0

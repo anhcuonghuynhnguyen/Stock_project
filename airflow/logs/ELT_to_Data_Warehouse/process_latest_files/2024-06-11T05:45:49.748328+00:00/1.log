@@ -1,0 +1,53 @@
+[2024-06-11 05:46:19,391] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: ELT_to_Data_Warehouse.process_latest_files 2024-06-11T05:45:49.748328+00:00 [queued]>
+[2024-06-11 05:46:19,401] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: ELT_to_Data_Warehouse.process_latest_files 2024-06-11T05:45:49.748328+00:00 [queued]>
+[2024-06-11 05:46:19,401] {taskinstance.py:1017} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-11 05:46:19,401] {taskinstance.py:1018} INFO - Starting attempt 1 of 2
+[2024-06-11 05:46:19,401] {taskinstance.py:1019} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-11 05:46:19,415] {taskinstance.py:1038} INFO - Executing <Task(PythonOperator): process_latest_files> on 2024-06-11T05:45:49.748328+00:00
+[2024-06-11 05:46:19,419] {standard_task_runner.py:51} INFO - Started process 21294 to run task
+[2024-06-11 05:46:19,430] {standard_task_runner.py:75} INFO - Running: ['airflow', 'tasks', 'run', 'ELT_to_Data_Warehouse', 'process_latest_files', '2024-06-11T05:45:49.748328+00:00', '--job-id', '77', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/elt_to_dw.py', '--cfg-path', '/tmp/tmp5rl31po0']
+[2024-06-11 05:46:19,431] {standard_task_runner.py:76} INFO - Job 77: Subtask process_latest_files
+[2024-06-11 05:46:19,470] {logging_mixin.py:103} INFO - Running <TaskInstance: ELT_to_Data_Warehouse.process_latest_files 2024-06-11T05:45:49.748328+00:00 [running]> on host etl.us-central1-a.c.data-engineering-stock.internal
+[2024-06-11 05:46:19,496] {taskinstance.py:1230} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=ELT_to_Data_Warehouse
+AIRFLOW_CTX_TASK_ID=process_latest_files
+AIRFLOW_CTX_EXECUTION_DATE=2024-06-11T05:45:49.748328+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-06-11T05:45:49.748328+00:00
+[2024-06-11 05:46:19,499] {elt_to_dw.py:82} INFO - Files pulled from XCom: Uploaded /home/anhcu/Project/Stock_project/elt/data/completed/load_api_ohlcs_to_dl/crawl_ohlcs_2024_06_10.parquet to /user/anhcu/datalake/ohlcs on HDFS
+Uploaded /home/anhcu/Project/Stock_project/elt/data/completed/load_api_news_to_dl/crawl_news_2024_06_10.parquet to /user/anhcu/datalake/news on HDFS
+Uploaded /home/anhcu/Project/Stock_project/elt/data/completed/load_db_to_dl/load_db_to_dl_2024_06_11.parquet to /user/anhcu/datalake/companies on HDFS
+/user/anhcu/datalake/ohlcs/crawl_ohlcs_2024_06_10.parquet
+/user/anhcu/datalake/news/crawl_news_2024_06_10.parquet
+/user/anhcu/datalake/companies/load_db_to_dl_2024_06_11.parquet
+
+
+[2024-06-11 05:46:28,238] {taskinstance.py:1396} ERROR - [PATH_NOT_FOUND] Path does not exist: hdfs://0.0.0.0:9000/user/anhcu/Uploaded /home/anhcu/Project/Stock_project/elt/data/completed/load_api_ohlcs_to_dl/crawl_ohlcs_2024_06_10.parquet to /user/anhcu/datalake/ohlcs on HDFS.
+Traceback (most recent call last):
+  File "/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1086, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1260, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1300, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py", line 90, in process_latest_files
+    process_ohlcs(file_path)
+  File "/home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py", line 98, in process_ohlcs
+    transform_to_datawarehouse_2.process(hdfs_path)
+  File "/home/anhcu/Project/Stock_project/elt/scripts/transform/transform_to_datawarehouse_2.py", line 15, in process
+    df_spark = spark.read.parquet(parquet_file_path)
+  File "/usr/local/spark/python/pyspark/sql/readwriter.py", line 544, in parquet
+    return self._df(self._jreader.parquet(_to_seq(self._spark._sc, paths)))
+  File "/home/anhcu/.local/lib/python3.8/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/usr/local/spark/python/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.AnalysisException: [PATH_NOT_FOUND] Path does not exist: hdfs://0.0.0.0:9000/user/anhcu/Uploaded /home/anhcu/Project/Stock_project/elt/data/completed/load_api_ohlcs_to_dl/crawl_ohlcs_2024_06_10.parquet to /user/anhcu/datalake/ohlcs on HDFS.
+[2024-06-11 05:46:28,261] {taskinstance.py:1433} INFO - Marking task as UP_FOR_RETRY. dag_id=ELT_to_Data_Warehouse, task_id=process_latest_files, execution_date=20240611T054549, start_date=20240611T054619, end_date=20240611T054628
+[2024-06-11 05:46:28,306] {local_task_job.py:118} INFO - Task exited with return code 1

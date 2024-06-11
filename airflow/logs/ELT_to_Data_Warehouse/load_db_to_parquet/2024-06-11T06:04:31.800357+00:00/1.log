@@ -1,0 +1,49 @@
+[2024-06-11 06:04:44,573] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: ELT_to_Data_Warehouse.load_db_to_parquet 2024-06-11T06:04:31.800357+00:00 [queued]>
+[2024-06-11 06:04:44,579] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: ELT_to_Data_Warehouse.load_db_to_parquet 2024-06-11T06:04:31.800357+00:00 [queued]>
+[2024-06-11 06:04:44,579] {taskinstance.py:1017} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-11 06:04:44,579] {taskinstance.py:1018} INFO - Starting attempt 1 of 2
+[2024-06-11 06:04:44,579] {taskinstance.py:1019} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-11 06:04:44,591] {taskinstance.py:1038} INFO - Executing <Task(BashOperator): load_db_to_parquet> on 2024-06-11T06:04:31.800357+00:00
+[2024-06-11 06:04:44,594] {standard_task_runner.py:51} INFO - Started process 28234 to run task
+[2024-06-11 06:04:44,601] {standard_task_runner.py:75} INFO - Running: ['airflow', 'tasks', 'run', 'ELT_to_Data_Warehouse', 'load_db_to_parquet', '2024-06-11T06:04:31.800357+00:00', '--job-id', '82', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/elt_to_dw.py', '--cfg-path', '/tmp/tmppoas2s9w']
+[2024-06-11 06:04:44,602] {standard_task_runner.py:76} INFO - Job 82: Subtask load_db_to_parquet
+[2024-06-11 06:04:44,636] {logging_mixin.py:103} INFO - Running <TaskInstance: ELT_to_Data_Warehouse.load_db_to_parquet 2024-06-11T06:04:31.800357+00:00 [running]> on host etl.us-central1-a.c.data-engineering-stock.internal
+[2024-06-11 06:04:44,665] {taskinstance.py:1230} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=ELT_to_Data_Warehouse
+AIRFLOW_CTX_TASK_ID=load_db_to_parquet
+AIRFLOW_CTX_EXECUTION_DATE=2024-06-11T06:04:31.800357+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-06-11T06:04:31.800357+00:00
+[2024-06-11 06:04:44,665] {bash.py:135} INFO - Tmp dir root location: 
+ /tmp
+[2024-06-11 06:04:44,666] {bash.py:158} INFO - Running command: /bin/python3 /home/anhcu/Project/Stock_project/elt/scripts/load/load_db_to_parquet.py
+[2024-06-11 06:04:44,674] {bash.py:169} INFO - Output:
+[2024-06-11 06:04:45,719] {bash.py:173} INFO - <class 'pandas.core.frame.DataFrame'>
+[2024-06-11 06:04:45,720] {bash.py:173} INFO - RangeIndex: 19706 entries, 0 to 19705
+[2024-06-11 06:04:45,720] {bash.py:173} INFO - Data columns (total 14 columns):
+[2024-06-11 06:04:45,720] {bash.py:173} INFO -  #   Column                      Non-Null Count  Dtype
+[2024-06-11 06:04:45,720] {bash.py:173} INFO - ---  ------                      --------------  -----
+[2024-06-11 06:04:45,720] {bash.py:173} INFO -  0   company_name                19706 non-null  object
+[2024-06-11 06:04:45,720] {bash.py:173} INFO -  1   company_ticket              19706 non-null  object
+[2024-06-11 06:04:45,720] {bash.py:173} INFO -  2   company_is_delisted         19706 non-null  bool
+[2024-06-11 06:04:45,720] {bash.py:173} INFO -  3   company_category            19706 non-null  object
+[2024-06-11 06:04:45,720] {bash.py:173} INFO -  4   company_currency            19706 non-null  object
+[2024-06-11 06:04:45,720] {bash.py:173} INFO -  5   company_location            19706 non-null  object
+[2024-06-11 06:04:45,720] {bash.py:173} INFO -  6   company_exchange_name       19706 non-null  object
+[2024-06-11 06:04:45,720] {bash.py:173} INFO -  7   company_region_name         19706 non-null  object
+[2024-06-11 06:04:45,720] {bash.py:173} INFO -  8   company_region_local_open   19706 non-null  object
+[2024-06-11 06:04:45,720] {bash.py:173} INFO -  9   company_region_local_close  19706 non-null  object
+[2024-06-11 06:04:45,720] {bash.py:173} INFO -  10  company_industry_name       19706 non-null  object
+[2024-06-11 06:04:45,720] {bash.py:173} INFO -  11  company_industry_sector     19706 non-null  object
+[2024-06-11 06:04:45,720] {bash.py:173} INFO -  12  company_sic_industry        19706 non-null  object
+[2024-06-11 06:04:45,721] {bash.py:173} INFO -  13  company_sic_sector          19706 non-null  object
+[2024-06-11 06:04:45,721] {bash.py:173} INFO - dtypes: bool(1), object(13)
+[2024-06-11 06:04:45,721] {bash.py:173} INFO - memory usage: 2.0+ MB
+[2024-06-11 06:04:45,721] {bash.py:173} INFO - None
+[2024-06-11 06:04:45,721] {bash.py:173} INFO - Saved data from database to parquet successfully at /home/anhcu/Project/Stock_project/elt/data/completed/load_db_to_dl/load_db_to_dl_2024_06_11.parquet
+[2024-06-11 06:04:45,828] {bash.py:177} INFO - Command exited with return code 0
+[2024-06-11 06:04:45,847] {taskinstance.py:1135} INFO - Marking task as SUCCESS. dag_id=ELT_to_Data_Warehouse, task_id=load_db_to_parquet, execution_date=20240611T060431, start_date=20240611T060444, end_date=20240611T060445
+[2024-06-11 06:04:45,874] {taskinstance.py:1195} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-11 06:04:45,895] {local_task_job.py:118} INFO - Task exited with return code 0

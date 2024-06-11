@@ -1,0 +1,30 @@
+[2024-06-11 06:35:44,271] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: ELT_to_Data_Warehouse.load_api_to_parquet 2024-06-11T06:35:31.272544+00:00 [queued]>
+[2024-06-11 06:35:44,299] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: ELT_to_Data_Warehouse.load_api_to_parquet 2024-06-11T06:35:31.272544+00:00 [queued]>
+[2024-06-11 06:35:44,302] {taskinstance.py:1017} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-11 06:35:44,303] {taskinstance.py:1018} INFO - Starting attempt 1 of 2
+[2024-06-11 06:35:44,305] {taskinstance.py:1019} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-11 06:35:44,338] {taskinstance.py:1038} INFO - Executing <Task(BashOperator): load_api_to_parquet> on 2024-06-11T06:35:31.272544+00:00
+[2024-06-11 06:35:44,343] {standard_task_runner.py:51} INFO - Started process 41522 to run task
+[2024-06-11 06:35:44,360] {standard_task_runner.py:75} INFO - Running: ['airflow', 'tasks', 'run', 'ELT_to_Data_Warehouse', 'load_api_to_parquet', '2024-06-11T06:35:31.272544+00:00', '--job-id', '95', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/elt_to_dw.py', '--cfg-path', '/tmp/tmpt9qitj_w']
+[2024-06-11 06:35:44,381] {standard_task_runner.py:76} INFO - Job 95: Subtask load_api_to_parquet
+[2024-06-11 06:35:44,471] {logging_mixin.py:103} INFO - Running <TaskInstance: ELT_to_Data_Warehouse.load_api_to_parquet 2024-06-11T06:35:31.272544+00:00 [running]> on host etl.us-central1-a.c.data-engineering-stock.internal
+[2024-06-11 06:35:44,535] {taskinstance.py:1230} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=ELT_to_Data_Warehouse
+AIRFLOW_CTX_TASK_ID=load_api_to_parquet
+AIRFLOW_CTX_EXECUTION_DATE=2024-06-11T06:35:31.272544+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-06-11T06:35:31.272544+00:00
+[2024-06-11 06:35:44,536] {bash.py:135} INFO - Tmp dir root location: 
+ /tmp
+[2024-06-11 06:35:44,537] {bash.py:158} INFO - Running command: /bin/python3 /home/anhcu/Project/Stock_project/elt/scripts/load/load_api_to_parquet.py
+[2024-06-11 06:35:44,572] {bash.py:169} INFO - Output:
+[2024-06-11 06:35:48,578] {bash.py:173} INFO - Đã đọc file: /home/anhcu/Project/Stock_project/elt/data/raw/news/crawl_news_2024_06_10.json
+[2024-06-11 06:35:48,578] {bash.py:173} INFO - Đã lưu file Parquet: /home/anhcu/Project/Stock_project/elt/data/completed/load_api_news_to_dl/crawl_news_2024_06_10.parquet
+[2024-06-11 06:35:48,578] {bash.py:173} INFO - Đã đọc file: /home/anhcu/Project/Stock_project/elt/data/raw/ohlcs/crawl_ohlcs_2024_06_10.json
+[2024-06-11 06:35:48,578] {bash.py:173} INFO - Đã lưu file Parquet: /home/anhcu/Project/Stock_project/elt/data/completed/load_api_ohlcs_to_dl/crawl_ohlcs_2024_06_10.parquet
+[2024-06-11 06:35:48,923] {bash.py:177} INFO - Command exited with return code 0
+[2024-06-11 06:35:48,963] {taskinstance.py:1135} INFO - Marking task as SUCCESS. dag_id=ELT_to_Data_Warehouse, task_id=load_api_to_parquet, execution_date=20240611T063531, start_date=20240611T063544, end_date=20240611T063548
+[2024-06-11 06:35:49,022] {taskinstance.py:1195} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-11 06:35:49,048] {local_task_job.py:118} INFO - Task exited with return code 0

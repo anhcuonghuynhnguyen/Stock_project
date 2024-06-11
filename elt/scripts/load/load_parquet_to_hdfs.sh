@@ -2,9 +2,9 @@
 
 # Mảng các thư mục local và các thư mục HDFS tương ứng
 declare -A directories=(
-    ["/home/anhcu/Project/Stock_project/elt/data/completed/load_api_news_to_dl"]="/user/anhcu/datalake/news"
-    ["/home/anhcu/Project/Stock_project/elt/data/completed/load_api_ohlcs_to_dl"]="/user/anhcu/datalake/ohlcs"
     ["/home/anhcu/Project/Stock_project/elt/data/completed/load_db_to_dl"]="/user/anhcu/datalake/companies"
+    ["/home/anhcu/Project/Stock_project/elt/data/completed/load_api_ohlcs_to_dl"]="/user/anhcu/datalake/ohlcs"
+    ["/home/anhcu/Project/Stock_project/elt/data/completed/load_api_news_to_dl"]="/user/anhcu/datalake/news"
 )
 
 # Biến để lưu tên tệp mới nhất
@@ -23,7 +23,6 @@ for local_directory in "${!directories[@]}"; do
     else
         # Tải file lên HDFS
         hdfs dfs -put "$latest_file" "$hdfs_directory"
-        echo "Uploaded $latest_file to $hdfs_directory on HDFS"
 
     # Thêm tên tệp và thư mục HDFS tương ứng vào biến
         latest_files="$latest_files$hdfs_directory/$(basename $latest_file)\n"

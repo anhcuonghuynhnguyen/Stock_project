@@ -1,0 +1,36 @@
+[2024-06-11 05:29:08,007] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: ELT_to_Data_Warehouse.process_latest_files 2024-06-11T05:28:34.518050+00:00 [queued]>
+[2024-06-11 05:29:08,013] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: ELT_to_Data_Warehouse.process_latest_files 2024-06-11T05:28:34.518050+00:00 [queued]>
+[2024-06-11 05:29:08,013] {taskinstance.py:1017} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-11 05:29:08,013] {taskinstance.py:1018} INFO - Starting attempt 1 of 2
+[2024-06-11 05:29:08,013] {taskinstance.py:1019} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-11 05:29:08,027] {taskinstance.py:1038} INFO - Executing <Task(PythonOperator): process_latest_files> on 2024-06-11T05:28:34.518050+00:00
+[2024-06-11 05:29:08,030] {standard_task_runner.py:51} INFO - Started process 10952 to run task
+[2024-06-11 05:29:08,036] {standard_task_runner.py:75} INFO - Running: ['airflow', 'tasks', 'run', 'ELT_to_Data_Warehouse', 'process_latest_files', '2024-06-11T05:28:34.518050+00:00', '--job-id', '63', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/elt_to_dw.py', '--cfg-path', '/tmp/tmpnwbr1ljm']
+[2024-06-11 05:29:08,037] {standard_task_runner.py:76} INFO - Job 63: Subtask process_latest_files
+[2024-06-11 05:29:08,071] {logging_mixin.py:103} INFO - Running <TaskInstance: ELT_to_Data_Warehouse.process_latest_files 2024-06-11T05:28:34.518050+00:00 [running]> on host etl.us-central1-a.c.data-engineering-stock.internal
+[2024-06-11 05:29:08,097] {taskinstance.py:1230} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=ELT_to_Data_Warehouse
+AIRFLOW_CTX_TASK_ID=process_latest_files
+AIRFLOW_CTX_EXECUTION_DATE=2024-06-11T05:28:34.518050+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-06-11T05:28:34.518050+00:00
+[2024-06-11 05:29:08,100] {elt_to_dw.py:76} ERROR - No files were pulled from XCom. Check the 'load_parquet_to_hdfs' task.
+[2024-06-11 05:29:08,100] {taskinstance.py:1396} ERROR - No files were pulled from XCom. Check the 'load_parquet_to_hdfs' task.
+Traceback (most recent call last):
+  File "/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1086, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1260, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1300, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py", line 77, in process_latest_files
+    raise ValueError("No files were pulled from XCom. Check the 'load_parquet_to_hdfs' task.")
+ValueError: No files were pulled from XCom. Check the 'load_parquet_to_hdfs' task.
+[2024-06-11 05:29:08,102] {taskinstance.py:1433} INFO - Marking task as UP_FOR_RETRY. dag_id=ELT_to_Data_Warehouse, task_id=process_latest_files, execution_date=20240611T052834, start_date=20240611T052908, end_date=20240611T052908
+[2024-06-11 05:29:08,126] {local_task_job.py:118} INFO - Task exited with return code 1
