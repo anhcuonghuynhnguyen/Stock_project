@@ -1,6 +1,5 @@
 from airflow import DAG
 from airflow.operators.bash import BashOperator
-from airflow.operators.email import EmailOperator
 from airflow.utils.dates import days_ago
 from datetime import timedelta
 
@@ -12,15 +11,15 @@ default_args = {
     'email_on_failure': True,
     'email_on_retry': True,
     'retries': 1,
-    'retry_delay': timedelta(minutes=5),
+    'retry_delay': timedelta(minutes=1),
 }
 
 # Khởi tạo DAG
 with DAG(
-    dag_id='Manual_ETL_to_Database',
+    dag_id='ETL_to_Database',
     default_args=default_args,
-    description='A manual ETL DAG',
-    schedule_interval=None,
+    description='A simple ETL DAG',
+    schedule_interval='1 0 * * *',
     start_date=days_ago(1),
     catchup=False,
 ) as dag:
@@ -73,13 +72,5 @@ with DAG(
         bash_command='/bin/python3 /home/anhcu/Project/Stock_project/backend/scripts/load/load_json_to_db_3.py',
     )
 
-    # Task 9: Send email on success
-    send_email = EmailOperator(
-        task_id='send_email',
-        to='anhcuonghuynhnguyen@gmail.com',
-        subject='DAG Manual_ETL_to_Database Succeeded',
-        html_content='<p>The DAG Manual_ETL_to_Database has completed successfully.</p>',
-    )
-
     # Định nghĩa thứ tự chạy các task
-    [crawl_companies, crawl_markets] >> transform_to_database_1 >> load_json_to_db_1 >> transform_to_database_2 >> load_json_to_db_2 >> transform_to_database_3 >> load_json_to_db_3 >> send_email
+    [crawl_companies, crawl_markets] >> transform_to_database_1 >> load_json_to_db_1 >> transform_to_database_2 >> load_json_to_db_2 >> transform_to_database_3 >> load_json_to_db_3

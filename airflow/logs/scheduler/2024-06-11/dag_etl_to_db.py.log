@@ -2252,3 +2252,207 @@
 [2024-06-11 08:23:40,767] {logging_mixin.py:103} INFO - [2024-06-11 08:23:40,767] {dag.py:1813} INFO - Sync 1 DAGs
 [2024-06-11 08:23:40,785] {logging_mixin.py:103} INFO - [2024-06-11 08:23:40,785] {dag.py:2266} INFO - Setting next_dagrun for Manual_ETL_to_Database to None
 [2024-06-11 08:23:40,797] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.047 seconds
+[2024-06-11 08:24:00,633] {scheduler_job.py:181} INFO - Started process (PID=28295) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:24:00,635] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:24:00,635] {logging_mixin.py:103} INFO - [2024-06-11 08:24:00,635] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:24:00,645] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Manual_ETL_to_Database']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:24:00,646] {logging_mixin.py:103} INFO - [2024-06-11 08:24:00,646] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:24:00,664] {logging_mixin.py:103} INFO - [2024-06-11 08:24:00,664] {dag.py:2266} INFO - Setting next_dagrun for Manual_ETL_to_Database to None
+[2024-06-11 08:24:00,676] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.046 seconds
+[2024-06-11 08:24:19,310] {scheduler_job.py:181} INFO - Started process (PID=28465) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:24:19,313] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:24:19,315] {logging_mixin.py:103} INFO - [2024-06-11 08:24:19,314] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:24:19,325] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Manual_ETL_to_Database']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:24:19,327] {logging_mixin.py:103} INFO - [2024-06-11 08:24:19,327] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:24:19,350] {logging_mixin.py:103} INFO - [2024-06-11 08:24:19,350] {dag.py:2266} INFO - Setting next_dagrun for Manual_ETL_to_Database to None
+[2024-06-11 08:24:19,368] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.062 seconds
+[2024-06-11 08:24:37,814] {scheduler_job.py:181} INFO - Started process (PID=28677) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:24:37,816] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:24:37,818] {logging_mixin.py:103} INFO - [2024-06-11 08:24:37,818] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:24:37,827] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Manual_ETL_to_Database']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:24:37,830] {logging_mixin.py:103} INFO - [2024-06-11 08:24:37,830] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:24:37,846] {logging_mixin.py:103} INFO - [2024-06-11 08:24:37,846] {dag.py:2266} INFO - Setting next_dagrun for Manual_ETL_to_Database to None
+[2024-06-11 08:24:37,859] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.048 seconds
+[2024-06-11 08:24:56,580] {scheduler_job.py:181} INFO - Started process (PID=28899) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:24:56,581] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:24:56,582] {logging_mixin.py:103} INFO - [2024-06-11 08:24:56,582] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:24:56,592] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Manual_ETL_to_Database']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:24:56,593] {logging_mixin.py:103} INFO - [2024-06-11 08:24:56,593] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:24:56,610] {logging_mixin.py:103} INFO - [2024-06-11 08:24:56,609] {dag.py:2266} INFO - Setting next_dagrun for Manual_ETL_to_Database to None
+[2024-06-11 08:24:56,622] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.046 seconds
+[2024-06-11 08:25:16,068] {scheduler_job.py:181} INFO - Started process (PID=29085) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:25:16,069] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:25:16,070] {logging_mixin.py:103} INFO - [2024-06-11 08:25:16,070] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:25:16,081] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Manual_ETL_to_Database']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:25:16,082] {logging_mixin.py:103} INFO - [2024-06-11 08:25:16,082] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:25:16,098] {logging_mixin.py:103} INFO - [2024-06-11 08:25:16,098] {dag.py:2266} INFO - Setting next_dagrun for Manual_ETL_to_Database to None
+[2024-06-11 08:25:16,111] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.047 seconds
+[2024-06-11 08:25:34,883] {scheduler_job.py:181} INFO - Started process (PID=29319) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:25:34,884] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:25:34,885] {logging_mixin.py:103} INFO - [2024-06-11 08:25:34,885] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:25:34,895] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Manual_ETL_to_Database']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:25:34,896] {logging_mixin.py:103} INFO - [2024-06-11 08:25:34,896] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:25:34,913] {logging_mixin.py:103} INFO - [2024-06-11 08:25:34,913] {dag.py:2266} INFO - Setting next_dagrun for Manual_ETL_to_Database to None
+[2024-06-11 08:25:34,925] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.046 seconds
+[2024-06-11 08:25:52,869] {scheduler_job.py:181} INFO - Started process (PID=29477) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:25:52,871] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:25:52,872] {logging_mixin.py:103} INFO - [2024-06-11 08:25:52,871] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:25:52,886] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Manual_ETL_to_Database']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:25:52,888] {logging_mixin.py:103} INFO - [2024-06-11 08:25:52,888] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:25:52,910] {logging_mixin.py:103} INFO - [2024-06-11 08:25:52,910] {dag.py:2266} INFO - Setting next_dagrun for Manual_ETL_to_Database to None
+[2024-06-11 08:25:52,928] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.063 seconds
+[2024-06-11 08:26:11,439] {scheduler_job.py:181} INFO - Started process (PID=29703) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:26:11,441] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:26:11,442] {logging_mixin.py:103} INFO - [2024-06-11 08:26:11,442] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:26:11,455] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Manual_ETL_to_Database']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:26:11,456] {logging_mixin.py:103} INFO - [2024-06-11 08:26:11,456] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:26:11,476] {logging_mixin.py:103} INFO - [2024-06-11 08:26:11,476] {dag.py:2266} INFO - Setting next_dagrun for Manual_ETL_to_Database to None
+[2024-06-11 08:26:11,489] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.053 seconds
+[2024-06-11 08:26:30,323] {scheduler_job.py:181} INFO - Started process (PID=29877) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:26:30,324] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:26:30,325] {logging_mixin.py:103} INFO - [2024-06-11 08:26:30,325] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:26:30,335] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Manual_ETL_to_Database']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:26:30,336] {logging_mixin.py:103} INFO - [2024-06-11 08:26:30,336] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:26:30,353] {logging_mixin.py:103} INFO - [2024-06-11 08:26:30,353] {dag.py:2266} INFO - Setting next_dagrun for Manual_ETL_to_Database to None
+[2024-06-11 08:26:30,366] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.047 seconds
+[2024-06-11 08:26:47,997] {scheduler_job.py:181} INFO - Started process (PID=30109) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:26:47,998] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:26:48,000] {logging_mixin.py:103} INFO - [2024-06-11 08:26:48,000] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:26:48,011] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Manual_ETL_to_Database']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:26:48,012] {logging_mixin.py:103} INFO - [2024-06-11 08:26:48,012] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:26:48,029] {logging_mixin.py:103} INFO - [2024-06-11 08:26:48,029] {dag.py:2266} INFO - Setting next_dagrun for Manual_ETL_to_Database to None
+[2024-06-11 08:26:48,042] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.049 seconds
+[2024-06-11 08:27:07,337] {scheduler_job.py:181} INFO - Started process (PID=30345) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:27:07,339] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:27:07,340] {logging_mixin.py:103} INFO - [2024-06-11 08:27:07,340] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:27:07,352] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Manual_ETL_to_Database']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:27:07,354] {logging_mixin.py:103} INFO - [2024-06-11 08:27:07,353] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:27:07,370] {logging_mixin.py:103} INFO - [2024-06-11 08:27:07,370] {dag.py:2266} INFO - Setting next_dagrun for Manual_ETL_to_Database to None
+[2024-06-11 08:27:07,382] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.049 seconds
+[2024-06-11 08:27:26,227] {scheduler_job.py:181} INFO - Started process (PID=30481) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:27:26,232] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:27:26,233] {logging_mixin.py:103} INFO - [2024-06-11 08:27:26,233] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:27:26,244] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Manual_ETL_to_Database']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:27:26,245] {logging_mixin.py:103} INFO - [2024-06-11 08:27:26,245] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:27:26,267] {logging_mixin.py:103} INFO - [2024-06-11 08:27:26,267] {dag.py:2266} INFO - Setting next_dagrun for Manual_ETL_to_Database to None
+[2024-06-11 08:27:26,285] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.063 seconds
+[2024-06-11 08:27:45,617] {scheduler_job.py:181} INFO - Started process (PID=30722) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:27:45,619] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:27:45,620] {logging_mixin.py:103} INFO - [2024-06-11 08:27:45,620] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:27:45,634] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Manual_ETL_to_Database']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:27:45,639] {logging_mixin.py:103} INFO - [2024-06-11 08:27:45,639] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:27:45,671] {logging_mixin.py:103} INFO - [2024-06-11 08:27:45,671] {dag.py:2266} INFO - Setting next_dagrun for Manual_ETL_to_Database to None
+[2024-06-11 08:27:45,694] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.083 seconds
+[2024-06-11 08:27:52,678] {scheduler_job.py:181} INFO - Started process (PID=30829) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:27:52,682] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:27:52,686] {logging_mixin.py:103} INFO - [2024-06-11 08:27:52,685] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:27:52,719] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Manual_ETL_to_Database']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:27:52,723] {logging_mixin.py:103} INFO - [2024-06-11 08:27:52,723] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:27:52,779] {logging_mixin.py:103} INFO - [2024-06-11 08:27:52,779] {dag.py:2266} INFO - Setting next_dagrun for Manual_ETL_to_Database to None
+[2024-06-11 08:27:52,837] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.170 seconds
+[2024-06-11 08:28:00,423] {scheduler_job.py:181} INFO - Started process (PID=30924) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:00,425] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:28:00,427] {logging_mixin.py:103} INFO - [2024-06-11 08:28:00,426] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:00,451] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Manual_ETL_to_Database']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:00,452] {logging_mixin.py:103} INFO - [2024-06-11 08:28:00,452] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:28:00,474] {logging_mixin.py:103} INFO - [2024-06-11 08:28:00,474] {dag.py:2266} INFO - Setting next_dagrun for Manual_ETL_to_Database to None
+[2024-06-11 08:28:00,493] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.076 seconds
+[2024-06-11 08:28:05,501] {scheduler_job.py:181} INFO - Started process (PID=30999) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:05,503] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:28:05,503] {logging_mixin.py:103} INFO - [2024-06-11 08:28:05,503] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:05,513] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Manual_ETL_to_Database']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:05,514] {logging_mixin.py:103} INFO - [2024-06-11 08:28:05,514] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:28:05,530] {logging_mixin.py:103} INFO - [2024-06-11 08:28:05,530] {dag.py:2266} INFO - Setting next_dagrun for Manual_ETL_to_Database to None
+[2024-06-11 08:28:05,545] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.047 seconds
+[2024-06-11 08:28:10,698] {scheduler_job.py:181} INFO - Started process (PID=31053) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:10,699] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:28:10,700] {logging_mixin.py:103} INFO - [2024-06-11 08:28:10,700] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:10,709] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Manual_ETL_to_Database']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:10,710] {logging_mixin.py:103} INFO - [2024-06-11 08:28:10,710] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:28:10,731] {logging_mixin.py:103} INFO - [2024-06-11 08:28:10,731] {dag.py:2266} INFO - Setting next_dagrun for Manual_ETL_to_Database to None
+[2024-06-11 08:28:10,744] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.050 seconds
+[2024-06-11 08:28:15,764] {scheduler_job.py:181} INFO - Started process (PID=31092) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:15,765] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:28:15,766] {logging_mixin.py:103} INFO - [2024-06-11 08:28:15,766] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:15,776] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Manual_ETL_to_Database']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:15,777] {logging_mixin.py:103} INFO - [2024-06-11 08:28:15,777] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:28:15,794] {logging_mixin.py:103} INFO - [2024-06-11 08:28:15,794] {dag.py:2266} INFO - Setting next_dagrun for Manual_ETL_to_Database to None
+[2024-06-11 08:28:15,809] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.048 seconds
+[2024-06-11 08:28:20,644] {scheduler_job.py:181} INFO - Started process (PID=31164) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:20,645] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:28:20,646] {logging_mixin.py:103} INFO - [2024-06-11 08:28:20,646] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:20,655] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Manual_ETL_to_Database']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:20,656] {logging_mixin.py:103} INFO - [2024-06-11 08:28:20,656] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:28:20,673] {logging_mixin.py:103} INFO - [2024-06-11 08:28:20,673] {dag.py:2266} INFO - Setting next_dagrun for Manual_ETL_to_Database to None
+[2024-06-11 08:28:20,685] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.045 seconds
+[2024-06-11 08:28:24,932] {scheduler_job.py:181} INFO - Started process (PID=31191) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:24,934] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:28:24,935] {logging_mixin.py:103} INFO - [2024-06-11 08:28:24,935] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:24,947] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Manual_ETL_to_Database']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:24,949] {logging_mixin.py:103} INFO - [2024-06-11 08:28:24,949] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:28:24,972] {logging_mixin.py:103} INFO - [2024-06-11 08:28:24,971] {dag.py:2266} INFO - Setting next_dagrun for Manual_ETL_to_Database to None
+[2024-06-11 08:28:24,990] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.062 seconds
+[2024-06-11 08:28:30,095] {scheduler_job.py:181} INFO - Started process (PID=31261) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:30,096] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:28:30,098] {logging_mixin.py:103} INFO - [2024-06-11 08:28:30,098] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:30,110] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Manual_ETL_to_Database']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:30,111] {logging_mixin.py:103} INFO - [2024-06-11 08:28:30,111] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:28:30,133] {logging_mixin.py:103} INFO - [2024-06-11 08:28:30,133] {dag.py:2266} INFO - Setting next_dagrun for Manual_ETL_to_Database to None
+[2024-06-11 08:28:30,151] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.061 seconds
+[2024-06-11 08:28:35,249] {scheduler_job.py:181} INFO - Started process (PID=31330) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:35,250] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:28:35,252] {logging_mixin.py:103} INFO - [2024-06-11 08:28:35,252] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:35,262] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['Manual_ETL_to_Database']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:35,263] {logging_mixin.py:103} INFO - [2024-06-11 08:28:35,263] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-11 08:28:35,281] {logging_mixin.py:103} INFO - [2024-06-11 08:28:35,281] {dag.py:2266} INFO - Setting next_dagrun for Manual_ETL_to_Database to None
+[2024-06-11 08:28:35,293] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.048 seconds
+[2024-06-11 08:28:40,187] {scheduler_job.py:181} INFO - Started process (PID=31380) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:40,189] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:28:40,189] {logging_mixin.py:103} INFO - [2024-06-11 08:28:40,189] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:40,190] {scheduler_job.py:641} WARNING - No viable dags retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:40,190] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.008 seconds
+[2024-06-11 08:28:44,317] {scheduler_job.py:181} INFO - Started process (PID=31412) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:44,319] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:28:44,319] {logging_mixin.py:103} INFO - [2024-06-11 08:28:44,319] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:44,320] {scheduler_job.py:641} WARNING - No viable dags retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:44,320] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.006 seconds
+[2024-06-11 08:28:49,356] {scheduler_job.py:181} INFO - Started process (PID=31446) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:49,357] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:28:49,358] {logging_mixin.py:103} INFO - [2024-06-11 08:28:49,358] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:49,358] {scheduler_job.py:641} WARNING - No viable dags retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:49,359] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.006 seconds
+[2024-06-11 08:28:53,682] {scheduler_job.py:181} INFO - Started process (PID=31457) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:53,683] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:28:53,684] {logging_mixin.py:103} INFO - [2024-06-11 08:28:53,684] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:53,684] {scheduler_job.py:641} WARNING - No viable dags retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:53,685] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.006 seconds
+[2024-06-11 08:28:58,850] {scheduler_job.py:181} INFO - Started process (PID=31531) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:58,853] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:28:58,854] {logging_mixin.py:103} INFO - [2024-06-11 08:28:58,854] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:58,854] {scheduler_job.py:641} WARNING - No viable dags retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:28:58,855] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.009 seconds
+[2024-06-11 08:29:03,591] {scheduler_job.py:181} INFO - Started process (PID=31580) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:29:03,592] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:29:03,593] {logging_mixin.py:103} INFO - [2024-06-11 08:29:03,593] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:29:03,593] {scheduler_job.py:641} WARNING - No viable dags retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:29:03,593] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.006 seconds
+[2024-06-11 08:29:08,750] {scheduler_job.py:181} INFO - Started process (PID=31628) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:29:08,751] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:29:08,752] {logging_mixin.py:103} INFO - [2024-06-11 08:29:08,752] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:29:08,752] {scheduler_job.py:641} WARNING - No viable dags retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:29:08,753] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.006 seconds
+[2024-06-11 08:29:13,798] {scheduler_job.py:181} INFO - Started process (PID=31661) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:29:13,800] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:29:13,801] {logging_mixin.py:103} INFO - [2024-06-11 08:29:13,801] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:29:13,801] {scheduler_job.py:641} WARNING - No viable dags retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:29:13,802] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.008 seconds
+[2024-06-11 08:29:18,860] {scheduler_job.py:181} INFO - Started process (PID=31692) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:29:18,861] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:29:18,862] {logging_mixin.py:103} INFO - [2024-06-11 08:29:18,862] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:29:18,862] {scheduler_job.py:641} WARNING - No viable dags retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:29:18,863] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.007 seconds
+[2024-06-11 08:29:23,913] {scheduler_job.py:181} INFO - Started process (PID=31723) to work on /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:29:23,915] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py for tasks to queue
+[2024-06-11 08:29:23,915] {logging_mixin.py:103} INFO - [2024-06-11 08:29:23,915] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:29:23,916] {scheduler_job.py:641} WARNING - No viable dags retrieved from /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py
+[2024-06-11 08:29:23,916] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/dag_etl_to_db.py took 0.006 seconds

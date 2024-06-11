@@ -1,10 +1,12 @@
 from airflow import DAG
-from airflow.operators.bash_operator import BashOperator
-from airflow.operators.python_operator import PythonOperator
+from airflow.operators.bash import BashOperator
+from airflow.operators.python import PythonOperator
 from airflow.sensors.external_task_sensor import ExternalTaskSensor
 from airflow.utils.dates import days_ago
 from datetime import timedelta
 import sys
+import subprocess
+import logging
 
 # Add the paths to sys.path
 sys.path.append('/home/anhcu/Project/Stock_project/elt/scripts/transform')
@@ -17,7 +19,7 @@ default_args = {
     'depends_on_past': False,
     'email_on_failure': True,
     'email_on_retry': True,
-    'retries': 2,
+    'retries': 1,
     'retry_delay': timedelta(minutes=1),
 }
 
@@ -25,21 +27,10 @@ with DAG(
     dag_id='ELT_to_Data_Warehouse',
     default_args=default_args,
     description='ETL DAG for Data Warehouse',
-    schedule_interval=None,  # Chạy khi được kích hoạt bởi DAG khác
+    schedule_interval='1 1 * * *',  # Chạy khi được kích hoạt bởi DAG khác
     start_date=days_ago(1),
     catchup=False,
 ) as dag:
-
-    wait_for_etl_to_database = ExternalTaskSensor(
-        task_id='wait_for_etl_to_database',
-        external_dag_id='ETL_to_Database',
-        external_task_id=None,  # Chờ toàn bộ DAG hoàn thành
-        timeout=600,  # Thời gian chờ tối đa 10 phút
-        allowed_states=['success', 'running'],  # Chỉ cần success và running
-        failed_states=['failed'],  # Chỉ cần failed
-        mode='poke',  # Sử dụng chế độ poke để kiểm tra định kỳ
-    )
-
     crawl_news = BashOperator(
         task_id='crawl_news',
         bash_command='/bin/python3 /home/anhcu/Project/Stock_project/elt/scripts/extract/crawl_news.py',
@@ -60,18 +51,38 @@ with DAG(
         bash_command='/bin/python3 /home/anhcu/Project/Stock_project/elt/scripts/load/load_db_to_parquet.py',
     )
 
-    load_parquet_to_hdfs = BashOperator(
+    def run_shell_script():
+        result = subprocess.run(['bash', '/home/anhcu/Project/Stock_project/elt/scripts/load/load_parquet_to_hdfs.sh'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        if result.returncode != 0:
+            raise Exception(f"Shell script failed with error: {result.stderr.decode()}")
+        output = result.stdout.decode()
+        print(output)
+        return output
+        
+    load_parquet_to_hdfs = PythonOperator(
         task_id='load_parquet_to_hdfs',
-        bash_command='/bin/bash /home/anhcu/Project/Stock_project/elt/scripts/load/load_parquet_to_hdfs.sh',
-        xcom_push=True,
-        template_ext=[]  # Disable Jinja templating for bash_command
+        python_callable=run_shell_script,
+        do_xcom_push=True
     )
+
+    # load_parquet_to_hdfs = BashOperator(
+    #     task_id='load_parquet_to_hdfs',
+    #     bash_command='bash /home/anhcu/Project/Stock_project/elt/scripts/load/load_parquet_to_hdfs.sh',
+    #     do_xcom_push=True,  # Sử dụng do_xcom_push để đẩy kết quả lên XCom
+    # )
 
     def process_latest_files(**kwargs):
         ti = kwargs['ti']
         latest_files = ti.xcom_pull(task_ids='load_parquet_to_hdfs')
-        file_list = latest_files.strip().split('\n')
         
+        if latest_files is None:
+            logging.error("No files were pulled from XCom. Check the 'load_parquet_to_hdfs' task.")
+            raise ValueError("No files were pulled from XCom. Check the 'load_parquet_to_hdfs' task.")
+        
+        logging.info(f"Files pulled from XCom: {latest_files}")
+
+        file_list = latest_files.strip().split('\n')
+                
         for file_path in file_list:
             if "datalake/companies" in file_path:
                 process_companies(file_path)
@@ -96,8 +107,10 @@ with DAG(
     )
 
     # Định nghĩa thứ tự chạy các task
-    wait_for_etl_to_database >> [crawl_news, crawl_ohlcs]
-    [crawl_news, crawl_ohlcs] >> load_api_to_parquet
-    [crawl_news, crawl_ohlcs] >> load_db_to_parquet
-    [load_api_to_parquet, load_db_to_parquet] >> load_parquet_to_hdfs
+    crawl_news >> load_api_to_parquet
+    crawl_ohlcs >> load_api_to_parquet
+    crawl_news >> load_db_to_parquet
+    crawl_ohlcs >> load_db_to_parquet
+    load_api_to_parquet >> load_parquet_to_hdfs
+    load_db_to_parquet >> load_parquet_to_hdfs
     load_parquet_to_hdfs >> process_files
