@@ -119,4 +119,5 @@ def process(parquet_file_path):
 
 if __name__ == "__main__":
     parquet_file_path = sys.argv[1]
+    # parquet_file_path = "datalake/ohlcs/crawl_ohlcs_2024_06_10.parquet"
     process(parquet_file_path)

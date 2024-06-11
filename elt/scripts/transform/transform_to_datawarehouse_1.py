@@ -67,4 +67,5 @@ def process(parquet_file_path):
 
 if __name__ == "__main__":
     parquet_file_path = sys.argv[1]
+    # parquet_file_path = "datalake/companies/load_db_to_dl_2024_06_11.parquet"
     process(parquet_file_path)

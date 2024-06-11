@@ -7,8 +7,6 @@ SELECT
     c.company_location,
     e.exchange_name as company_exchange_name,
     r.region_name as company_region_name,
-    r.region_local_open as company_region_local_open,
-    r.region_local_close as company_region_local_close,
     i.industry_name as company_industry_name,
     i.industry_sector as company_industry_sector,
     s.sic_industry as company_sic_industry,

@@ -1,0 +1,303 @@
+[2024-06-11 08:16:27,922] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: ELT_to_Data_Warehouse.process_latest_files 2024-06-11T08:15:49.953823+00:00 [queued]>
+[2024-06-11 08:16:27,930] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: ELT_to_Data_Warehouse.process_latest_files 2024-06-11T08:15:49.953823+00:00 [queued]>
+[2024-06-11 08:16:27,930] {taskinstance.py:1017} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-11 08:16:27,930] {taskinstance.py:1018} INFO - Starting attempt 1 of 2
+[2024-06-11 08:16:27,930] {taskinstance.py:1019} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-11 08:16:27,944] {taskinstance.py:1038} INFO - Executing <Task(PythonOperator): process_latest_files> on 2024-06-11T08:15:49.953823+00:00
+[2024-06-11 08:16:27,947] {standard_task_runner.py:51} INFO - Started process 22159 to run task
+[2024-06-11 08:16:27,954] {standard_task_runner.py:75} INFO - Running: ['airflow', 'tasks', 'run', 'ELT_to_Data_Warehouse', 'process_latest_files', '2024-06-11T08:15:49.953823+00:00', '--job-id', '135', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/elt_to_dw.py', '--cfg-path', '/tmp/tmpgnnt2jki']
+[2024-06-11 08:16:27,954] {standard_task_runner.py:76} INFO - Job 135: Subtask process_latest_files
+[2024-06-11 08:16:27,993] {logging_mixin.py:103} INFO - Running <TaskInstance: ELT_to_Data_Warehouse.process_latest_files 2024-06-11T08:15:49.953823+00:00 [running]> on host etl.us-central1-a.c.data-engineering-stock.internal
+[2024-06-11 08:16:28,040] {taskinstance.py:1230} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=ELT_to_Data_Warehouse
+AIRFLOW_CTX_TASK_ID=process_latest_files
+AIRFLOW_CTX_EXECUTION_DATE=2024-06-11T08:15:49.953823+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-06-11T08:15:49.953823+00:00
+[2024-06-11 08:16:28,046] {elt_to_dw.py:82} INFO - Files pulled from XCom: /user/anhcu/datalake/companies/load_db_to_dl_2024_06_11.parquet
+/user/anhcu/datalake/ohlcs/crawl_ohlcs_2024_06_10.parquet
+/user/anhcu/datalake/news/crawl_news_2024_06_10.parquet
+
+
+[2024-06-11 08:16:50,866] {logging_mixin.py:103} INFO - root
+ |-- company_name: string (nullable = true)
+ |-- company_ticket: string (nullable = true)
+ |-- company_is_delisted: boolean (nullable = true)
+ |-- company_category: string (nullable = true)
+ |-- company_currency: string (nullable = true)
+ |-- company_location: string (nullable = true)
+ |-- company_exchange_name: string (nullable = true)
+ |-- company_region_name: string (nullable = true)
+ |-- company_industry_name: string (nullable = true)
+ |-- company_industry_sector: string (nullable = true)
+ |-- company_sic_industry: string (nullable = true)
+ |-- company_sic_sector: string (nullable = true)
+[2024-06-11 08:16:50,866] {logging_mixin.py:103} INFO - 
+[2024-06-11 08:16:57,166] {logging_mixin.py:103} INFO - +--------------------+--------------+-------------------+--------------------+----------------+--------------------+---------------------+-------------------+---------------------+-----------------------+--------------------+--------------------+
+|        company_name|company_ticket|company_is_delisted|    company_category|company_currency|    company_location|company_exchange_name|company_region_name|company_industry_name|company_industry_sector|company_sic_industry|  company_sic_sector|
++--------------------+--------------+-------------------+--------------------+----------------+--------------------+---------------------+-------------------+---------------------+-----------------------+--------------------+--------------------+
+|ADMIRALTY BANCORP...|          AAAB|               true|Domestic Common S...|             USD|      Florida; U.S.A|               NASDAQ|      United States|     Banks - Regional|     Financial Services|State Commercial ...|Finance Insurance...|
+|ACCESS ANYTIME BA...|          AABC|               true|Domestic Common S...|             USD|   New Mexico; U.S.A|               NASDAQ|      United States|     Banks - Regional|     Financial Services|Savings Instituti...|Finance Insurance...|
+|ASSET ACCEPTANCE ...|          AACC|               true|Domestic Common S...|             USD|     Michigan; U.S.A|               NASDAQ|      United States|     Asset Management|     Financial Services|Short-Term Busine...|Finance Insurance...|
+|ACE CASH EXPRESS INC|          AACE|               true|Domestic Common S...|             USD|        Texas; U.S.A|               NASDAQ|      United States|      Credit Services|     Financial Services|Functions Related...|Finance Insurance...|
+|ARMADA ACQUISITIO...|          AACI|              false|Domestic Common S...|             USD| Pennsylvania; U.S.A|               NASDAQ|      United States|      Shell Companies|            Industrials|        Blank Checks|Finance Insurance...|
+|AUSTRALIA ACQUISI...|         AACPF|               true|    ADR Common Stock|             USD|           Australia|               NASDAQ|      United States|      Shell Companies|            Industrials|        Blank Checks|Finance Insurance...|
+| AADI BIOSCIENCE INC|          AADI|              false|Domestic Common S...|             USD|   California; U.S.A|               NASDAQ|      United States|        Biotechnology|             Healthcare|Pharmaceutical Pr...|       Manufacturing|
+|ADVANTAGE BANCORP...|          AADV|               true|Domestic Common S...|             USD|    Wisconsin; U.S.A|               NASDAQ|      United States|     Banks - Regional|     Financial Services|Savings Instituti...|Finance Insurance...|
+|AFRICAN AGRICULTU...|          AAGR|              false|Domestic Common S...|             USD|     New York; U.S.A|               NASDAQ|      United States|        Farm Products|     Consumer Defensive|Agricultural Prod...|Agriculture Fores...|
+|AIRTRAN HOLDINGS INC|           AAI|               true|Domestic Common S...|             USD|      Florida; U.S.A|               NASDAQ|      United States|             Airlines|            Industrials|Air Transportatio...|Transportation Co...|
+|ALABAMA AIRCRAFT ...|         AAIIQ|               true|Domestic Common S...|             USD|      Alabama; U.S.A|               NASDAQ|      United States|  Aerospace & Defense|            Industrials|            Aircraft|       Manufacturing|
+|       AAIPHARMA INC|        AAIIQ1|               true|Domestic Common S...|             USD|North Carolina; U...|               NASDAQ|      United States| Diagnostics & Res...|             Healthcare|Services-Testing ...|            Services|
+|AMERICAN AIRLINES...|           AAL|              false|Domestic Common S...|             USD|        Texas; U.S.A|               NASDAQ|      United States|             Airlines|            Industrials|Air Transportatio...|Transportation Co...|
+|ATLANTIC AMERICAN...|          AAME|              false|Domestic Common S...|             USD|      Georgia; U.S.A|               NASDAQ|      United States|     Insurance - Life|     Financial Services|      Life Insurance|Finance Insurance...|
+|ABIGAIL ADAMS NAT...|          AANB|               true|Domestic Common S...|             USD|District Of Colum...|               NASDAQ|      United States|     Banks - Regional|     Financial Services|National Commerci...|Finance Insurance...|
+|APPLIED OPTOELECT...|          AAOI|              false|Domestic Common S...|             USD|        Texas; U.S.A|               NASDAQ|      United States| Communication Equ...|             Technology|Semiconductors & ...|       Manufacturing|
+|            AAON INC|          AAON|              false|Domestic Common S...|             USD|     Oklahoma; U.S.A|               NASDAQ|      United States| Building Products...|        Basic Materials|Air-Cond & Warm A...|       Manufacturing|
+|ATLANTIC ALLIANCE...|          AAPC|               true|Domestic Common S...|             USD|     New York; U.S.A|               NASDAQ|      United States|             Gambling|      Consumer Cyclical|Services-Miscella...|            Services|
+|           APPLE INC|          AAPL|              false|Domestic Common S...|             USD|   California; U.S.A|               NASDAQ|      United States| Consumer Electronics|             Technology|Electronic Computers|       Manufacturing|
+|         ALCIDE CORP|          ALCD|               true|Domestic Common S...|             USD|   Washington; U.S.A|               NASDAQ|      United States|  Agricultural Inputs|        Basic Materials|Agricultural Chem...|       Manufacturing|
++--------------------+--------------+-------------------+--------------------+----------------+--------------------+---------------------+-------------------+---------------------+-----------------------+--------------------+--------------------+
+only showing top 20 rows
+[2024-06-11 08:16:57,166] {logging_mixin.py:103} INFO - 
+[2024-06-11 08:17:00,506] {logging_mixin.py:103} INFO - Data has been successfully inserted into dim_companies in DuckDB!
+[2024-06-11 08:17:01,434] {logging_mixin.py:103} INFO - root
+ |-- company_ticket: string (nullable = true)
+ |-- volume: double (nullable = true)
+ |-- volume_weighted: double (nullable = true)
+ |-- open: double (nullable = true)
+ |-- close: double (nullable = true)
+ |-- high: double (nullable = true)
+ |-- low: double (nullable = true)
+ |-- time_stamp: long (nullable = true)
+ |-- num_of_trades: double (nullable = true)
+ |-- is_otc: boolean (nullable = true)
+[2024-06-11 08:17:01,434] {logging_mixin.py:103} INFO - 
+[2024-06-11 08:17:02,252] {logging_mixin.py:103} INFO - +--------------+---------+---------------+------+------+-------+-------+-------------+-------------+------+
+|company_ticket|   volume|volume_weighted|  open| close|   high|    low|   time_stamp|num_of_trades|is_otc|
++--------------+---------+---------------+------+------+-------+-------+-------------+-------------+------+
+|           CFR| 514797.0|        97.8206| 99.25| 97.53|  99.25|  97.27|1718049600000|      12182.0|  NULL|
+|          PSCM|  18544.0|        77.1174|  77.0| 76.98|  77.12|  76.98|1718049600000|         17.0|  NULL|
+|         PUMSY|  18404.0|         5.0048|  5.06| 5.002|   5.06| 4.9701|1718049600000|         55.0|  true|
+|           JBL| 976703.0|       116.4732|113.13| 117.1| 117.26| 113.13|1718049600000|      23841.0|  NULL|
+|          ADAP|1624762.0|         1.0304|  1.01|  1.04|  1.045|   1.01|1718049600000|       2629.0|  NULL|
+|           PCY| 246948.0|        20.1679|  20.2| 20.17|   20.2| 20.135|1718049600000|       1565.0|  NULL|
+|            ZM|3410969.0|        62.8349| 62.43| 62.96|  63.32|  62.42|1718049600000|      48029.0|  NULL|
+|          AVDE| 303588.0|        64.5796| 64.25| 64.64|64.6624|64.1131|1718049600000|        889.0|  NULL|
+|          CBRE|1806891.0|        86.9636| 84.99| 87.62|  87.68|  84.68|1718049600000|      25257.0|  NULL|
+|           UZE|  88271.0|        21.3756| 21.23|  21.5|  21.57|21.1501|1718049600000|        580.0|  NULL|
+|           NWG| 865861.0|         8.0354|  8.03|  8.08|    8.1|  7.985|1718049600000|       3289.0|  NULL|
+|          ASGN| 275478.0|        92.2782| 92.39| 92.37|  92.81|  91.58|1718049600000|       9685.0|  NULL|
+|          REFG|   2000.0|         1.0E-6|1.0E-6|1.0E-6| 1.0E-6| 1.0E-6|1718049600000|          1.0|  true|
+|          FVAL|  66138.0|        56.7982| 56.62| 56.87|  56.93|  56.62|1718049600000|        431.0|  NULL|
+|          HJEN|  12162.0|        12.0681| 11.91|  12.2|  12.25|  11.85|1718049600000|        227.0|  NULL|
+|          MMSI| 203913.0|         82.106|  81.7| 82.22|   82.4| 81.325|1718049600000|       6708.0|  NULL|
+|          IDRV|  34795.0|        30.3532| 30.19| 30.42|  30.49|  30.19|1718049600000|        409.0|  NULL|
+|           SIL| 658797.0|         31.986|  32.0| 32.19|  32.19|  31.44|1718049600000|       5705.0|  NULL|
+|          JAAA|2168248.0|        50.7258|50.745| 50.73|  50.75|  50.71|1718049600000|       6554.0|  NULL|
+|          TFLO|2207969.0|        50.5295| 50.53| 50.53|  50.54|  50.52|1718049600000|       4998.0|  NULL|
++--------------+---------+---------------+------+------+-------+-------+-------------+-------------+------+
+only showing top 20 rows
+[2024-06-11 08:17:02,252] {logging_mixin.py:103} INFO - 
+[2024-06-11 08:17:03,333] {logging_mixin.py:103} INFO -       company_ticket     volume  volume_weighted    open    close     high       low     time_stamp  num_of_trades is_otc
+0                CFR   514797.0          97.8206   99.25   97.530   99.250   97.2700  1718049600000        12182.0   None
+1               PSCM    18544.0          77.1174   77.00   76.980   77.120   76.9800  1718049600000           17.0   None
+2              PUMSY    18404.0           5.0048    5.06    5.002    5.060    4.9701  1718049600000           55.0   True
+3                JBL   976703.0         116.4732  113.13  117.100  117.260  113.1300  1718049600000        23841.0   None
+4               ADAP  1624762.0           1.0304    1.01    1.040    1.045    1.0100  1718049600000         2629.0   None
+...              ...        ...              ...     ...      ...      ...       ...            ...            ...    ...
+14566          ZJZZT   173361.0          21.0000   21.00   21.000   21.000   21.0000  1718049600000            1.0   None
+14567           ZBZX        0.0              NaN   25.00   25.000   25.000   25.0000  1718049600000            NaN   None
+14568          ZEXIT     2000.0          10.0000   10.00   10.000   10.000   10.0000  1718049600000            1.0   None
+14569          ZXZZT     5490.0          18.4857   10.25   10.250   10.250   10.2500  1718049600000          117.0   None
+14570          ZWZZT   162655.0          19.0049   19.00   19.500   19.500   19.0000  1718049600000            5.0   None
+
+[14571 rows x 10 columns]
+[2024-06-11 08:17:03,334] {logging_mixin.py:103} INFO - Yesterday's date: 2024-06-10
+[2024-06-11 08:17:03,408] {logging_mixin.py:103} INFO -        company_id company_ticket
+0               1           AAAB
+1               2           AABC
+2               3           AACC
+3               4           AACE
+4               5           AACI
+...           ...            ...
+59095       59096          MOTNU
+59096       59097          PLTNR
+59097       59098          PLTNU
+59098       59099          SIFYR
+59099       59100        MTAL.WS
+
+[59100 rows x 2 columns]
+[2024-06-11 08:17:03,436] {logging_mixin.py:103} INFO -        company_id company_ticket
+39394       39395           AAAB
+39395       39396           AABC
+39396       39397           AACC
+39397       39398           AACE
+39398       39399           AACI
+...           ...            ...
+59095       59096          MOTNU
+59096       59097          PLTNR
+59097       59098          PLTNU
+59098       59099          SIFYR
+59099       59100        MTAL.WS
+
+[19701 rows x 2 columns]
+[2024-06-11 08:17:03,493] {logging_mixin.py:103} INFO -       company_ticket     volume  volume_weighted    open   close     high     low     time_stamp  num_of_trades is_otc  company_id
+0                CFR   514797.0          97.8206   99.25   97.53   99.250   97.27  1718049600000        12182.0   None     53309.0
+3                JBL   976703.0         116.4732  113.13  117.10  117.260  113.13  1718049600000        23841.0   None     54650.0
+4               ADAP  1624762.0           1.0304    1.01    1.04    1.045    1.01  1718049600000         2629.0   None     39564.0
+6                 ZM  3410969.0          62.8349   62.43   62.96   63.320   62.42  1718049600000        48029.0   None     49802.0
+8               CBRE  1806891.0          86.9636   84.99   87.62   87.680   84.68  1718049600000        25257.0   None     53240.0
+...              ...        ...              ...     ...     ...      ...     ...            ...            ...    ...         ...
+14171          IPXXU      100.0          10.5900   10.59   10.59   10.590   10.59  1718049600000            1.0   None     51158.0
+14174          GAMCW      600.0           0.1500    0.15    0.15    0.150    0.15  1718049600000            1.0   None     50816.0
+14175           PBBK      562.0          13.2594   13.25   13.25   13.250   13.25  1718049600000           57.0   None     46464.0
+14177          BAYAU      103.0          10.3544   10.35   10.35   10.350   10.35  1718049600000            2.0   None     50104.0
+14178        HLLY.WS     4900.0           0.1000    0.10    0.10    0.100    0.10  1718049600000            1.0   None     57874.0
+
+[6147 rows x 11 columns]
+[2024-06-11 08:17:03,520] {logging_mixin.py:103} INFO -       company_ticket     volume  volume_weighted    open   close     high     low     time_stamp  num_of_trades is_otc  company_id  candles_time_id
+0                CFR   514797.0          97.8206   99.25   97.53   99.250   97.27  1718049600000        12182.0   None     53309.0                2
+3                JBL   976703.0         116.4732  113.13  117.10  117.260  113.13  1718049600000        23841.0   None     54650.0                2
+4               ADAP  1624762.0           1.0304    1.01    1.04    1.045    1.01  1718049600000         2629.0   None     39564.0                2
+6                 ZM  3410969.0          62.8349   62.43   62.96   63.320   62.42  1718049600000        48029.0   None     49802.0                2
+8               CBRE  1806891.0          86.9636   84.99   87.62   87.680   84.68  1718049600000        25257.0   None     53240.0                2
+...              ...        ...              ...     ...     ...      ...     ...            ...            ...    ...         ...              ...
+14171          IPXXU      100.0          10.5900   10.59   10.59   10.590   10.59  1718049600000            1.0   None     51158.0                2
+14174          GAMCW      600.0           0.1500    0.15    0.15    0.150    0.15  1718049600000            1.0   None     50816.0                2
+14175           PBBK      562.0          13.2594   13.25   13.25   13.250   13.25  1718049600000           57.0   None     46464.0                2
+14177          BAYAU      103.0          10.3544   10.35   10.35   10.350   10.35  1718049600000            2.0   None     50104.0                2
+14178        HLLY.WS     4900.0           0.1000    0.10    0.10    0.100    0.10  1718049600000            1.0   None     57874.0                2
+
+[6147 rows x 12 columns]
+[2024-06-11 08:17:06,414] {logging_mixin.py:103} INFO - Data inserted into fact_candles successfully!
+[2024-06-11 08:17:07,443] {logging_mixin.py:103} INFO - root
+ |-- title: string (nullable = true)
+ |-- url: string (nullable = true)
+ |-- time_published: string (nullable = true)
+ |-- authors: array (nullable = true)
+ |    |-- element: string (containsNull = true)
+ |-- summary: string (nullable = true)
+ |-- banner_image: string (nullable = true)
+ |-- source: string (nullable = true)
+ |-- category_within_source: string (nullable = true)
+ |-- source_domain: string (nullable = true)
+ |-- topics: array (nullable = true)
+ |    |-- element: struct (containsNull = true)
+ |    |    |-- relevance_score: string (nullable = true)
+ |    |    |-- topic: string (nullable = true)
+ |-- overall_sentiment_score: double (nullable = true)
+ |-- overall_sentiment_label: string (nullable = true)
+ |-- ticker_sentiment: array (nullable = true)
+ |    |-- element: struct (containsNull = true)
+ |    |    |-- relevance_score: string (nullable = true)
+ |    |    |-- ticker: string (nullable = true)
+ |    |    |-- ticker_sentiment_label: string (nullable = true)
+ |    |    |-- ticker_sentiment_score: string (nullable = true)
+[2024-06-11 08:17:07,443] {logging_mixin.py:103} INFO - 
+[2024-06-11 08:17:08,188] {logging_mixin.py:103} INFO - +--------------------+--------------------+---------------+--------------------+--------------------+--------------------+-----------------+----------------------+--------------------+--------------------+-----------------------+-----------------------+--------------------+
+|               title|                 url| time_published|             authors|             summary|        banner_image|           source|category_within_source|       source_domain|              topics|overall_sentiment_score|overall_sentiment_label|    ticker_sentiment|
++--------------------+--------------------+---------------+--------------------+--------------------+--------------------+-----------------+----------------------+--------------------+--------------------+-----------------------+-----------------------+--------------------+
+|INR slides amid f...|https://www.busin...|20240610T092900|    [Capital Market]|Indian Rupee has ...|https://www.busin...|Business Standard|             GoogleRSS|www.business-stan...|[{0.158519, Earni...|               0.164851|       Somewhat-Bullish|[{0.666827, FOREX...|
+|Bulgarian electio...|https://www.aljaz...|20240610T092754|        [Al Jazeera]|The centre-right ...|https://www.aljaz...|       Al Jareeza|                   n/a|   www.aljazeera.com| [{1.0, Technology}]|               0.115218|                Neutral|[{0.103331, META,...|
+|Russian President...|https://www.benzi...|20240610T092740|    [Benzinga Neuro]|Russian President...|https://cdn.benzi...|         Benzinga|                  News|    www.benzinga.com|[{1.0, Retail & W...|                0.03589|                Neutral|[{0.092213, GLP, ...|
+|HDFC Bank hikes f...|https://www.busin...|20240610T092536|[Surbhi Gloria Si...|For its general c...|https://bsmedia.b...|Business Standard|             GoogleRSS|www.business-stan...|[{0.928139, Econo...|               0.250628|       Somewhat-Bullish|[{0.0699, SBKFF, ...|
+|If You'd Invested...|https://www.fool....|20240610T092500|        [Will Healy]|Super Micro Compu...|https://g.foolcdn...|      Motley Fool|                   n/a|        www.fool.com|[{0.451494, IPO},...|               0.148965|                Neutral|[{0.114137, NVDA,...|
+|Michael Mosley 'c...|https://theweek.c...|20240610T092419|[The Week UK, Hol...|The family of mis...|https://cdn.mos.c...|    The Week News|                   n/a|         theweek.com|                  []|               0.036322|                Neutral|[{0.049221, FRNWF...|
+|This Stock Has Do...|https://www.fool....|20240610T092200|         [Adam Levy]|Berkshire Hathawa...|https://g.foolcdn...|      Motley Fool|                   n/a|        www.fool.com|[{1.0, Finance}, ...|               0.372082|                Bullish|[{0.045224, BAC, ...|
+|3 Artificial Inte...|https://www.fool....|20240610T092100|     [Sean Williams]|Warren Buffett's ...|https://g.foolcdn...|      Motley Fool|                   n/a|        www.fool.com|[{0.999499, Finan...|               0.250368|       Somewhat-Bullish|[{0.268294, MSFT,...|
+|Olympic athletes ...|https://www.cnn.c...|20240610T091900|                  []|Olympians, includ...|https://media.cnn...|              CNN|               Markets|         www.cnn.com|[{1.0, Life Scien...|               0.245539|       Somewhat-Bullish|[{0.03853, GLDAF,...|
+|Shelly Group anno...|https://www.prnew...|20240610T091700|      [Shelly Group]|SOFIA, Bulgaria a...|https://mma.prnew...|      PR Newswire|                   n/a|  www.prnewswire.com|[{0.650727, Finan...|               0.432138|                Bullish|[{0.122269, SSNLF...|
+|This Coffee Stock...|https://www.fool....|20240610T091500|         [Jon Quast]|Is Black Rifle Co...|https://media.ych...|      Motley Fool|                   n/a|        www.fool.com|[{0.158519, IPO},...|               0.308221|       Somewhat-Bullish|[{0.145145, BROS,...|
+|Modi 3.0: Telcos ...|https://www.busin...|20240610T091456|[Press Trust of I...|According to DIPA...|https://bsmedia.b...|Business Standard|             GoogleRSS|www.business-stan...| [{1.0, Technology}]|                0.21211|       Somewhat-Bullish|[{0.059341, VOD, ...|
+|2nd highest weekl...|https://cointeleg...|20240610T091321|    [William Suberg]|BTC price action ...|https://images.co...|    Cointelegraph|                   n/a|   cointelegraph.com|[{0.998626, Econo...|                0.10395|                Neutral|[{0.059194, CME, ...|
+|Check out the ver...|https://www.busin...|20240610T091300|     [Meghan Morris]|Read the super-co...|                NULL| Business Insider|             GoogleRSS|www.businessinsid...|                  []|               0.089791|                Neutral|[{0.110462, ACN, ...|
+|A key Russian CEO...|https://www.busin...|20240610T091000|       [Huileng Tan]|Key Russian oil C...|                NULL| Business Insider|             GoogleRSS|www.businessinsid...|[{0.838487, Econo...|               0.096331|                Neutral|[{0.076602, FOREX...|
+|Is Now a Golden O...|https://www.fool....|20240610T091000|   [Geoffrey Seiler]|The company's new...|https://g.foolcdn...|      Motley Fool|                   n/a|        www.fool.com|[{0.999767, Earni...|               0.171113|       Somewhat-Bullish|[{0.053153, SSNLF...|
+|I quit my career ...|https://www.busin...|20240610T090700|      [J.D. Harlock]|I Lost All My Sav...|                NULL| Business Insider|             GoogleRSS|www.businessinsid...|[{0.158519, Earni...|               0.051328|                Neutral|[{0.059636, FOREX...|
+|3 Stock-Split Sto...|https://www.fool....|20240610T090600|     [Sean Williams]|Three supercharge...|https://g.foolcdn...|      Motley Fool|                   n/a|        www.fool.com|[{1.0, Financial ...|               0.217492|       Somewhat-Bullish|[{0.028626, EVR, ...|
+|Sarawak Premier L...|https://www.prnew...|20240610T090500|[Asia Pacific Gre...|KUCHING, Malaysia...|https://mma.prnew...|      PR Newswire|                   n/a|  www.prnewswire.com|[{0.108179, Finan...|               0.438818|                Bullish|[{0.068112, PRFUF...|
+|Microsoft to help...|https://www.prnew...|20240610T090500|   [Microsoft Corp.]|New program will ...|https://mma.prnew...|      PR Newswire|                   n/a|  www.prnewswire.com| [{1.0, Technology}]|               0.236407|       Somewhat-Bullish|[{0.716023, MSFT,...|
++--------------------+--------------------+---------------+--------------------+--------------------+--------------------+-----------------+----------------------+--------------------+--------------------+-----------------------+-----------------------+--------------------+
+only showing top 20 rows
+[2024-06-11 08:17:08,188] {logging_mixin.py:103} INFO - 
+[2024-06-11 08:17:11,935] {logging_mixin.py:103} INFO - Data inserted into dim_topics successfully!
+[2024-06-11 08:17:11,935] {logging_mixin.py:103} INFO - Yesterday's date: 2024-06-10
+[2024-06-11 08:17:12,637] {logging_mixin.py:103} INFO -                                               new_title new_time_published              new_authors  ... new_overall_sentiment_score new_overall_sentiment_label news_time_id
+0      INR slides amid firm movement in US dollar index    20240610T092900       ['Capital Market']  ...                    0.164851            Somewhat-Bullish            2
+1     Bulgarian election delivers another fragmented...    20240610T092754           ['Al Jazeera']  ...                    0.115218                     Neutral            2
+2     Russian President To Visit North Korea For Fir...    20240610T092740       ['Benzinga Neuro']  ...                    0.035890                     Neutral            2
+3     HDFC Bank hikes fixed deposit rates on select ...    20240610T092536  ['Surbhi Gloria Singh']  ...                    0.250628            Somewhat-Bullish            2
+4     If You'd Invested $1,000 in Super Micro Comput...    20240610T092500           ['Will Healy']  ...                    0.148965                     Neutral            2
+...                                                 ...                ...                      ...  ...                         ...                         ...          ...
+2021  African elephants call each other by unique na...    20240610T160300     ['CHRISTINA LARSON']  ...                    0.018860                     Neutral            2
+2022  Dow Edges Lower; KWESST Micro Systems Shares J...    20240610T160250           ['Avi Kapoor']  ...                   -0.072897                     Neutral            2
+2023                India among Asia's new flying geese    20240610T160243          ['Sonal Varma']  ...                    0.290257            Somewhat-Bullish            2
+2024  INARI MEDICAL, INC.  ( NASDAQ: NARI )  INVESTO...    20240610T160228       ['Globe Newswire']  ...                    0.089498                     Neutral            2
+2025  Uniswap Labs Acquires 'Crypto: The Game' Ahead...    20240610T160111          ['Reza Jafery']  ...                    0.263580            Somewhat-Bullish            2
+
+[2026 rows x 9 columns]
+[2024-06-11 08:17:13,134] {logging_mixin.py:103} INFO - Data inserted into dim_news successfully!
+[2024-06-11 08:17:13,967] {logging_mixin.py:103} INFO -      new_topic_relevance_score              topic_name                                          new_title
+0                     0.158519                Earnings   INR slides amid firm movement in US dollar index
+1                     0.158519      Economy - Monetary   INR slides amid firm movement in US dollar index
+2                     0.360215       Financial Markets   INR slides amid firm movement in US dollar index
+3                          1.0              Technology  Bulgarian election delivers another fragmented...
+4                          1.0      Retail & Wholesale  Russian President To Visit North Korea For Fir...
+...                        ...                     ...                                                ...
+4492                  0.158519        Economy - Fiscal                India among Asia's new flying geese
+4493                  0.929393       Financial Markets                India among Asia's new flying geese
+4494                  0.108179  Mergers & Acquisitions  INARI MEDICAL, INC.  ( NASDAQ: NARI )  INVESTO...
+4495                       1.0           Life Sciences  INARI MEDICAL, INC.  ( NASDAQ: NARI )  INVESTO...
+4496                  0.972756       Financial Markets  INARI MEDICAL, INC.  ( NASDAQ: NARI )  INVESTO...
+
+[4497 rows x 3 columns]
+[2024-06-11 08:17:14,128] {logging_mixin.py:103} INFO -       new_topic_relevance_score         topic_name                                          new_title  topic_id  new_id
+0                      0.158519           Earnings   INR slides amid firm movement in US dollar index         5     151
+1                      0.158519           Earnings   INR slides amid firm movement in US dollar index         5    2158
+2                      0.158519           Earnings   INR slides amid firm movement in US dollar index         5    4165
+3                      0.158519           Earnings   INR slides amid firm movement in US dollar index         5    6172
+4                      0.158519           Earnings   INR slides amid firm movement in US dollar index         5    8179
+...                         ...                ...                                                ...       ...     ...
+56585                  0.972756  Financial Markets  INARI MEDICAL, INC.  ( NASDAQ: NARI )  INVESTO...        10   16205
+56586                  0.972756  Financial Markets  INARI MEDICAL, INC.  ( NASDAQ: NARI )  INVESTO...        10   18212
+56587                  0.972756  Financial Markets  INARI MEDICAL, INC.  ( NASDAQ: NARI )  INVESTO...        10   20219
+56588                  0.972756  Financial Markets  INARI MEDICAL, INC.  ( NASDAQ: NARI )  INVESTO...        10   22245
+56589                  0.972756  Financial Markets  INARI MEDICAL, INC.  ( NASDAQ: NARI )  INVESTO...        10   24271
+
+[56590 rows x 5 columns]
+[2024-06-11 08:17:41,138] {logging_mixin.py:103} INFO - Data inserted into fact_news_topics successfully!
+[2024-06-11 08:17:42,022] {logging_mixin.py:103} INFO -      new_company_relevance_score company_ticket new_company_ticker_sentiment_score new_company_ticker_sentiment_label                                          new_title
+0                       0.666827      FOREX:INR                           0.253801                   Somewhat-Bullish   INR slides amid firm movement in US dollar index
+1                       0.666827      FOREX:USD                           0.253801                   Somewhat-Bullish   INR slides amid firm movement in US dollar index
+2                       0.103331           META                           0.362883                            Bullish  Bulgarian election delivers another fragmented...
+3                       0.092213            GLP                          -0.044674                            Neutral  Russian President To Visit North Korea For Fir...
+4                         0.0699          SBKFF                           0.464013                            Bullish  HDFC Bank hikes fixed deposit rates on select ...
+...                          ...            ...                                ...                                ...                                                ...
+3808                    0.210274             NE                           0.230674                   Somewhat-Bullish  Dow Edges Lower; KWESST Micro Systems Shares J...
+3809                    0.210274           SIFY                           0.018524                            Neutral  Dow Edges Lower; KWESST Micro Systems Shares J...
+3810                    0.414559           NARI                           0.080039                            Neutral  INARI MEDICAL, INC.  ( NASDAQ: NARI )  INVESTO...
+3811                     0.17715     CRYPTO:ETH                           0.210748                   Somewhat-Bullish  Uniswap Labs Acquires 'Crypto: The Game' Ahead...
+3812                    0.629492     CRYPTO:UNI                           0.337156                   Somewhat-Bullish  Uniswap Labs Acquires 'Crypto: The Game' Ahead...
+
+[3813 rows x 5 columns]
+[2024-06-11 08:17:42,266] {logging_mixin.py:103} INFO -        new_company_relevance_score company_ticket new_company_ticker_sentiment_score new_company_ticker_sentiment_label                                          new_title  new_id  company_id
+24                        0.103331           META                           0.362883                            Bullish  Bulgarian election delivers another fragmented...     152      5903.0
+25                        0.103331           META                           0.362883                            Bullish  Bulgarian election delivers another fragmented...     152     25591.0
+26                        0.103331           META                           0.362883                            Bullish  Bulgarian election delivers another fragmented...     152     45297.0
+27                        0.103331           META                           0.362883                            Bullish  Bulgarian election delivers another fragmented...    2159      5903.0
+28                        0.103331           META                           0.362883                            Bullish  Bulgarian election delivers another fragmented...    2159     25591.0
+...                            ...            ...                                ...                                ...                                                ...     ...         ...
+121389                    0.414559           NARI                           0.080039                            Neutral  INARI MEDICAL, INC.  ( NASDAQ: NARI )  INVESTO...   22245     25994.0
+121390                    0.414559           NARI                           0.080039                            Neutral  INARI MEDICAL, INC.  ( NASDAQ: NARI )  INVESTO...   22245     45700.0
+121391                    0.414559           NARI                           0.080039                            Neutral  INARI MEDICAL, INC.  ( NASDAQ: NARI )  INVESTO...   24271      6306.0
+121392                    0.414559           NARI                           0.080039                            Neutral  INARI MEDICAL, INC.  ( NASDAQ: NARI )  INVESTO...   24271     25994.0
+121393                    0.414559           NARI                           0.080039                            Neutral  INARI MEDICAL, INC.  ( NASDAQ: NARI )  INVESTO...   24271     45700.0
+
+[110352 rows x 7 columns]
+[2024-06-11 08:17:44,119] {logging_mixin.py:103} INFO - Data inserted into fact_news_companies successfully!
+[2024-06-11 08:17:45,254] {python.py:118} INFO - Done. Returned value was: None
+[2024-06-11 08:17:45,261] {taskinstance.py:1135} INFO - Marking task as SUCCESS. dag_id=ELT_to_Data_Warehouse, task_id=process_latest_files, execution_date=20240611T081549, start_date=20240611T081627, end_date=20240611T081745
+[2024-06-11 08:17:45,289] {taskinstance.py:1195} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-11 08:17:45,336] {local_task_job.py:118} INFO - Task exited with return code 0

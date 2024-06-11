@@ -23,7 +23,7 @@
         "primary_exchanges": "London",
         "local_open": "08:00",
         "local_close": "16:30",
-        "current_status": "closed",
+        "current_status": "open",
         "notes": ""
     },
     {
@@ -32,7 +32,7 @@
         "primary_exchanges": "XETRA, Berlin, Frankfurt, Munich, Stuttgart",
         "local_open": "08:00",
         "local_close": "20:00",
-        "current_status": "closed",
+        "current_status": "open",
         "notes": ""
     },
     {
@@ -41,7 +41,7 @@
         "primary_exchanges": "Paris",
         "local_open": "09:00",
         "local_close": "17:30",
-        "current_status": "closed",
+        "current_status": "open",
         "notes": ""
     },
     {
@@ -50,7 +50,7 @@
         "primary_exchanges": "Barcelona, Madrid",
         "local_open": "09:00",
         "local_close": "17:30",
-        "current_status": "closed",
+        "current_status": "open",
         "notes": ""
     },
     {
@@ -59,7 +59,7 @@
         "primary_exchanges": "Lisbon",
         "local_open": "08:00",
         "local_close": "16:30",
-        "current_status": "closed",
+        "current_status": "open",
         "notes": ""
     },
     {
@@ -86,7 +86,7 @@
         "primary_exchanges": "Shanghai, Shenzhen",
         "local_open": "09:30",
         "local_close": "15:00",
-        "current_status": "open",
+        "current_status": "closed",
         "notes": "Noon trading break from 11:30 to 13:00 local time"
     },
     {
@@ -95,7 +95,7 @@
         "primary_exchanges": "Hong Kong",
         "local_open": "09:30",
         "local_close": "16:00",
-        "current_status": "open",
+        "current_status": "closed",
         "notes": "Noon trading break from 12:00 to 13:00 local time"
     },
     {
@@ -122,7 +122,7 @@
         "primary_exchanges": "Johannesburg",
         "local_open": "09:00",
         "local_close": "17:00",
-        "current_status": "closed",
+        "current_status": "open",
         "notes": ""
     },
     {
