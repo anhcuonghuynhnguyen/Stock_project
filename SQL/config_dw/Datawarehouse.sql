@@ -46,11 +46,11 @@ CREATE TABLE IF NOT EXISTS dim_topics (
 CREATE TABLE IF NOT EXISTS dim_news (
     new_id INTEGER DEFAULT NEXTVAL('new_id_seq') PRIMARY KEY,
     new_title TEXT NOT NULL,
+    new_url TEXT NOT NULL,
     new_time_published CHAR(15) NOT NULL,
     new_authors VARCHAR[],
     new_summary TEXT,
     new_source TEXT,
-    new_source_domain VARCHAR(255),
     new_overall_sentiment_score DOUBLE NOT NULL,
     new_overall_sentiment_label VARCHAR(255) NOT NULL,
     news_time_id INTEGER,

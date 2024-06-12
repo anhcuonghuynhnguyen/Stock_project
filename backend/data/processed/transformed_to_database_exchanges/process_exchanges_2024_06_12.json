@@ -1,0 +1,26 @@
+{"exchange_region_id":1,"exchange_name":"NASDAQ"}
+{"exchange_region_id":1,"exchange_name":"NYSE"}
+{"exchange_region_id":1,"exchange_name":"AMEX"}
+{"exchange_region_id":1,"exchange_name":"BATS"}
+{"exchange_region_id":2,"exchange_name":"Toronto"}
+{"exchange_region_id":2,"exchange_name":"Toronto Ventures"}
+{"exchange_region_id":3,"exchange_name":"London"}
+{"exchange_region_id":4,"exchange_name":"XETRA"}
+{"exchange_region_id":4,"exchange_name":"Berlin"}
+{"exchange_region_id":4,"exchange_name":"Frankfurt"}
+{"exchange_region_id":4,"exchange_name":"Munich"}
+{"exchange_region_id":4,"exchange_name":"Stuttgart"}
+{"exchange_region_id":5,"exchange_name":"Paris"}
+{"exchange_region_id":6,"exchange_name":"Barcelona"}
+{"exchange_region_id":6,"exchange_name":"Madrid"}
+{"exchange_region_id":7,"exchange_name":"Lisbon"}
+{"exchange_region_id":8,"exchange_name":"Tokyo"}
+{"exchange_region_id":9,"exchange_name":"NSE"}
+{"exchange_region_id":9,"exchange_name":"BSE"}
+{"exchange_region_id":10,"exchange_name":"Shanghai"}
+{"exchange_region_id":10,"exchange_name":"Shenzhen"}
+{"exchange_region_id":11,"exchange_name":"Hong Kong"}
+{"exchange_region_id":12,"exchange_name":"Sao Paolo"}
+{"exchange_region_id":13,"exchange_name":"Mexico"}
+{"exchange_region_id":14,"exchange_name":"Johannesburg"}
+{"exchange_region_id":15,"exchange_name":"Global"}

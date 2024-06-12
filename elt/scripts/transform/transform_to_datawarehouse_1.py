@@ -66,6 +66,7 @@ def process(parquet_file_path):
     print("Data has been successfully inserted into dim_companies in DuckDB!")
 
 if __name__ == "__main__":
+    # Get the Parquet file path from command-line arguments
     parquet_file_path = sys.argv[1]
-    # parquet_file_path = "datalake/companies/load_db_to_dl_2024_06_11.parquet"
+    # Process the Parquet file and insert data into DuckDB
     process(parquet_file_path)

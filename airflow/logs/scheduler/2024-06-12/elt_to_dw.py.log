@@ -1,0 +1,320 @@
+[2024-06-12 05:58:36,833] {scheduler_job.py:181} INFO - Started process (PID=21030) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:58:36,835] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 05:58:36,835] {logging_mixin.py:103} INFO - [2024-06-12 05:58:36,835] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:58:37,868] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 05:58:37,888] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:58:37,889] {logging_mixin.py:103} INFO - [2024-06-12 05:58:37,889] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 05:58:37,914] {logging_mixin.py:103} INFO - [2024-06-12 05:58:37,914] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 05:58:37,949] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 1.120 seconds
+[2024-06-12 05:58:41,389] {scheduler_job.py:181} INFO - Started process (PID=21258) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:58:41,390] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 05:58:41,391] {logging_mixin.py:103} INFO - [2024-06-12 05:58:41,391] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:58:42,136] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 05:58:42,142] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:58:42,143] {logging_mixin.py:103} INFO - [2024-06-12 05:58:42,143] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 05:58:42,169] {logging_mixin.py:103} INFO - [2024-06-12 05:58:42,169] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 05:58:42,180] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.796 seconds
+[2024-06-12 05:58:45,521] {scheduler_job.py:181} INFO - Started process (PID=21298) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:58:45,522] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 05:58:45,523] {logging_mixin.py:103} INFO - [2024-06-12 05:58:45,523] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:58:46,303] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 05:58:46,309] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:58:46,310] {logging_mixin.py:103} INFO - [2024-06-12 05:58:46,310] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 05:58:46,337] {logging_mixin.py:103} INFO - [2024-06-12 05:58:46,336] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 05:58:46,347] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.830 seconds
+[2024-06-12 05:58:49,853] {scheduler_job.py:181} INFO - Started process (PID=21361) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:58:49,855] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 05:58:49,856] {logging_mixin.py:103} INFO - [2024-06-12 05:58:49,855] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:58:51,828] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 05:58:51,833] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:58:51,834] {logging_mixin.py:103} INFO - [2024-06-12 05:58:51,834] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 05:58:51,914] {logging_mixin.py:103} INFO - [2024-06-12 05:58:51,914] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 05:58:51,933] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 2.100 seconds
+[2024-06-12 05:58:55,178] {scheduler_job.py:181} INFO - Started process (PID=21406) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:58:55,180] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 05:58:55,181] {logging_mixin.py:103} INFO - [2024-06-12 05:58:55,181] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:58:56,921] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 05:58:56,941] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:58:56,943] {logging_mixin.py:103} INFO - [2024-06-12 05:58:56,942] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 05:58:57,009] {logging_mixin.py:103} INFO - [2024-06-12 05:58:57,009] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 05:58:57,036] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 1.878 seconds
+[2024-06-12 05:59:00,581] {scheduler_job.py:181} INFO - Started process (PID=21413) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:00,582] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 05:59:00,583] {logging_mixin.py:103} INFO - [2024-06-12 05:59:00,583] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:01,111] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 05:59:01,115] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:01,116] {logging_mixin.py:103} INFO - [2024-06-12 05:59:01,116] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 05:59:01,133] {logging_mixin.py:103} INFO - [2024-06-12 05:59:01,133] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 05:59:01,141] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.563 seconds
+[2024-06-12 05:59:04,498] {scheduler_job.py:181} INFO - Started process (PID=21418) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:04,500] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 05:59:04,500] {logging_mixin.py:103} INFO - [2024-06-12 05:59:04,500] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:05,064] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 05:59:05,068] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:05,069] {logging_mixin.py:103} INFO - [2024-06-12 05:59:05,069] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 05:59:05,087] {logging_mixin.py:103} INFO - [2024-06-12 05:59:05,087] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 05:59:05,095] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.600 seconds
+[2024-06-12 05:59:08,266] {scheduler_job.py:181} INFO - Started process (PID=21425) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:08,267] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 05:59:08,267] {logging_mixin.py:103} INFO - [2024-06-12 05:59:08,267] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:08,813] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 05:59:08,816] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:08,817] {logging_mixin.py:103} INFO - [2024-06-12 05:59:08,817] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 05:59:08,835] {logging_mixin.py:103} INFO - [2024-06-12 05:59:08,835] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 05:59:08,846] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.584 seconds
+[2024-06-12 05:59:12,180] {scheduler_job.py:181} INFO - Started process (PID=21432) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:12,182] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 05:59:12,183] {logging_mixin.py:103} INFO - [2024-06-12 05:59:12,182] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:12,797] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 05:59:12,802] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:12,803] {logging_mixin.py:103} INFO - [2024-06-12 05:59:12,803] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 05:59:12,830] {logging_mixin.py:103} INFO - [2024-06-12 05:59:12,830] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 05:59:12,847] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.671 seconds
+[2024-06-12 05:59:16,201] {scheduler_job.py:181} INFO - Started process (PID=21475) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:16,202] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 05:59:16,203] {logging_mixin.py:103} INFO - [2024-06-12 05:59:16,203] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:16,764] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 05:59:16,778] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:16,779] {logging_mixin.py:103} INFO - [2024-06-12 05:59:16,779] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 05:59:16,809] {logging_mixin.py:103} INFO - [2024-06-12 05:59:16,808] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 05:59:16,825] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.627 seconds
+[2024-06-12 05:59:20,250] {scheduler_job.py:181} INFO - Started process (PID=21518) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:20,252] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 05:59:20,254] {logging_mixin.py:103} INFO - [2024-06-12 05:59:20,254] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:21,108] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 05:59:21,112] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:21,113] {logging_mixin.py:103} INFO - [2024-06-12 05:59:21,113] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 05:59:21,131] {logging_mixin.py:103} INFO - [2024-06-12 05:59:21,131] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 05:59:21,144] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.897 seconds
+[2024-06-12 05:59:24,250] {scheduler_job.py:181} INFO - Started process (PID=21543) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:24,254] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 05:59:24,256] {logging_mixin.py:103} INFO - [2024-06-12 05:59:24,256] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:24,822] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 05:59:24,826] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:24,827] {logging_mixin.py:103} INFO - [2024-06-12 05:59:24,826] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 05:59:24,844] {logging_mixin.py:103} INFO - [2024-06-12 05:59:24,844] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 05:59:24,855] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.610 seconds
+[2024-06-12 05:59:28,261] {scheduler_job.py:181} INFO - Started process (PID=21572) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:28,262] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 05:59:28,263] {logging_mixin.py:103} INFO - [2024-06-12 05:59:28,263] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:28,820] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 05:59:28,823] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:28,824] {logging_mixin.py:103} INFO - [2024-06-12 05:59:28,824] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 05:59:28,848] {logging_mixin.py:103} INFO - [2024-06-12 05:59:28,848] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 05:59:28,903] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.645 seconds
+[2024-06-12 05:59:41,131] {scheduler_job.py:181} INFO - Started process (PID=21722) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:41,132] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 05:59:41,133] {logging_mixin.py:103} INFO - [2024-06-12 05:59:41,133] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:41,695] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 05:59:41,699] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:41,700] {logging_mixin.py:103} INFO - [2024-06-12 05:59:41,700] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 05:59:41,719] {logging_mixin.py:103} INFO - [2024-06-12 05:59:41,719] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 05:59:41,732] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.605 seconds
+[2024-06-12 05:59:48,378] {scheduler_job.py:181} INFO - Started process (PID=21798) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:48,380] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 05:59:48,383] {logging_mixin.py:103} INFO - [2024-06-12 05:59:48,383] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:49,154] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 05:59:49,160] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 05:59:49,161] {logging_mixin.py:103} INFO - [2024-06-12 05:59:49,161] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 05:59:49,186] {logging_mixin.py:103} INFO - [2024-06-12 05:59:49,186] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 05:59:49,203] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.832 seconds
+[2024-06-12 06:00:03,769] {scheduler_job.py:181} INFO - Started process (PID=21960) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:03,771] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 06:00:03,772] {logging_mixin.py:103} INFO - [2024-06-12 06:00:03,772] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:04,350] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 06:00:04,354] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:04,354] {logging_mixin.py:103} INFO - [2024-06-12 06:00:04,354] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 06:00:04,376] {logging_mixin.py:103} INFO - [2024-06-12 06:00:04,376] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 06:00:04,395] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.630 seconds
+[2024-06-12 06:00:06,871] {scheduler_job.py:181} INFO - Started process (PID=21984) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:06,873] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 06:00:06,874] {logging_mixin.py:103} INFO - [2024-06-12 06:00:06,874] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:07,417] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 06:00:07,421] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:07,422] {logging_mixin.py:103} INFO - [2024-06-12 06:00:07,422] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 06:00:07,440] {logging_mixin.py:103} INFO - [2024-06-12 06:00:07,440] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 06:00:07,454] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.588 seconds
+[2024-06-12 06:00:09,727] {scheduler_job.py:181} INFO - Started process (PID=22027) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:09,729] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 06:00:09,730] {logging_mixin.py:103} INFO - [2024-06-12 06:00:09,730] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:10,309] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 06:00:10,313] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:10,314] {logging_mixin.py:103} INFO - [2024-06-12 06:00:10,313] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 06:00:10,332] {logging_mixin.py:103} INFO - [2024-06-12 06:00:10,332] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 06:00:10,344] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.621 seconds
+[2024-06-12 06:00:12,692] {scheduler_job.py:181} INFO - Started process (PID=22032) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:12,693] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 06:00:12,695] {logging_mixin.py:103} INFO - [2024-06-12 06:00:12,694] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:13,326] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 06:00:13,330] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:13,331] {logging_mixin.py:103} INFO - [2024-06-12 06:00:13,331] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 06:00:13,360] {logging_mixin.py:103} INFO - [2024-06-12 06:00:13,360] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 06:00:13,380] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.692 seconds
+[2024-06-12 06:00:15,831] {scheduler_job.py:181} INFO - Started process (PID=22077) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:15,832] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 06:00:15,833] {logging_mixin.py:103} INFO - [2024-06-12 06:00:15,833] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:16,380] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 06:00:16,384] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:16,385] {logging_mixin.py:103} INFO - [2024-06-12 06:00:16,385] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 06:00:16,409] {logging_mixin.py:103} INFO - [2024-06-12 06:00:16,408] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 06:00:16,422] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.595 seconds
+[2024-06-12 06:00:17,750] {scheduler_job.py:181} INFO - Started process (PID=22082) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:17,752] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 06:00:17,753] {logging_mixin.py:103} INFO - [2024-06-12 06:00:17,753] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:18,298] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 06:00:18,301] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:18,302] {logging_mixin.py:103} INFO - [2024-06-12 06:00:18,302] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 06:00:18,320] {logging_mixin.py:103} INFO - [2024-06-12 06:00:18,320] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 06:00:18,331] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.586 seconds
+[2024-06-12 06:00:20,925] {scheduler_job.py:181} INFO - Started process (PID=22128) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:20,927] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 06:00:20,928] {logging_mixin.py:103} INFO - [2024-06-12 06:00:20,928] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:21,796] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 06:00:21,802] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:21,803] {logging_mixin.py:103} INFO - [2024-06-12 06:00:21,803] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 06:00:21,832] {logging_mixin.py:103} INFO - [2024-06-12 06:00:21,832] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 06:00:21,849] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.931 seconds
+[2024-06-12 06:00:23,910] {scheduler_job.py:181} INFO - Started process (PID=22152) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:23,912] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 06:00:23,916] {logging_mixin.py:103} INFO - [2024-06-12 06:00:23,916] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:24,549] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 06:00:24,553] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:24,554] {logging_mixin.py:103} INFO - [2024-06-12 06:00:24,553] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 06:00:24,572] {logging_mixin.py:103} INFO - [2024-06-12 06:00:24,572] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 06:00:24,583] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.690 seconds
+[2024-06-12 06:00:27,007] {scheduler_job.py:181} INFO - Started process (PID=22175) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:27,010] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 06:00:27,012] {logging_mixin.py:103} INFO - [2024-06-12 06:00:27,011] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:27,545] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 06:00:27,549] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:27,550] {logging_mixin.py:103} INFO - [2024-06-12 06:00:27,550] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 06:00:27,567] {logging_mixin.py:103} INFO - [2024-06-12 06:00:27,567] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 06:00:27,579] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.576 seconds
+[2024-06-12 06:00:29,984] {scheduler_job.py:181} INFO - Started process (PID=22220) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:29,986] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 06:00:29,987] {logging_mixin.py:103} INFO - [2024-06-12 06:00:29,987] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:30,542] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 06:00:30,546] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:30,547] {logging_mixin.py:103} INFO - [2024-06-12 06:00:30,547] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 06:00:30,564] {logging_mixin.py:103} INFO - [2024-06-12 06:00:30,564] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 06:00:30,577] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.598 seconds
+[2024-06-12 06:00:32,653] {scheduler_job.py:181} INFO - Started process (PID=22225) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:32,656] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 06:00:32,657] {logging_mixin.py:103} INFO - [2024-06-12 06:00:32,657] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:33,197] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 06:00:33,200] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:33,201] {logging_mixin.py:103} INFO - [2024-06-12 06:00:33,201] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 06:00:33,218] {logging_mixin.py:103} INFO - [2024-06-12 06:00:33,218] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 06:00:33,230] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.581 seconds
+[2024-06-12 06:00:35,366] {scheduler_job.py:181} INFO - Started process (PID=22232) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:35,369] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 06:00:35,370] {logging_mixin.py:103} INFO - [2024-06-12 06:00:35,370] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:35,923] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 06:00:35,927] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:35,928] {logging_mixin.py:103} INFO - [2024-06-12 06:00:35,928] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 06:00:35,946] {logging_mixin.py:103} INFO - [2024-06-12 06:00:35,945] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 06:00:35,958] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.596 seconds
+[2024-06-12 06:00:38,318] {scheduler_job.py:181} INFO - Started process (PID=22238) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:38,322] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 06:00:38,322] {logging_mixin.py:103} INFO - [2024-06-12 06:00:38,322] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:38,887] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 06:00:38,891] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:38,892] {logging_mixin.py:103} INFO - [2024-06-12 06:00:38,892] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 06:00:38,910] {logging_mixin.py:103} INFO - [2024-06-12 06:00:38,909] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 06:00:38,923] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.609 seconds
+[2024-06-12 06:00:41,473] {scheduler_job.py:181} INFO - Started process (PID=22245) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:41,480] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 06:00:41,482] {logging_mixin.py:103} INFO - [2024-06-12 06:00:41,481] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:42,023] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 06:00:42,027] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:42,028] {logging_mixin.py:103} INFO - [2024-06-12 06:00:42,027] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 06:00:42,044] {logging_mixin.py:103} INFO - [2024-06-12 06:00:42,044] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 06:00:42,056] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.587 seconds
+[2024-06-12 06:00:44,426] {scheduler_job.py:181} INFO - Started process (PID=22250) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:44,428] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 06:00:44,429] {logging_mixin.py:103} INFO - [2024-06-12 06:00:44,429] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:45,009] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 06:00:45,013] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:45,014] {logging_mixin.py:103} INFO - [2024-06-12 06:00:45,014] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 06:00:45,031] {logging_mixin.py:103} INFO - [2024-06-12 06:00:45,031] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 06:00:45,042] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.620 seconds
+[2024-06-12 06:00:47,529] {scheduler_job.py:181} INFO - Started process (PID=22257) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:47,531] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 06:00:47,532] {logging_mixin.py:103} INFO - [2024-06-12 06:00:47,532] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:48,079] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 06:00:48,083] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:48,084] {logging_mixin.py:103} INFO - [2024-06-12 06:00:48,084] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 06:00:48,102] {logging_mixin.py:103} INFO - [2024-06-12 06:00:48,101] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 06:00:48,113] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.589 seconds
+[2024-06-12 06:00:49,478] {scheduler_job.py:181} INFO - Started process (PID=22262) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:49,480] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 06:00:49,481] {logging_mixin.py:103} INFO - [2024-06-12 06:00:49,481] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:50,260] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 06:00:50,266] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:50,267] {logging_mixin.py:103} INFO - [2024-06-12 06:00:50,267] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 06:00:50,293] {logging_mixin.py:103} INFO - [2024-06-12 06:00:50,293] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 06:00:50,310] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.837 seconds
+[2024-06-12 06:00:52,633] {scheduler_job.py:181} INFO - Started process (PID=22312) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:52,635] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 06:00:52,636] {logging_mixin.py:103} INFO - [2024-06-12 06:00:52,636] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:53,400] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 06:00:53,406] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:53,407] {logging_mixin.py:103} INFO - [2024-06-12 06:00:53,407] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 06:00:53,435] {logging_mixin.py:103} INFO - [2024-06-12 06:00:53,435] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 06:00:53,453] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.824 seconds
+[2024-06-12 06:00:55,702] {scheduler_job.py:181} INFO - Started process (PID=22336) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:55,703] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 06:00:55,704] {logging_mixin.py:103} INFO - [2024-06-12 06:00:55,704] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:56,244] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 06:00:56,247] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:56,248] {logging_mixin.py:103} INFO - [2024-06-12 06:00:56,248] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 06:00:56,265] {logging_mixin.py:103} INFO - [2024-06-12 06:00:56,265] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 06:00:56,277] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.580 seconds
+[2024-06-12 06:00:58,607] {scheduler_job.py:181} INFO - Started process (PID=22360) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:58,611] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 06:00:58,612] {logging_mixin.py:103} INFO - [2024-06-12 06:00:58,612] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:59,139] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 06:00:59,143] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:00:59,144] {logging_mixin.py:103} INFO - [2024-06-12 06:00:59,143] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 06:00:59,161] {logging_mixin.py:103} INFO - [2024-06-12 06:00:59,161] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 06:00:59,172] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.569 seconds
+[2024-06-12 06:01:01,727] {scheduler_job.py:181} INFO - Started process (PID=22403) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:01:01,728] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 06:01:01,729] {logging_mixin.py:103} INFO - [2024-06-12 06:01:01,729] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:01:02,283] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 06:01:02,287] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:01:02,288] {logging_mixin.py:103} INFO - [2024-06-12 06:01:02,288] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 06:01:02,307] {logging_mixin.py:103} INFO - [2024-06-12 06:01:02,307] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 06:01:02,319] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.597 seconds
+[2024-06-12 06:01:03,663] {scheduler_job.py:181} INFO - Started process (PID=22408) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:01:03,667] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 06:01:03,668] {logging_mixin.py:103} INFO - [2024-06-12 06:01:03,668] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:01:04,196] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 06:01:04,199] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:01:04,200] {logging_mixin.py:103} INFO - [2024-06-12 06:01:04,200] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 06:01:04,223] {logging_mixin.py:103} INFO - [2024-06-12 06:01:04,223] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 06:01:04,242] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.583 seconds
+[2024-06-12 06:01:06,793] {scheduler_job.py:181} INFO - Started process (PID=22439) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:01:06,795] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 06:01:06,795] {logging_mixin.py:103} INFO - [2024-06-12 06:01:06,795] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:01:07,371] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 06:01:07,375] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:01:07,376] {logging_mixin.py:103} INFO - [2024-06-12 06:01:07,375] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 06:01:07,394] {logging_mixin.py:103} INFO - [2024-06-12 06:01:07,394] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 06:01:07,405] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.615 seconds
+[2024-06-12 06:01:09,774] {scheduler_job.py:181} INFO - Started process (PID=22658) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:01:09,775] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 06:01:09,776] {logging_mixin.py:103} INFO - [2024-06-12 06:01:09,776] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:01:10,307] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 06:01:10,311] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:01:10,312] {logging_mixin.py:103} INFO - [2024-06-12 06:01:10,312] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 06:01:10,329] {logging_mixin.py:103} INFO - [2024-06-12 06:01:10,328] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 06:01:10,340] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.571 seconds
+[2024-06-12 06:01:12,902] {scheduler_job.py:181} INFO - Started process (PID=22673) to work on /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:01:12,907] {scheduler_job.py:629} INFO - Processing file /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py for tasks to queue
+[2024-06-12 06:01:12,909] {logging_mixin.py:103} INFO - [2024-06-12 06:01:12,908] {dagbag.py:440} INFO - Filling up the DagBag from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:01:13,614] {logging_mixin.py:103} WARNING - /home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/utils/decorators.py:94 DeprecationWarning: provide_context is deprecated as of 2.0 and is no longer required
+[2024-06-12 06:01:13,618] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['ELT_to_Data_Warehouse']) retrieved from /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py
+[2024-06-12 06:01:13,619] {logging_mixin.py:103} INFO - [2024-06-12 06:01:13,618] {dag.py:1813} INFO - Sync 1 DAGs
+[2024-06-12 06:01:13,644] {logging_mixin.py:103} INFO - [2024-06-12 06:01:13,644] {dag.py:2266} INFO - Setting next_dagrun for ELT_to_Data_Warehouse to 2024-06-12 01:01:00+00:00
+[2024-06-12 06:01:13,659] {scheduler_job.py:189} INFO - Processing /home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py took 0.762 seconds

@@ -19221,4 +19221,98 @@ File Path                                                                       
 [2024-06-11 10:00:54,050] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-11 09:55:54.050824+00:00
 [2024-06-11 10:01:04,248] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
 [2024-06-11 10:01:04,248] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-11 09:56:04.248916+00:00
-                                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                            [2024-06-12 05:58:36,689] {dag_processing.py:590} INFO - Processing files using up to 1 processes at a time 
+[2024-06-12 05:58:36,703] {dag_processing.py:591} INFO - Process each file at most once every 0 seconds
+[2024-06-12 05:58:36,703] {dag_processing.py:592} INFO - Checking for new files in /home/anhcu/Project/Stock_project/airflow/dags every 300 seconds
+[2024-06-12 05:58:36,703] {dag_processing.py:726} INFO - Searching for files in /home/anhcu/Project/Stock_project/airflow/dags
+[2024-06-12 05:58:36,771] {dag_processing.py:729} INFO - There are 3 files in /home/anhcu/Project/Stock_project/airflow/dags
+[2024-06-12 05:58:36,814] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-12 05:58:36,814] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-12 05:53:36.814767+00:00
+[2024-06-12 05:58:38,031] {dag_processing.py:833} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/anhcu/Project/Stock_project/airflow/dags/etl_to_db.py                                                                                 0           0
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py                           0           0
+/home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py                                                                                 1           0  1.21s           2024-06-12T05:58:38
+================================================================================
+[2024-06-12 05:58:47,231] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-12 05:58:47,231] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-12 05:53:47.231913+00:00
+[2024-06-12 05:58:57,970] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-12 05:58:57,973] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-12 05:53:57.973249+00:00
+[2024-06-12 05:59:08,246] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-12 05:59:08,247] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-12 05:54:08.246995+00:00
+[2024-06-12 05:59:08,860] {dag_processing.py:833} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py                           0           0  0.10s           2024-06-12T05:59:07
+/home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py                                                                                 1           0  0.61s           2024-06-12T05:59:08
+/home/anhcu/Project/Stock_project/airflow/dags/etl_to_db.py                                                                                 1           0  0.10s           2024-06-12T05:59:06
+================================================================================
+[2024-06-12 05:59:19,057] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-12 05:59:19,060] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-12 05:54:19.060670+00:00
+[2024-06-12 05:59:29,982] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-12 05:59:29,983] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-12 05:54:29.983068+00:00
+[2024-06-12 05:59:41,112] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-12 05:59:41,113] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-12 05:54:41.113146+00:00
+[2024-06-12 05:59:41,827] {dag_processing.py:833} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py                           0           0  0.10s           2024-06-12T05:59:36
+/home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py                                                                                 1           0  0.71s           2024-06-12T05:59:41
+/home/anhcu/Project/Stock_project/airflow/dags/etl_to_db.py                                                                                 1           0  0.10s           2024-06-12T05:59:30
+================================================================================
+[2024-06-12 05:59:54,564] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-12 05:59:54,565] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-12 05:54:54.565270+00:00
+[2024-06-12 06:00:04,788] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-12 06:00:04,788] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-12 05:55:04.788713+00:00
+[2024-06-12 06:00:11,890] {dag_processing.py:833} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py                           0           0  0.10s           2024-06-12T06:00:11
+/home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py                                                                                 1           0  0.71s           2024-06-12T06:00:10
+/home/anhcu/Project/Stock_project/airflow/dags/etl_to_db.py                                                                                 1           0  0.11s           2024-06-12T06:00:10
+================================================================================
+[2024-06-12 06:00:15,806] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-12 06:00:15,806] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-12 05:55:15.806665+00:00
+[2024-06-12 06:00:25,961] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-12 06:00:25,962] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-12 05:55:25.962329+00:00
+[2024-06-12 06:00:36,391] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-12 06:00:36,392] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-12 05:55:36.392350+00:00
+[2024-06-12 06:00:42,066] {dag_processing.py:833} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py                           0           0  0.10s           2024-06-12T06:00:40
+/home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py                                                                                 1           0  0.61s           2024-06-12T06:00:42
+/home/anhcu/Project/Stock_project/airflow/dags/etl_to_db.py                                                                                 1           0  0.10s           2024-06-12T06:00:39
+================================================================================
+[2024-06-12 06:00:46,480] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-12 06:00:46,480] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-12 05:55:46.480863+00:00
+[2024-06-12 06:00:56,721] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-12 06:00:56,722] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-12 05:55:56.722410+00:00
+[2024-06-12 06:01:06,768] {dag_processing.py:1062} INFO - Finding 'running' jobs without a recent heartbeat
+[2024-06-12 06:01:06,768] {dag_processing.py:1066} INFO - Failing jobs without heartbeat after 2024-06-12 05:56:06.768846+00:00
+[2024-06-12 06:01:13,684] {dag_processing.py:833} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/home/anhcu/Project/Stock_project/airflow_venv/lib/python3.8/site-packages/airflow/example_dags/subdags/subdag.py                           0           0  0.10s           2024-06-12T06:01:11
+/home/anhcu/Project/Stock_project/airflow/dags/elt_to_dw.py                                                                                 1           0  0.81s           2024-06-12T06:01:13
+/home/anhcu/Project/Stock_project/airflow/dags/etl_to_db.py                                                                                 1           0  0.10s           2024-06-12T06:01:10
+================================================================================

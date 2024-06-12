@@ -3,6 +3,13 @@ import json
 import os
 
 def get_latest_file_in_directory(directory, extension):
+    """
+    Get the latest file in a directory with a specific extension.
+    
+    :param directory: Directory to search for files.
+    :param extension: File extension to look for.
+    :return: Path to the latest file or None if no files are found.
+    """
     files = [os.path.join(directory, f) for f in os.listdir(directory) if f.endswith(extension)]
     if not files:
         return None
@@ -10,6 +17,14 @@ def get_latest_file_in_directory(directory, extension):
     return latest_file
 
 def insert_data_from_json(file_path, table_name, columns, conflict_columns):
+    """
+    Insert data from a JSON file into a PostgreSQL table.
+    
+    :param file_path: Path to the JSON file.
+    :param table_name: Name of the PostgreSQL table.
+    :param columns: List of columns to insert data into.
+    :param conflict_columns: List of columns to check for conflicts.
+    """
     with open(file_path, 'r') as file:
         data = [json.loads(line) for line in file]
 
@@ -45,9 +60,17 @@ def insert_data_from_json(file_path, table_name, columns, conflict_columns):
     print(f"Inserted data into {table_name}")
 
 if __name__ == "__main__":
-    insert_data_from_json(
-        get_latest_file_in_directory('/home/anhcu/Project/Stock_project/backend/data/processed/transformed_to_database_exchanges','.json'),
-        'exchanges',
-        ['exchange_region_id', 'exchange_name'],
-        ['exchange_name']
-    )
+    # Define directory and table information
+    directory = '/home/anhcu/Project/Stock_project/backend/data/processed/transformed_to_database_exchanges'
+    table_name = 'exchanges'
+    columns = ['exchange_region_id', 'exchange_name']
+    conflict_columns = ['exchange_name']
+    
+    # Get the latest file in the directory
+    latest_file = get_latest_file_in_directory(directory, '.json')
+    
+    # Insert data from the latest JSON file into the database
+    if latest_file:
+        insert_data_from_json(latest_file, table_name, columns, conflict_columns)
+    else:
+        print("No file found to insert data.")

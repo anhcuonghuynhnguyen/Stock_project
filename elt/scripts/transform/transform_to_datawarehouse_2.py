@@ -9,7 +9,7 @@ def process(parquet_file_path):
     spark = SparkSession.builder \
         .appName("Insert Parquet into DuckDB (dim_times, fact_candles)") \
         .config("spark.sql.caseSensitive", "true") \
-        .getOrCreate()	
+        .getOrCreate()  
     
     # Read Parquet file into Spark DataFrame
     df_spark = spark.read.parquet(parquet_file_path)
@@ -118,6 +118,7 @@ def process(parquet_file_path):
     spark.stop()
 
 if __name__ == "__main__":
+    # Get the Parquet file path from command-line arguments
     parquet_file_path = sys.argv[1]
-    # parquet_file_path = "datalake/ohlcs/crawl_ohlcs_2024_06_10.parquet"
+    # Process the Parquet file and insert data into DuckDB
     process(parquet_file_path)

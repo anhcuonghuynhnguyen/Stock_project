@@ -2,22 +2,26 @@ import requests
 import json
 import datetime
 
-function = "MARKET_STATUS"
-# 8VRGCBIF91MIK8OE
-apiKey = "8VRGCBIF91MIK8OE"
+# Define function and API key for Alpha Vantage API
+FUNCTION = "MARKET_STATUS"
+API_KEY = "8VRGCBIF91MIK8OE"
 
-url = f'https://www.alphavantage.co/query?function={function}&apikey={apiKey}'
-r = requests.get(url)
-data = r.json()["markets"]
-# Serializing json
+# Construct the API URL
+url = f'https://www.alphavantage.co/query?function={FUNCTION}&apikey={API_KEY}'
+response = requests.get(url)
+data = response.json()["markets"]
+
+# Serialize the market data to JSON
 json_object = json.dumps(data, indent=4)
 
-# Lấy date của ngày thực hiện truy xuất dữ liệu
+# Get the current date for filename
 date = datetime.date.today().strftime("%Y_%m_%d")
-path = r"/home/anhcu/Project/Stock_project/backend/data/raw/markets/crawl_markets_" + f"{date}.json"
-# Writing
+path = f"/home/anhcu/Project/Stock_project/backend/data/raw/markets/crawl_markets_{date}.json"
+
+# Write the JSON data to a file
 with open(path, "w") as outfile:
     outfile.write(json_object)
 
-print(f"The process of extracting {len(data)} regions and exchanges has been completed")
-print(f"Saving at {path}")
+# Print completion messages
+print(f"Extracted {len(data)} regions and exchanges.")
+print(f"Data saved to {path}")

@@ -1,13 +1,12 @@
 import sys
 import duckdb
-import pyspark
 import pandas as pd
 from pyspark.sql import SparkSession
 from datetime import datetime, timedelta
 from pyspark.sql.functions import col, explode
 
 def process(parquet_file_path):
-# Create SparkSession
+    # Create SparkSession
     spark = SparkSession.builder \
         .appName("Insert Parquet into DuckDB (dim_times, dim_topics, dim_news, fact_news_topics, fact_news_companies)") \
         .config("spark.sql.caseSensitive", "true") \
@@ -18,14 +17,14 @@ def process(parquet_file_path):
     conn = duckdb.connect(database=database_path)
     
     # Read Parquet file into Spark DataFrame
-    df_pandas = spark.read.parquet(parquet_file_path)
+    df_spark = spark.read.parquet(parquet_file_path)
     
     # Display schema and a few rows of data
-    df_pandas.printSchema()
-    df_pandas.show()
+    df_spark.printSchema()
+    df_spark.show()
     
     # Step 1: Create DataFrame for dim_topics and insert new topics if they do not exist
-    df_topics = df_pandas.select(explode(col("topics")).alias("topic")) \
+    df_topics = df_spark.select(explode(col("topics")).alias("topic")) \
         .select("topic.topic").distinct().withColumnRenamed("topic", "topic_name")
     
     # Convert Spark DataFrame to Pandas DataFrame
@@ -62,43 +61,43 @@ def process(parquet_file_path):
     ''').fetchdf()
 
     # Step 3: Create DataFrame for dim_news
-    df_news = df_pandas.select(
+    df_news = df_spark.select(
         col("title").alias("new_title"),
+        col("url").alias("new_url"),
         col("time_published").alias("new_time_published"),
         col("authors").alias("new_authors"),
         col("summary").alias("new_summary"),
         col("source").alias("new_source"),
-        col("source_domain").alias("new_source_domain"),
         col("overall_sentiment_score").alias("new_overall_sentiment_score"),
         col("overall_sentiment_label").alias("new_overall_sentiment_label")
     )
     
     # Add news_time_id to DataFrame
-    df_news = df_news.toPandas()
-    df_news["new_authors"] = df_news["new_authors"].apply(str)
-    df_news['news_time_id'] = id_time_df['time_id'][0]
-    print(df_news)
+    df_news_pd = df_news.toPandas()
+    df_news_pd["new_authors"] = df_news_pd["new_authors"].apply(str)
+    df_news_pd['news_time_id'] = id_time_df['time_id'][0]
+    print(df_news_pd)
 
     # Step 4: Insert DataFrame dim_news into dim_news table
-    conn.register('df_news', df_news)
+    conn.register('df_news', df_news_pd)
     conn.execute('''
         INSERT INTO dim_news (
             new_title,
+            new_url,
             new_time_published,
             new_authors,
             new_summary,
             new_source,
-            new_source_domain,
             new_overall_sentiment_score,
             new_overall_sentiment_label,
             news_time_id
         ) SELECT 
             new_title,
+            new_url,
             new_time_published,
             new_authors,
             new_summary,
             new_source,
-            new_source_domain,
             new_overall_sentiment_score,
             new_overall_sentiment_label,
             news_time_id
@@ -107,7 +106,7 @@ def process(parquet_file_path):
     print("Data inserted into dim_news successfully!")
     
     # Step 5: Create DataFrame for fact_news_topics
-    df_fact_news_topics = df_pandas.select(
+    df_fact_news_topics = df_spark.select(
         explode(col("topics")).alias("topic"),
         col("title").alias("new_title")
     ).select(
@@ -119,16 +118,12 @@ def process(parquet_file_path):
     print(df_fact_news_topics_pd)
     
     # Get corresponding topic_id from dim_topics
-    id_topic_df = conn.execute(f'''
-        SELECT * FROM dim_topics
-    ''').fetchdf()
+    id_topic_df = conn.execute('SELECT * FROM dim_topics').fetchdf()
     df_fact_news_topics_pd = df_fact_news_topics_pd.merge(id_topic_df, on='topic_name', how='left')
     df_fact_news_topics_pd = df_fact_news_topics_pd[df_fact_news_topics_pd['topic_id'].notnull()]
     
     # Get corresponding new_id from dim_news
-    id_new_df = conn.execute(f'''
-        SELECT new_id, new_title FROM dim_news
-    ''').fetchdf()
+    id_new_df = conn.execute('SELECT new_id, new_title FROM dim_news').fetchdf()
     df_fact_news_topics_pd = df_fact_news_topics_pd.merge(id_new_df, on='new_title', how='left')
     df_fact_news_topics_pd = df_fact_news_topics_pd[df_fact_news_topics_pd['new_id'].notnull()]
     print(df_fact_news_topics_pd)
@@ -149,7 +144,7 @@ def process(parquet_file_path):
     print("Data inserted into fact_news_topics successfully!")
     
     # Step 6: Create DataFrame for fact_news_companies
-    df_fact_news_companies = df_pandas.select(
+    df_fact_news_companies = df_spark.select(
         explode(col("ticker_sentiment")).alias("ticker_sentiment"),
         col("title").alias("new_title")
     ).select(
@@ -167,9 +162,19 @@ def process(parquet_file_path):
     df_fact_news_companies_pd = df_fact_news_companies_pd[df_fact_news_companies_pd['new_id'].notnull()]
     
     # Get corresponding company_id from dim_companies
-    id_company_df = conn.execute(f'''
-        SELECT company_id, company_ticket FROM dim_companies
-    ''').fetchdf()
+    query = """
+        SELECT company_id, company_ticket, company_time_stamp
+        FROM (
+            SELECT 
+                company_id, 
+                company_ticket, 
+                company_time_stamp,
+                ROW_NUMBER() OVER (PARTITION BY company_ticket ORDER BY company_time_stamp DESC) as row_num
+            FROM dim_companies
+        ) subquery
+        WHERE row_num = 1;
+        """
+    id_company_df = conn.execute(query).fetchdf()
     df_fact_news_companies_pd = df_fact_news_companies_pd.merge(id_company_df, on='company_ticket', how='left')
     df_fact_news_companies_pd = df_fact_news_companies_pd[df_fact_news_companies_pd['company_id'].notnull()]
     print(df_fact_news_companies_pd)
